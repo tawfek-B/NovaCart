@@ -9,7 +9,6 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory, Notifiable;
 
     /**
@@ -17,13 +16,24 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $fillable = [
-        'name',
-        'email',
-        'password',
-        'admin',
+    public $timestamps = false;
+
+    protected $attributes = [
+        'admin' => 0,
+        'logo' => "https://via.placeholder.com/640x480.png/00ccee?text=quia",
     ];
 
+
+    // protected $fillable = [
+    //     'name',
+    //     'email',
+    //     'password',
+    //     'admin',
+    // ];
+
+    protected $guarded =[
+
+    ];
     /**
      * The attributes that should be hidden for serialization.
      *
@@ -31,7 +41,7 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'password',
-        // 'remember_token',
+        'remember_token',
     ];
 
     /**
