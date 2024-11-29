@@ -27,6 +27,5 @@ class UserController extends Controller
     public function update(Request $request) {
         $logopath = $request->logo->store();
         User::update($logopath);
-
     }
 }

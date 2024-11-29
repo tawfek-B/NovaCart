@@ -21,6 +21,7 @@ class User extends Authenticatable
     protected $attributes = [
         'admin' => 0,
         'logo' => "https://via.placeholder.com/640x480.png/00ccee?text=quia",
+        // 'remember_token' => Str::random(10),
     ];
 
 

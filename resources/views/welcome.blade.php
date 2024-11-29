@@ -17,3 +17,6 @@
 
 </body>
 </html>
+<!--Hash:make("[password]");
+    Hash:check("[password]", "[Hashed password]");
+-->
