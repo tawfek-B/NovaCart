@@ -32,9 +32,7 @@ class User extends Authenticatable
     //     'admin',
     // ];
 
-    protected $guarded =[
-
-    ];
+    protected $guarded = [];
     /**
      * The attributes that should be hidden for serialization.
      *

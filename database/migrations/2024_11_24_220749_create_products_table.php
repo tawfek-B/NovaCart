@@ -18,7 +18,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('image');
             $table->integer('quantity');
-            $table->foreignIdFor(App\Models\Store::class);
+            $table->foreignId('store_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }

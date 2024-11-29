@@ -17,11 +17,11 @@ class StoreFactory extends Factory
     public function definition(): array
     {
         return [
-            'name'=> fake() -> domainName(),
-            'opening hours' => fake() -> time,
-            'location' => fake() -> streetName,
-            'delivery fee' => fake() -> numberBetween(0,10000000),
-            'distance' => fake() -> numberBetween(0, 1),
+            'name' => fake()->domainName(),
+            'opening hours' => fake()->time(),
+            'location' => fake()->streetName(),
+            'delivery fee' => fake()->numberBetween(0, 10000000),
+            'distance' => fake()->numberBetween(0, 1),
             // 'product_id' =>Product::factory(),
         ];
     }
