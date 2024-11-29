@@ -15,7 +15,6 @@ Route::get('/login', [SessionController::class, 'create']);
 Route::post('/login', [SessionController::class, 'store']);
 //trying out github push
 
-use App\Models\User;
 
 Route::get('/products/{product}', function (Product $product) {
     return $product;
