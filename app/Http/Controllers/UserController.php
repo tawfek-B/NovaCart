@@ -8,11 +8,13 @@ use App\Models\User;
 class UserController extends Controller
 {
     //
-    public function create(Request $request) {
-        return view ('auth.register');
+    public function create(Request $request)
+    {
+        return view('auth.register');
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
         $userAttributes = $request->validate([
             'name' => ['required'],
             'email' => ['required'],
@@ -24,8 +26,9 @@ class UserController extends Controller
         // dd($request -> name);
 
     }
-    public function update(Request $request) {
+    public function update(Request $request)
+    {
         $logopath = $request->logo->store();
-        User::update($logopath);
+        // User::update($logopath);
     }
 }

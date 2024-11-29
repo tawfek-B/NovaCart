@@ -13,9 +13,12 @@ class Product extends Model
     /** @use HasFactory<\Database\Factories\ProductFactory> */
     use HasFactory;
 
-    protected $table = 'products';
+    // protected $table = 'products';
 
-    public function store() {
+    protected $guarded = [];
+
+    public function store()
+    {
         return $this->belongsTo(Store::class);
     }
 }

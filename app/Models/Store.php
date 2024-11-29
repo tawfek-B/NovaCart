@@ -13,9 +13,12 @@ class Store extends Model
     /** @use HasFactory<\Database\Factories\StoreFactory> */
     use HasFactory;
 
-    protected $table = 'stores';
+    // protected $table = 'stores';
 
-    public function products(): HasMany {
+    protected $guarded = [];
+
+    public function products(): HasMany
+    {
         return $this->HasMany(Product::class);
     }
 }
