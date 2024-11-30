@@ -9,15 +9,13 @@
 
     <form method="POST" action="/register" enctype="multipart/form-data">
         @csrf
-        <div>
             <input type="text" id="name" name="name" placeholder="NAME">
 
             <input type="email" id="email" name="email" placeholder="EMAIL">
 
             <input type="number" id="number" name="number" placeholder="NUMBER">
 
-            <input type="password" id="password" name="password" placeholder="PASSWORD">
-        </div>
+            <input type=password id="password" name="password" placeholder="PASSWORD">
 
 
 {{-- <div>
