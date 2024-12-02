@@ -34,7 +34,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'logo' => fake()->imageUrl(),
             'location' => fake()->streetAddress(),
-            'remember_token' => Str::random(10),
+            // 'remember_token' => Str::random(10),
         ];
     }
 

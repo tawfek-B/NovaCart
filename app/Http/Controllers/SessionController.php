@@ -2,16 +2,28 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+
 class SessionController extends Controller
 
 {
-    public function store()
+    public function login(Request $request)
     {
-        dd('login');
+        $user = User::where('email', $request->email)->first();
+
+        if (! $user || ! Hash::check($request->password, $user->password)) {
+            return response()->json(['message' => 'Invalid credentials'], 401);
+        }
+        Auth::login($user, true);
+        return response()->json(['messeage' => 'WEllcum']);
+
+
+        // dd('login');
         // $attributes = request()->validate([
         //     'email' => ['required', 'email'],
         //     'password' => ['required']
@@ -24,7 +36,7 @@ class SessionController extends Controller
         // request()->session()->regenerate();
     }
 
-    public function destroy()
+    public function logout()
     {
         Auth::logout();
     }

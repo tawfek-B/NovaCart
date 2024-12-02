@@ -16,7 +16,8 @@ class UserController extends Controller
             'data' => $users,
         ]);
     }
-    public function create(Request $request)
+
+    public function signUp(Request $request)
     {
         $userAttributes = $request->validate([
             $firstname = 'firstName' => ['required'],
@@ -40,7 +41,9 @@ class UserController extends Controller
 
         return response()->json(['message' => 'ok', 'data' => $userAttributes]);
     }
-    public function changeLogo(Request $request) {
+
+    public function changeLogo(Request $request)
+    {
         $request->validate([
             'userName' => 'required|string',
             'newLogo' => 'required|string',

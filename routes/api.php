@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\ProductCOntroller;
+use App\Http\Controllers\SessionController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -14,7 +15,7 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::post('/adduser', [UserController::class, 'create']);
+Route::post('/signUp', [UserController::class, 'signUp']);
 Route::get('/fetch', [UserController::class, 'fetch']);
 Route::put('/changelogo', [UserController::class, 'changeLogo']);
 
@@ -22,6 +23,9 @@ Route::post('/addstore', [StoreController::class, 'create']);
 
 Route::post('/addproduct', [ProductController::class, 'create']);
 Route::put('/buyproduct', [ProductController::class, 'update']);
+
+Route::post('/login', [SessionController::class, 'login']);
+Route::post('/logout', [SessionController::class, 'logout']);
 
 
 Route::post('/token', function (Request $request) {
