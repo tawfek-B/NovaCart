@@ -13,6 +13,17 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+
+Route::post('/adduser', [UserController::class, 'create']);
+Route::get('/fetch', [UserController::class, 'fetch']);
+Route::put('/changelogo', [UserController::class, 'changeLogo']);
+
+Route::post('/addstore', [StoreController::class, 'create']);
+
+Route::post('/addproduct', [ProductController::class, 'create']);
+Route::put('/buyproduct', [ProductController::class, 'update']);
+
+
 Route::post('/token', function (Request $request) {
     $user = User::where('email', $request->email)->first();
 
@@ -25,9 +36,3 @@ Route::post('/token', function (Request $request) {
     return response()->json(['token' => $token], 200);
 });
 //this is used i think to make sure that the user exists or some shit
-
-Route::post('/adduser', [UserController::class, 'create']);
-Route::get('/fetch', [UserController::class, 'fetch']);
-Route::put('/changelogo', [UserController::class, 'changeLogo']);
-Route::post('/addstore', [StoreController::class, 'create']);
-Route::post('/addproduct', [ProductController::class, 'create']);
