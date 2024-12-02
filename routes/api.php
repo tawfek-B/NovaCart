@@ -2,6 +2,8 @@
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\StoreController;
+use App\Http\Controllers\ProductCOntroller;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -24,5 +26,8 @@ Route::post('/token', function (Request $request) {
 });
 //this is used i think to make sure that the user exists or some shit
 
-Route::post('/adduser', [UserController::class, 'store']);
+Route::post('/adduser', [UserController::class, 'create']);
 Route::get('/fetch', [UserController::class, 'fetch']);
+Route::put('/changelogo', [UserController::class, 'changeLogo']);
+Route::post('/addstore', [StoreController::class, 'create']);
+Route::post('/addproduct', [ProductController::class, 'create']);
