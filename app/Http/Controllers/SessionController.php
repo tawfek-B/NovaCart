@@ -14,12 +14,31 @@ class SessionController extends Controller
 {
     public function login(Request $request)
     {
-        $user = User::where('email', $request->email)->first();
+        // $user = User::where('email', $request->email)->first();
 
-        if (! $user || ! Hash::check($request->password, $user->password)) {
-            return response()->json(['message' => 'Invalid credentials'], 401);
+        $credentials = $request->validate([
+            'email' => 'required',
+            'password' => 'required'
+        ]);
+        if(Auth::attempt($credentials)) {
+            $user = Auth::user();
+            return response()->json([
+                $user->createToken('API Token')->plainTextToken,
+                'user' => $user,
+            ]);
+            }
+            else {
+                return response()->json([
+                    'you are an idiot',
+                ]);
         }
-        Auth::login($user, true);
+
+        // if (! $user || ! Hash::check($request->password, $user->password)) {
+        //     return response()->json(['message' => 'Invalid credentials'], 401);
+        // }
+        // Auth::login($user, true);
+        // $token = $user->createToken('API Token')->plainTextToken;
+        // $user->rememberToken->$token;
         return response()->json(['messeage' => 'WEllcum']);
 
 

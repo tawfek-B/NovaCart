@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\StoreController;
 use App\Http\Controllers\ProductCOntroller;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -15,17 +16,24 @@ Route::get('/user', function (Request $request) {
 })->middleware('auth:sanctum');
 
 
-Route::post('/signUp', [UserController::class, 'signUp']);
+Route::post('/signup', [UserController::class, 'signUp']);
 Route::get('/fetch', [UserController::class, 'fetch']);
 Route::put('/changelogo', [UserController::class, 'changeLogo']);
+Route::middleware('auth:sanctum')->post('/changepassword', [UserController::class, 'changePassword']);
 
-Route::post('/addstore', [StoreController::class, 'create']);
+Route::post('/additem', [CartController::class, 'addItem']);
+Route::put('/updateorder', [CartController::class, 'update']);
+Route::delete('/deleteorder', [CartController::class, 'delete']);
+Route::delete('/deletecart', [CartController::class, 'deleteCart']);
+
+Route::post('/addstore', [StoreController::class, 'create']);//add patch for store attributes like name, location, opening and closing time
 
 Route::post('/addproduct', [ProductController::class, 'create']);
-Route::put('/buyproduct', [ProductController::class, 'update']);
+Route::put('/updateproduct', [ProductController::class, 'update']);
 
 Route::post('/login', [SessionController::class, 'login']);
 Route::post('/logout', [SessionController::class, 'logout']);
+
 
 
 Route::post('/token', function (Request $request) {

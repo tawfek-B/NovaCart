@@ -1560,87 +1560,87 @@
 	</style>
 
 	<style>
-		#frame-0 .hljs-ln-line[data-line-number='825'] {
+		#frame-0 .hljs-ln-line[data-line-number='62'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-1 .hljs-ln-line[data-line-number='779'] {
+		#frame-1 .hljs-ln-line[data-line-number='46'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-2 .hljs-ln-line[data-line-number='560'] {
+		#frame-2 .hljs-ln-line[data-line-number='265'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-3 .hljs-ln-line[data-line-number='524'] {
+		#frame-3 .hljs-ln-line[data-line-number='211'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-4 .hljs-ln-line[data-line-number='32'] {
+		#frame-4 .hljs-ln-line[data-line-number='808'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-5 .hljs-ln-line[data-line-number='3799'] {
+		#frame-5 .hljs-ln-line[data-line-number='144'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-6 .hljs-ln-line[data-line-number='2049'] {
+		#frame-6 .hljs-ln-line[data-line-number='51'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-7 .hljs-ln-line[data-line-number='1358'] {
+		#frame-7 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-8 .hljs-ln-line[data-line-number='1323'] {
+		#frame-8 .hljs-ln-line[data-line-number='64'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-9 .hljs-ln-line[data-line-number='1162'] {
+		#frame-9 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-10 .hljs-ln-line[data-line-number='349'] {
+		#frame-10 .hljs-ln-line[data-line-number='119'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-11 .hljs-ln-line[data-line-number='257'] {
+		#frame-11 .hljs-ln-line[data-line-number='807'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-12 .hljs-ln-line[data-line-number='344'] {
+		#frame-12 .hljs-ln-line[data-line-number='786'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-13 .hljs-ln-line[data-line-number='298'] {
+		#frame-13 .hljs-ln-line[data-line-number='750'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-14 .hljs-ln-line[data-line-number='292'] {
+		#frame-14 .hljs-ln-line[data-line-number='739'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-15 .hljs-ln-line[data-line-number='21'] {
+		#frame-15 .hljs-ln-line[data-line-number='201'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-16 .hljs-ln-line[data-line-number='46'] {
+		#frame-16 .hljs-ln-line[data-line-number='144'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-17 .hljs-ln-line[data-line-number='265'] {
+		#frame-17 .hljs-ln-line[data-line-number='21'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-18 .hljs-ln-line[data-line-number='211'] {
+		#frame-18 .hljs-ln-line[data-line-number='31'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-19 .hljs-ln-line[data-line-number='808'] {
+		#frame-19 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-20 .hljs-ln-line[data-line-number='144'] {
+		#frame-20 .hljs-ln-line[data-line-number='21'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
@@ -1652,39 +1652,39 @@
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-23 .hljs-ln-line[data-line-number='119'] {
+		#frame-23 .hljs-ln-line[data-line-number='27'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-24 .hljs-ln-line[data-line-number='807'] {
+		#frame-24 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-25 .hljs-ln-line[data-line-number='786'] {
+		#frame-25 .hljs-ln-line[data-line-number='110'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-26 .hljs-ln-line[data-line-number='750'] {
+		#frame-26 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-27 .hljs-ln-line[data-line-number='739'] {
+		#frame-27 .hljs-ln-line[data-line-number='62'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-28 .hljs-ln-line[data-line-number='201'] {
+		#frame-28 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-29 .hljs-ln-line[data-line-number='144'] {
+		#frame-29 .hljs-ln-line[data-line-number='58'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-30 .hljs-ln-line[data-line-number='21'] {
+		#frame-30 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-31 .hljs-ln-line[data-line-number='31'] {
+		#frame-31 .hljs-ln-line[data-line-number='22'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
@@ -1692,79 +1692,27 @@
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-33 .hljs-ln-line[data-line-number='21'] {
+		#frame-33 .hljs-ln-line[data-line-number='119'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-34 .hljs-ln-line[data-line-number='51'] {
+		#frame-34 .hljs-ln-line[data-line-number='176'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-35 .hljs-ln-line[data-line-number='183'] {
+		#frame-35 .hljs-ln-line[data-line-number='145'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-36 .hljs-ln-line[data-line-number='27'] {
+		#frame-36 .hljs-ln-line[data-line-number='1190'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-37 .hljs-ln-line[data-line-number='183'] {
+		#frame-37 .hljs-ln-line[data-line-number='17'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-38 .hljs-ln-line[data-line-number='110'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-39 .hljs-ln-line[data-line-number='183'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-40 .hljs-ln-line[data-line-number='62'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-41 .hljs-ln-line[data-line-number='183'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-42 .hljs-ln-line[data-line-number='58'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-43 .hljs-ln-line[data-line-number='183'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-44 .hljs-ln-line[data-line-number='22'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-45 .hljs-ln-line[data-line-number='183'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-46 .hljs-ln-line[data-line-number='119'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-47 .hljs-ln-line[data-line-number='176'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-48 .hljs-ln-line[data-line-number='145'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-49 .hljs-ln-line[data-line-number='1190'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-50 .hljs-ln-line[data-line-number='17'] {
-			background-color: rgba(242, 95, 95, 0.4);
-		}
-
-		#frame-51 .hljs-ln-line[data-line-number='139'] {
+		#frame-38 .hljs-ln-line[data-line-number='139'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 	</style>
@@ -1939,21 +1887,15 @@
 							<div
 								class="inline-block rounded-full bg-red-500/20 px-3 py-2 max-w-full text-sm font-bold leading-5 text-red-500 truncate lg:text-base dark:bg-red-500/20">
 								<span class="hidden md:inline">
-                    Illuminate\Database\QueryException
+                    ErrorException
                 </span>
 								<span class="md:hidden">
-                    QueryException
+                    ErrorException
                 </span>
 							</div>
 							<div
 								class="mt-4 text-lg font-semibold text-gray-900 break-words dark:text-white lg:text-2xl">
-								SQLSTATE[23000]: Integrity constraint violation: 19 FOREIGN KEY constraint failed
-								(Connection: sqlite, SQL: insert into &quot;products&quot; (&quot;name&quot;,
-								&quot;price&quot;, &quot;description&quot;, &quot;image&quot;, &quot;quantity&quot;,
-								&quot;store_id&quot;, &quot;updated_at&quot;, &quot;created_at&quot;) values (product
-								name, 10.5, The best decision you will ever make, come buy now!,
-								https://via.placeholder.com/640x480.png/0000ee?text=voluptatem, 10, 200, 2024-12-01
-								14:59:10, 2024-12-01 14:59:10))
+								Attempt to read property &quot;Password&quot; on string
 							</div>
 						</div>
 
@@ -2034,12 +1976,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Connection</span>
-                                    <span class="font-mono text-xs">:825</span>
+                                    <span class="text-gray-900 dark:text-gray-300">App\Http\Controllers\UserController</span>
+                                    <span class="font-mono text-xs">:62</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                runQueryCallback
+                                changePassword
                             </div>
                         </div>
                     </div>
@@ -2057,456 +1999,6 @@
                     <div
                         x-bind:class="
                             index === 1
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Connection</span>
-                                    <span class="font-mono text-xs">:779</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                run
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 2"
-                >
-                    <div
-                        x-bind:class="
-                            index === 2
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Connection</span>
-                                    <span class="font-mono text-xs">:560</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                statement
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 3"
-                >
-                    <div
-                        x-bind:class="
-                            index === 3
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Connection</span>
-                                    <span class="font-mono text-xs">:524</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                insert
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 4"
-                >
-                    <div
-                        x-bind:class="
-                            index === 4
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Query\Processors\Processor</span>
-                                    <span class="font-mono text-xs">:32</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                processInsertGetId
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 5"
-                >
-                    <div
-                        x-bind:class="
-                            index === 5
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Query\Builder</span>
-                                    <span class="font-mono text-xs">:3799</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                insertGetId
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 6"
-                >
-                    <div
-                        x-bind:class="
-                            index === 6
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Builder</span>
-                                    <span class="font-mono text-xs">:2049</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                __call
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 7"
-                >
-                    <div
-                        x-bind:class="
-                            index === 7
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Model</span>
-                                    <span class="font-mono text-xs">:1358</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                insertAndSetId
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 8"
-                >
-                    <div
-                        x-bind:class="
-                            index === 8
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Model</span>
-                                    <span class="font-mono text-xs">:1323</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                performInsert
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 9"
-                >
-                    <div
-                        x-bind:class="
-                            index === 9
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Model</span>
-                                    <span class="font-mono text-xs">:1162</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                save
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 10"
-                >
-                    <div
-                        x-bind:class="
-                            index === 10
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Factories\Factory</span>
-                                    <span class="font-mono text-xs">:349</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:Illuminate\Database\Eloquent\Factories\Factory::store():344}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 11"
-                >
-                    <div
-                        x-bind:class="
-                            index === 11
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Support\Traits\EnumeratesValues</span>
-                                    <span class="font-mono text-xs">:257</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                each
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 12"
-                >
-                    <div
-                        x-bind:class="
-                            index === 12
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Factories\Factory</span>
-                                    <span class="font-mono text-xs">:344</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                store
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 13"
-                >
-                    <div
-                        x-bind:class="
-                            index === 13
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Factories\Factory</span>
-                                    <span class="font-mono text-xs">:298</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                create
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 14"
-                >
-                    <div
-                        x-bind:class="
-                            index === 14
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Factories\Factory</span>
-                                    <span class="font-mono text-xs">:292</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                create
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 15"
-                >
-                    <div
-                        x-bind:class="
-                            index === 15
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">App\Http\Controllers\ProductController</span>
-                                    <span class="font-mono text-xs">:21</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                create
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 16"
-                >
-                    <div
-                        x-bind:class="
-                            index === 16
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2532,11 +2024,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 17"
+                    @click="index = 2"
                 >
                     <div
                         x-bind:class="
-                            index === 17
+                            index === 2
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2562,11 +2054,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 18"
+                    @click="index = 3"
                 >
                     <div
                         x-bind:class="
-                            index === 18
+                            index === 3
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2592,11 +2084,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 19"
+                    @click="index = 4"
                 >
                     <div
                         x-bind:class="
-                            index === 19
+                            index === 4
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2622,11 +2114,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 20"
+                    @click="index = 5"
                 >
                     <div
                         x-bind:class="
-                            index === 20
+                            index === 5
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2652,6 +2144,456 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
+                    @click="index = 6"
+                >
+                    <div
+                        x-bind:class="
+                            index === 6
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Middleware\SubstituteBindings</span>
+                                    <span class="font-mono text-xs">:51</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                handle
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 7"
+                >
+                    <div
+                        x-bind:class="
+                            index === 7
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 8"
+                >
+                    <div
+                        x-bind:class="
+                            index === 8
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Auth\Middleware\Authenticate</span>
+                                    <span class="font-mono text-xs">:64</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                handle
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 9"
+                >
+                    <div
+                        x-bind:class="
+                            index === 9
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 10"
+                >
+                    <div
+                        x-bind:class="
+                            index === 10
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:119</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                then
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 11"
+                >
+                    <div
+                        x-bind:class="
+                            index === 11
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
+                                    <span class="font-mono text-xs">:807</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                runRouteWithinStack
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 12"
+                >
+                    <div
+                        x-bind:class="
+                            index === 12
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
+                                    <span class="font-mono text-xs">:786</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                runRoute
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 13"
+                >
+                    <div
+                        x-bind:class="
+                            index === 13
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
+                                    <span class="font-mono text-xs">:750</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                dispatchToRoute
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 14"
+                >
+                    <div
+                        x-bind:class="
+                            index === 14
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
+                                    <span class="font-mono text-xs">:739</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                dispatch
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 15"
+                >
+                    <div
+                        x-bind:class="
+                            index === 15
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Kernel</span>
+                                    <span class="font-mono text-xs">:201</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                {closure:Illuminate\Foundation\Http\Kernel::dispatchToRouter():198}
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 16"
+                >
+                    <div
+                        x-bind:class="
+                            index === 16
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:144</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                {closure:Illuminate\Pipeline\Pipeline::prepareDestination():142}
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 17"
+                >
+                    <div
+                        x-bind:class="
+                            index === 17
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
+                                    <span class="font-mono text-xs">:21</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                handle
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 18"
+                >
+                    <div
+                        x-bind:class="
+                            index === 18
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull</span>
+                                    <span class="font-mono text-xs">:31</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                handle
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 19"
+                >
+                    <div
+                        x-bind:class="
+                            index === 19
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 20"
+                >
+                    <div
+                        x-bind:class="
+                            index === 20
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
+                                    <span class="font-mono text-xs">:21</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                handle
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
                     @click="index = 21"
                 >
                     <div
@@ -2664,7 +2606,7 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Middleware\SubstituteBindings</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TrimStrings</span>
                                     <span class="font-mono text-xs">:51</span>
                                 </span>
                             </div>
@@ -2724,12 +2666,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:119</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\ValidatePostSize</span>
+                                    <span class="font-mono text-xs">:27</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                then
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2754,12 +2696,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
-                                    <span class="font-mono text-xs">:807</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                runRouteWithinStack
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
                             </div>
                         </div>
                     </div>
@@ -2784,12 +2726,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
-                                    <span class="font-mono text-xs">:786</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance</span>
+                                    <span class="font-mono text-xs">:110</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                runRoute
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2814,12 +2756,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
-                                    <span class="font-mono text-xs">:750</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                dispatchToRoute
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
                             </div>
                         </div>
                     </div>
@@ -2844,12 +2786,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Routing\Router</span>
-                                    <span class="font-mono text-xs">:739</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\HandleCors</span>
+                                    <span class="font-mono text-xs">:62</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                dispatch
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2874,12 +2816,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Kernel</span>
-                                    <span class="font-mono text-xs">:201</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                {closure:Illuminate\Foundation\Http\Kernel::dispatchToRouter():198}
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
                             </div>
                         </div>
                     </div>
@@ -2904,12 +2846,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:144</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\TrustProxies</span>
+                                    <span class="font-mono text-xs">:58</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                {closure:Illuminate\Pipeline\Pipeline::prepareDestination():142}
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2934,12 +2876,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
-                                    <span class="font-mono text-xs">:21</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                handle
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
                             </div>
                         </div>
                     </div>
@@ -2964,8 +2906,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull</span>
-                                    <span class="font-mono text-xs">:31</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks</span>
+                                    <span class="font-mono text-xs">:22</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -3024,396 +2966,6 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
-                                    <span class="font-mono text-xs">:21</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 34"
-                >
-                    <div
-                        x-bind:class="
-                            index === 34
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TrimStrings</span>
-                                    <span class="font-mono text-xs">:51</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 35"
-                >
-                    <div
-                        x-bind:class="
-                            index === 35
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 36"
-                >
-                    <div
-                        x-bind:class="
-                            index === 36
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\ValidatePostSize</span>
-                                    <span class="font-mono text-xs">:27</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 37"
-                >
-                    <div
-                        x-bind:class="
-                            index === 37
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 38"
-                >
-                    <div
-                        x-bind:class="
-                            index === 38
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance</span>
-                                    <span class="font-mono text-xs">:110</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 39"
-                >
-                    <div
-                        x-bind:class="
-                            index === 39
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 40"
-                >
-                    <div
-                        x-bind:class="
-                            index === 40
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\HandleCors</span>
-                                    <span class="font-mono text-xs">:62</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 41"
-                >
-                    <div
-                        x-bind:class="
-                            index === 41
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 42"
-                >
-                    <div
-                        x-bind:class="
-                            index === 42
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\TrustProxies</span>
-                                    <span class="font-mono text-xs">:58</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 43"
-                >
-                    <div
-                        x-bind:class="
-                            index === 43
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 44"
-                >
-                    <div
-                        x-bind:class="
-                            index === 44
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks</span>
-                                    <span class="font-mono text-xs">:22</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 45"
-                >
-                    <div
-                        x-bind:class="
-                            index === 45
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 46"
-                >
-                    <div
-                        x-bind:class="
-                            index === 46
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
                                     <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
                                     <span class="font-mono text-xs">:119</span>
                                 </span>
@@ -3432,11 +2984,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 47"
+                    @click="index = 34"
                 >
                     <div
                         x-bind:class="
-                            index === 47
+                            index === 34
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3462,11 +3014,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 48"
+                    @click="index = 35"
                 >
                     <div
                         x-bind:class="
-                            index === 48
+                            index === 35
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3492,11 +3044,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 49"
+                    @click="index = 36"
                 >
                     <div
                         x-bind:class="
-                            index === 49
+                            index === 36
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3522,11 +3074,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 50"
+                    @click="index = 37"
                 >
                     <div
                         x-bind:class="
-                            index === 50
+                            index === 37
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3555,11 +3107,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="includeVendorFrames"
-                    @click="index = 51"
+                    @click="index = 38"
                 >
                     <div
                         x-bind:class="
-                            index === 51
+                            index === 38
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3586,9 +3138,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Connection.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\app\Http\Controllers\UserController.php</span>
 
-											<span class="font-mono text-xs">:825</span>
+											<span class="font-mono text-xs">:62</span>
 										</div>
 									</div>
 								</div>
@@ -3597,599 +3149,24 @@
                     style="display: none;"
                     id="frame-0"
                     class="language-php highlightable-code  default-highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="825"
-                    data-ln-start-from="820"
-                >                throw new UniqueConstraintViolationException(
-                    $this-&gt;getName(), $query, $this-&gt;prepareBindings($bindings), $e
-                );
-            }
-
-            throw new QueryException(
-                $this-&gt;getName(), $query, $this-&gt;prepareBindings($bindings), $e
-            );
+                    data-line-number="62"
+                    data-ln-start-from="57"
+                >        ]);
+        $oldPassword = $request-&gt;input(&#039;oldPassword&#039;);
+        $newPassword = $request-&gt;input(&#039;newPassword&#039;);
+        $user = Auth::user();
+        if(Hash::check($oldPassword, $user-&gt;password)) {
+            $user-&gt;password-&gt;$newPassword;
+        }
+        else {
+            echo($oldPassword);
         }
     }
-
-    /**
-     * Determine if the given database exception was caused by a unique constraint violation.
-     *
-     * @param  \Exception  $exception
-     * @return bool
-     */
+}
 </code></template></pre>
 								</div>
 							</div>
 							<div class="sm:col-span-2" x-show="index === 1">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Connection.php</span>
-
-											<span class="font-mono text-xs">:779</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-1"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="779"
-                    data-ln-start-from="774"
-                >
-        // Here we will run this query. If an exception occurs we&#039;ll determine if it was
-        // caused by a connection that has been lost. If that is the cause, we&#039;ll try
-        // to re-establish connection and re-run the query with a fresh connection.
-        try {
-            $result = $this-&gt;runQueryCallback($query, $bindings, $callback);
-        } catch (QueryException $e) {
-            $result = $this-&gt;handleQueryException(
-                $e, $query, $bindings, $callback
-            );
-        }
-
-        // Once we have run the query we will calculate the time that it took to run and
-        // then log the query, bindings, and execution time so we will report them on
-        // the event that the developer needs them. We&#039;ll log time in milliseconds.
-        $this-&gt;logQuery(
-            $query, $bindings, $this-&gt;getElapsedTime($start)
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 2">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Connection.php</span>
-
-											<span class="font-mono text-xs">:560</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-2"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="560"
-                    data-ln-start-from="555"
-                >     * @param  array  $bindings
-     * @return bool
-     */
-    public function statement($query, $bindings = [])
-    {
-        return $this-&gt;run($query, $bindings, function ($query, $bindings) {
-            if ($this-&gt;pretending()) {
-                return true;
-            }
-
-            $statement = $this-&gt;getPdo()-&gt;prepare($query);
-
-            $this-&gt;bindValues($statement, $this-&gt;prepareBindings($bindings));
-
-            $this-&gt;recordsHaveBeenModified();
-
-            return $statement-&gt;execute();
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 3">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Connection.php</span>
-
-											<span class="font-mono text-xs">:524</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-3"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="524"
-                    data-ln-start-from="519"
-                >     * @param  array  $bindings
-     * @return bool
-     */
-    public function insert($query, $bindings = [])
-    {
-        return $this-&gt;statement($query, $bindings);
-    }
-
-    /**
-     * Run an update statement against the database.
-     *
-     * @param  string  $query
-     * @param  array  $bindings
-     * @return int
-     */
-    public function update($query, $bindings = [])
-    {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 4">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Query\Processors\Processor.php</span>
-
-											<span class="font-mono text-xs">:32</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-4"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="32"
-                    data-ln-start-from="27"
-                >     * @param  string|null  $sequence
-     * @return int
-     */
-    public function processInsertGetId(Builder $query, $sql, $values, $sequence = null)
-    {
-        $query-&gt;getConnection()-&gt;insert($sql, $values);
-
-        $id = $query-&gt;getConnection()-&gt;getPdo()-&gt;lastInsertId($sequence);
-
-        return is_numeric($id) ? (int) $id : $id;
-    }
-
-    /**
-     * Process the results of a tables query.
-     *
-     * @param  array  $results
-     * @return array
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 5">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php</span>
-
-											<span class="font-mono text-xs">:3799</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-5"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="3799"
-                    data-ln-start-from="3794"
-                >
-        $sql = $this-&gt;grammar-&gt;compileInsertGetId($this, $values, $sequence);
-
-        $values = $this-&gt;cleanBindings($values);
-
-        return $this-&gt;processor-&gt;processInsertGetId($this, $sql, $values, $sequence);
-    }
-
-    /**
-     * Insert new records into the table using a subquery.
-     *
-     * @param  array  $columns
-     * @param  \Closure|\Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder&lt;*&gt;|string  $query
-     * @return int
-     */
-    public function insertUsing(array $columns, $query)
-    {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 6">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php</span>
-
-											<span class="font-mono text-xs">:2049</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-6"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="2049"
-                    data-ln-start-from="2044"
-                >        if ($this-&gt;hasNamedScope($method)) {
-            return $this-&gt;callNamedScope($method, $parameters);
-        }
-
-        if (in_array(strtolower($method), $this-&gt;passthru)) {
-            return $this-&gt;toBase()-&gt;{$method}(...$parameters);
-        }
-
-        $this-&gt;forwardCallTo($this-&gt;query, $method, $parameters);
-
-        return $this;
-    }
-
-    /**
-     * Dynamically handle calls into the query instance.
-     *
-     * @param  string  $method
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 7">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php</span>
-
-											<span class="font-mono text-xs">:1358</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-7"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="1358"
-                    data-ln-start-from="1353"
-                >     * @param  array  $attributes
-     * @return void
-     */
-    protected function insertAndSetId(Builder $query, $attributes)
-    {
-        $id = $query-&gt;insertGetId($attributes, $keyName = $this-&gt;getKeyName());
-
-        $this-&gt;setAttribute($keyName, $id);
-    }
-
-    /**
-     * Destroy the models for the given IDs.
-     *
-     * @param  \Illuminate\Support\Collection|array|int|string  $ids
-     * @return int
-     */
-    public static function destroy($ids)
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 8">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php</span>
-
-											<span class="font-mono text-xs">:1323</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-8"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="1323"
-                    data-ln-start-from="1318"
-                >        // the query builder, which will give us back the final inserted ID for this
-        // table from the database. Not all tables have to be incrementing though.
-        $attributes = $this-&gt;getAttributesForInsert();
-
-        if ($this-&gt;getIncrementing()) {
-            $this-&gt;insertAndSetId($query, $attributes);
-        }
-
-        // If the table isn&#039;t incrementing we&#039;ll simply insert these attributes as they
-        // are. These attribute arrays must contain an &quot;id&quot; column previously placed
-        // there by the developer as the manually determined key for these models.
-        else {
-            if (empty($attributes)) {
-                return true;
-            }
-
-            $query-&gt;insert($attributes);
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 9">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php</span>
-
-											<span class="font-mono text-xs">:1162</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-9"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="1162"
-                    data-ln-start-from="1157"
-                >
-        // If the model is brand new, we&#039;ll insert it into our database and set the
-        // ID attribute on the model to the value of the newly inserted row&#039;s ID
-        // which is typically an auto-increment value managed by the database.
-        else {
-            $saved = $this-&gt;performInsert($query);
-
-            if (! $this-&gt;getConnectionName() &amp;&amp;
-                $connection = $query-&gt;getConnection()) {
-                $this-&gt;setConnection($connection-&gt;getName());
-            }
-        }
-
-        // If the model is successfully saved, we need to do a few more things once
-        // that is done. We will call the &quot;saved&quot; method here to run any actions
-        // we need to happen after a model gets successfully saved right here.
-        if ($saved) {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 10">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php</span>
-
-											<span class="font-mono text-xs">:349</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-10"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="349"
-                    data-ln-start-from="344"
-                >        $results-&gt;each(function ($model) {
-            if (! isset($this-&gt;connection)) {
-                $model-&gt;setConnection($model-&gt;newQueryWithoutScopes()-&gt;getConnection()-&gt;getName());
-            }
-
-            $model-&gt;save();
-
-            foreach ($model-&gt;getRelations() as $name =&gt; $items) {
-                if ($items instanceof Enumerable &amp;&amp; $items-&gt;isEmpty()) {
-                    $model-&gt;unsetRelation($name);
-                }
-            }
-
-            $this-&gt;createChildren($model);
-        });
-    }
-
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 11">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Collections\Traits\EnumeratesValues.php</span>
-
-											<span class="font-mono text-xs">:257</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-11"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="257"
-                    data-ln-start-from="252"
-                >     * @return $this
-     */
-    public function each(callable $callback)
-    {
-        foreach ($this as $key =&gt; $item) {
-            if ($callback($item, $key) === false) {
-                break;
-            }
-        }
-
-        return $this;
-    }
-
-    /**
-     * Execute a callback over each nested chunk of items.
-     *
-     * @param  callable(...mixed): mixed  $callback
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 12">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php</span>
-
-											<span class="font-mono text-xs">:344</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-12"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="344"
-                    data-ln-start-from="339"
-                >     * @param  \Illuminate\Support\Collection&lt;int, \Illuminate\Database\Eloquent\Model&gt;  $results
-     * @return void
-     */
-    protected function store(Collection $results)
-    {
-        $results-&gt;each(function ($model) {
-            if (! isset($this-&gt;connection)) {
-                $model-&gt;setConnection($model-&gt;newQueryWithoutScopes()-&gt;getConnection()-&gt;getName());
-            }
-
-            $model-&gt;save();
-
-            foreach ($model-&gt;getRelations() as $name =&gt; $items) {
-                if ($items instanceof Enumerable &amp;&amp; $items-&gt;isEmpty()) {
-                    $model-&gt;unsetRelation($name);
-                }
-            }
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 13">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php</span>
-
-											<span class="font-mono text-xs">:298</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-13"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="298"
-                    data-ln-start-from="293"
-                >        }
-
-        $results = $this-&gt;make($attributes, $parent);
-
-        if ($results instanceof Model) {
-            $this-&gt;store(collect([$results]));
-
-            $this-&gt;callAfterCreating(collect([$results]), $parent);
-        } else {
-            $this-&gt;store($results);
-
-            $this-&gt;callAfterCreating($results, $parent);
-        }
-
-        return $results;
-    }
-
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 14">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Factories\Factory.php</span>
-
-											<span class="font-mono text-xs">:292</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-14"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="292"
-                    data-ln-start-from="287"
-                >     * @return \Illuminate\Database\Eloquent\Collection&lt;int, TModel&gt;|TModel
-     */
-    public function create($attributes = [], ?Model $parent = null)
-    {
-        if (! empty($attributes)) {
-            return $this-&gt;state($attributes)-&gt;create([], $parent);
-        }
-
-        $results = $this-&gt;make($attributes, $parent);
-
-        if ($results instanceof Model) {
-            $this-&gt;store(collect([$results]));
-
-            $this-&gt;callAfterCreating(collect([$results]), $parent);
-        } else {
-            $this-&gt;store($results);
-
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 15">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\app\Http\Controllers\ProductController.php</span>
-
-											<span class="font-mono text-xs">:21</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-15"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="21"
-                    data-ln-start-from="16"
-                >            $description = $request-&gt;input(&#039;description&#039;),
-            $image = $request-&gt;input(&#039;image&#039;),
-            $quantity = $request-&gt;input(&#039;quantity&#039;),
-            $storeId = $request-&gt;input(&#039;storeId&#039;)
-        ];
-        $product = Product::factory()-&gt;create([
-            &#039;name&#039; =&gt; $name,
-            &#039;price&#039; =&gt; $price,
-            &#039;description&#039; =&gt; $description,
-            &#039;image&#039; =&gt; $image,
-            &#039;quantity&#039; =&gt; $quantity,
-            &#039;store_id&#039; =&gt; $storeId,
-        ]);
-        dd($product);
-        // $table-&gt;string(&#039;name&#039;);
-        // $table-&gt;float(&#039;price&#039;);
-        // $table-&gt;text(&#039;description&#039;);
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 16">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4203,7 +3180,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-16"
+                    id="frame-1"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="46"
                     data-ln-start-from="41"
@@ -4227,7 +3204,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 17">
+							<div class="sm:col-span-2" x-show="index === 2">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4241,7 +3218,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-17"
+                    id="frame-2"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="265"
                     data-ln-start-from="260"
@@ -4265,7 +3242,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 18">
+							<div class="sm:col-span-2" x-show="index === 3">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4279,7 +3256,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-18"
+                    id="frame-3"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="211"
                     data-ln-start-from="206"
@@ -4303,7 +3280,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 19">
+							<div class="sm:col-span-2" x-show="index === 4">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4317,7 +3294,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-19"
+                    id="frame-4"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="808"
                     data-ln-start-from="803"
@@ -4341,7 +3318,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 20">
+							<div class="sm:col-span-2" x-show="index === 5">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4355,7 +3332,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-20"
+                    id="frame-5"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="144"
                     data-ln-start-from="139"
@@ -4379,7 +3356,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 21">
+							<div class="sm:col-span-2" x-show="index === 6">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4393,7 +3370,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-21"
+                    id="frame-6"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="51"
                     data-ln-start-from="46"
@@ -4405,6 +3382,576 @@
         return $next($request);
     }
 }
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 7">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:183</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-7"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
+
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
+    }
+
+    /**
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 8">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Auth\Middleware\Authenticate.php</span>
+
+											<span class="font-mono text-xs">:64</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-8"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="64"
+                    data-ln-start-from="59"
+                >     */
+    public function handle($request, Closure $next, ...$guards)
+    {
+        $this-&gt;authenticate($request, $guards);
+
+        return $next($request);
+    }
+
+    /**
+     * Determine if the user is logged in to any of the given guards.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  array  $guards
+     * @return void
+     *
+     * @throws \Illuminate\Auth\AuthenticationException
+     */
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 9">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:183</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-9"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
+
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
+    }
+
+    /**
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 10">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:119</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-10"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="119"
+                    data-ln-start-from="114"
+                >    {
+        $pipeline = array_reduce(
+            array_reverse($this-&gt;pipes()), $this-&gt;carry(), $this-&gt;prepareDestination($destination)
+        );
+
+        return $pipeline($this-&gt;passable);
+    }
+
+    /**
+     * Run the pipeline and return the result.
+     *
+     * @return mixed
+     */
+    public function thenReturn()
+    {
+        return $this-&gt;then(function ($passable) {
+            return $passable;
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 11">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+
+											<span class="font-mono text-xs">:807</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-11"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="807"
+                    data-ln-start-from="802"
+                >        $middleware = $shouldSkipMiddleware ? [] : $this-&gt;gatherRouteMiddleware($route);
+
+        return (new Pipeline($this-&gt;container))
+                        -&gt;send($request)
+                        -&gt;through($middleware)
+                        -&gt;then(fn ($request) =&gt; $this-&gt;prepareResponse(
+                            $request, $route-&gt;run()
+                        ));
+    }
+
+    /**
+     * Gather the middleware for the given route with resolved class names.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @return array
+     */
+    public function gatherRouteMiddleware(Route $route)
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 12">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+
+											<span class="font-mono text-xs">:786</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-12"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="786"
+                    data-ln-start-from="781"
+                >        $request-&gt;setRouteResolver(fn () =&gt; $route);
+
+        $this-&gt;events-&gt;dispatch(new RouteMatched($route, $request));
+
+        return $this-&gt;prepareResponse($request,
+            $this-&gt;runRouteWithinStack($route, $request)
+        );
+    }
+
+    /**
+     * Run the given route within a Stack &quot;onion&quot; instance.
+     *
+     * @param  \Illuminate\Routing\Route  $route
+     * @param  \Illuminate\Http\Request  $request
+     * @return mixed
+     */
+    protected function runRouteWithinStack(Route $route, Request $request)
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 13">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+
+											<span class="font-mono text-xs">:750</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-13"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="750"
+                    data-ln-start-from="745"
+                >     * @param  \Illuminate\Http\Request  $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function dispatchToRoute(Request $request)
+    {
+        return $this-&gt;runRoute($request, $this-&gt;findRoute($request));
+    }
+
+    /**
+     * Find the route matching a given request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Routing\Route
+     */
+    protected function findRoute($request)
+    {
+        $this-&gt;events-&gt;dispatch(new Routing($request));
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 14">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+
+											<span class="font-mono text-xs">:739</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-14"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="739"
+                    data-ln-start-from="734"
+                >     */
+    public function dispatch(Request $request)
+    {
+        $this-&gt;currentRequest = $request;
+
+        return $this-&gt;dispatchToRoute($request);
+    }
+
+    /**
+     * Dispatch the request to a route and return the response.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function dispatchToRoute(Request $request)
+    {
+        return $this-&gt;runRoute($request, $this-&gt;findRoute($request));
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 15">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php</span>
+
+											<span class="font-mono text-xs">:201</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-15"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="201"
+                    data-ln-start-from="196"
+                >    protected function dispatchToRouter()
+    {
+        return function ($request) {
+            $this-&gt;app-&gt;instance(&#039;request&#039;, $request);
+
+            return $this-&gt;router-&gt;dispatch($request);
+        };
+    }
+
+    /**
+     * Call the terminate method on any terminable middleware.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Illuminate\Http\Response  $response
+     * @return void
+     */
+    public function terminate($request, $response)
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 16">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:144</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-16"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="144"
+                    data-ln-start-from="139"
+                >     */
+    protected function prepareDestination(Closure $destination)
+    {
+        return function ($passable) use ($destination) {
+            try {
+                return $destination($passable);
+            } catch (Throwable $e) {
+                return $this-&gt;handleException($passable, $e);
+            }
+        };
+    }
+
+    /**
+     * Get a Closure that represents a slice of the application onion.
+     *
+     * @return \Closure
+     */
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 17">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php</span>
+
+											<span class="font-mono text-xs">:21</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-17"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="21"
+                    data-ln-start-from="16"
+                >     */
+    public function handle($request, Closure $next)
+    {
+        $this-&gt;clean($request);
+
+        return $next($request);
+    }
+
+    /**
+     * Clean the request&#039;s data.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
+     */
+    protected function clean($request)
+    {
+        $this-&gt;cleanParameterBag($request-&gt;query);
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 18">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php</span>
+
+											<span class="font-mono text-xs">:31</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-18"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="31"
+                    data-ln-start-from="26"
+                >            if ($callback($request)) {
+                return $next($request);
+            }
+        }
+
+        return parent::handle($request, $next);
+    }
+
+    /**
+     * Transform the given value.
+     *
+     * @param  string  $key
+     * @param  mixed  $value
+     * @return mixed
+     */
+    protected function transform($key, $value)
+    {
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 19">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:183</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-19"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
+
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
+    }
+
+    /**
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 20">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php</span>
+
+											<span class="font-mono text-xs">:21</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-20"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="21"
+                    data-ln-start-from="16"
+                >     */
+    public function handle($request, Closure $next)
+    {
+        $this-&gt;clean($request);
+
+        return $next($request);
+    }
+
+    /**
+     * Clean the request&#039;s data.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
+     */
+    protected function clean($request)
+    {
+        $this-&gt;cleanParameterBag($request-&gt;query);
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 21">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php</span>
+
+											<span class="font-mono text-xs">:51</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-21"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="51"
+                    data-ln-start-from="46"
+                >            if ($callback($request)) {
+                return $next($request);
+            }
+        }
+
+        return parent::handle($request, $next);
+    }
+
+    /**
+     * Transform the given value.
+     *
+     * @param  string  $key
+     * @param  mixed  $value
+     * @return mixed
+     */
+    protected function transform($key, $value)
+    {
 </code></template></pre>
 								</div>
 							</div>
@@ -4451,9 +3998,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php</span>
 
-											<span class="font-mono text-xs">:119</span>
+											<span class="font-mono text-xs">:27</span>
 										</div>
 									</div>
 								</div>
@@ -4462,25 +4009,25 @@
                     style="display: none;"
                     id="frame-23"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="119"
-                    data-ln-start-from="114"
-                >    {
-        $pipeline = array_reduce(
-            array_reverse($this-&gt;pipes()), $this-&gt;carry(), $this-&gt;prepareDestination($destination)
-        );
+                    data-line-number="27"
+                    data-ln-start-from="22"
+                >
+        if ($max &gt; 0 &amp;&amp; $request-&gt;server(&#039;CONTENT_LENGTH&#039;) &gt; $max) {
+            throw new PostTooLargeException(&#039;The POST data is too large.&#039;);
+        }
 
-        return $pipeline($this-&gt;passable);
+        return $next($request);
     }
 
     /**
-     * Run the pipeline and return the result.
+     * Determine the server &#039;post_max_size&#039; as bytes.
      *
-     * @return mixed
+     * @return int
      */
-    public function thenReturn()
+    protected function getPostMaxSize()
     {
-        return $this-&gt;then(function ($passable) {
-            return $passable;
+        if (is_numeric($postMaxSize = ini_get(&#039;post_max_size&#039;))) {
+            return (int) $postMaxSize;
 </code></template></pre>
 								</div>
 							</div>
@@ -4489,9 +4036,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
 
-											<span class="font-mono text-xs">:807</span>
+											<span class="font-mono text-xs">:183</span>
 										</div>
 									</div>
 								</div>
@@ -4500,25 +4047,25 @@
                     style="display: none;"
                     id="frame-24"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="807"
-                    data-ln-start-from="802"
-                >        $middleware = $shouldSkipMiddleware ? [] : $this-&gt;gatherRouteMiddleware($route);
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
 
-        return (new Pipeline($this-&gt;container))
-                        -&gt;send($request)
-                        -&gt;through($middleware)
-                        -&gt;then(fn ($request) =&gt; $this-&gt;prepareResponse(
-                            $request, $route-&gt;run()
-                        ));
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
     }
 
     /**
-     * Gather the middleware for the given route with resolved class names.
-     *
-     * @param  \Illuminate\Routing\Route  $route
-     * @return array
-     */
-    public function gatherRouteMiddleware(Route $route)
 </code></template></pre>
 								</div>
 							</div>
@@ -4527,9 +4074,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php</span>
 
-											<span class="font-mono text-xs">:786</span>
+											<span class="font-mono text-xs">:110</span>
 										</div>
 									</div>
 								</div>
@@ -4538,25 +4085,25 @@
                     style="display: none;"
                     id="frame-25"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="786"
-                    data-ln-start-from="781"
-                >        $request-&gt;setRouteResolver(fn () =&gt; $route);
+                    data-line-number="110"
+                    data-ln-start-from="105"
+                >                null,
+                $this-&gt;getHeaders($data)
+            );
+        }
 
-        $this-&gt;events-&gt;dispatch(new RouteMatched($route, $request));
-
-        return $this-&gt;prepareResponse($request,
-            $this-&gt;runRouteWithinStack($route, $request)
-        );
+        return $next($request);
     }
 
     /**
-     * Run the given route within a Stack &quot;onion&quot; instance.
+     * Determine if the incoming request has a maintenance mode bypass cookie.
      *
-     * @param  \Illuminate\Routing\Route  $route
      * @param  \Illuminate\Http\Request  $request
-     * @return mixed
+     * @param  array  $data
+     * @return bool
      */
-    protected function runRouteWithinStack(Route $route, Request $request)
+    protected function hasValidBypassCookie($request, array $data)
+    {
 </code></template></pre>
 								</div>
 							</div>
@@ -4565,9 +4112,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
 
-											<span class="font-mono text-xs">:750</span>
+											<span class="font-mono text-xs">:183</span>
 										</div>
 									</div>
 								</div>
@@ -4576,25 +4123,25 @@
                     style="display: none;"
                     id="frame-26"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="750"
-                    data-ln-start-from="745"
-                >     * @param  \Illuminate\Http\Request  $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function dispatchToRoute(Request $request)
-    {
-        return $this-&gt;runRoute($request, $this-&gt;findRoute($request));
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
+
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
     }
 
     /**
-     * Find the route matching a given request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Routing\Route
-     */
-    protected function findRoute($request)
-    {
-        $this-&gt;events-&gt;dispatch(new Routing($request));
 </code></template></pre>
 								</div>
 							</div>
@@ -4603,9 +4150,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Routing\Router.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php</span>
 
-											<span class="font-mono text-xs">:739</span>
+											<span class="font-mono text-xs">:62</span>
 										</div>
 									</div>
 								</div>
@@ -4614,25 +4161,25 @@
                     style="display: none;"
                     id="frame-27"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="739"
-                    data-ln-start-from="734"
-                >     */
-    public function dispatch(Request $request)
-    {
-        $this-&gt;currentRequest = $request;
+                    data-line-number="62"
+                    data-ln-start-from="57"
+                >            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
 
-        return $this-&gt;dispatchToRoute($request);
+            return $response;
+        }
+
+        $response = $next($request);
+
+        if ($request-&gt;getMethod() === &#039;OPTIONS&#039;) {
+            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
+        }
+
+        return $this-&gt;cors-&gt;addActualRequestHeaders($response, $request);
     }
 
     /**
-     * Dispatch the request to a route and return the response.
+     * Get the path from the configuration to determine if the CORS service should run.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function dispatchToRoute(Request $request)
-    {
-        return $this-&gt;runRoute($request, $this-&gt;findRoute($request));
 </code></template></pre>
 								</div>
 							</div>
@@ -4641,9 +4188,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
 
-											<span class="font-mono text-xs">:201</span>
+											<span class="font-mono text-xs">:183</span>
 										</div>
 									</div>
 								</div>
@@ -4652,25 +4199,25 @@
                     style="display: none;"
                     id="frame-28"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="201"
-                    data-ln-start-from="196"
-                >    protected function dispatchToRouter()
-    {
-        return function ($request) {
-            $this-&gt;app-&gt;instance(&#039;request&#039;, $request);
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
 
-            return $this-&gt;router-&gt;dispatch($request);
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
         };
     }
 
     /**
-     * Call the terminate method on any terminable middleware.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Illuminate\Http\Response  $response
-     * @return void
-     */
-    public function terminate($request, $response)
 </code></template></pre>
 								</div>
 							</div>
@@ -4679,9 +4226,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php</span>
 
-											<span class="font-mono text-xs">:144</span>
+											<span class="font-mono text-xs">:58</span>
 										</div>
 									</div>
 								</div>
@@ -4690,25 +4237,25 @@
                     style="display: none;"
                     id="frame-29"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="144"
-                    data-ln-start-from="139"
-                >     */
-    protected function prepareDestination(Closure $destination)
-    {
-        return function ($passable) use ($destination) {
-            try {
-                return $destination($passable);
-            } catch (Throwable $e) {
-                return $this-&gt;handleException($passable, $e);
-            }
-        };
+                    data-line-number="58"
+                    data-ln-start-from="53"
+                >    {
+        $request::setTrustedProxies([], $this-&gt;getTrustedHeaderNames());
+
+        $this-&gt;setTrustedProxyIpAddresses($request);
+
+        return $next($request);
     }
 
     /**
-     * Get a Closure that represents a slice of the application onion.
+     * Sets the trusted proxies on the request.
      *
-     * @return \Closure
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
      */
+    protected function setTrustedProxyIpAddresses(Request $request)
+    {
+        $trustedIps = $this-&gt;proxies() ?: config(&#039;trustedproxy.proxies&#039;);
 </code></template></pre>
 								</div>
 							</div>
@@ -4717,9 +4264,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
 
-											<span class="font-mono text-xs">:21</span>
+											<span class="font-mono text-xs">:183</span>
 										</div>
 									</div>
 								</div>
@@ -4728,25 +4275,25 @@
                     style="display: none;"
                     id="frame-30"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="21"
-                    data-ln-start-from="16"
-                >     */
-    public function handle($request, Closure $next)
-    {
-        $this-&gt;clean($request);
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
 
-        return $next($request);
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
     }
 
     /**
-     * Clean the request&#039;s data.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return void
-     */
-    protected function clean($request)
-    {
-        $this-&gt;cleanParameterBag($request-&gt;query);
 </code></template></pre>
 								</div>
 							</div>
@@ -4755,9 +4302,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php</span>
 
-											<span class="font-mono text-xs">:31</span>
+											<span class="font-mono text-xs">:22</span>
 										</div>
 									</div>
 								</div>
@@ -4766,24 +4313,24 @@
                     style="display: none;"
                     id="frame-31"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="31"
-                    data-ln-start-from="26"
-                >            if ($callback($request)) {
-                return $next($request);
-            }
-        }
-
-        return parent::handle($request, $next);
+                    data-line-number="22"
+                    data-ln-start-from="17"
+                >     * @param  \Closure  $next
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function handle(Request $request, Closure $next)
+    {
+        return $next($request);
     }
 
     /**
-     * Transform the given value.
+     * Invoke the deferred callbacks.
      *
-     * @param  string  $key
-     * @param  mixed  $value
-     * @return mixed
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Symfony\Component\HttpFoundation\Response  $response
+     * @return void
      */
-    protected function transform($key, $value)
+    public function terminate(Request $request, Response $response)
     {
 </code></template></pre>
 								</div>
@@ -4831,500 +4378,6 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php</span>
-
-											<span class="font-mono text-xs">:21</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-33"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="21"
-                    data-ln-start-from="16"
-                >     */
-    public function handle($request, Closure $next)
-    {
-        $this-&gt;clean($request);
-
-        return $next($request);
-    }
-
-    /**
-     * Clean the request&#039;s data.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return void
-     */
-    protected function clean($request)
-    {
-        $this-&gt;cleanParameterBag($request-&gt;query);
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 34">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php</span>
-
-											<span class="font-mono text-xs">:51</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-34"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="51"
-                    data-ln-start-from="46"
-                >            if ($callback($request)) {
-                return $next($request);
-            }
-        }
-
-        return parent::handle($request, $next);
-    }
-
-    /**
-     * Transform the given value.
-     *
-     * @param  string  $key
-     * @param  mixed  $value
-     * @return mixed
-     */
-    protected function transform($key, $value)
-    {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 35">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-35"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 36">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php</span>
-
-											<span class="font-mono text-xs">:27</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-36"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="27"
-                    data-ln-start-from="22"
-                >
-        if ($max &gt; 0 &amp;&amp; $request-&gt;server(&#039;CONTENT_LENGTH&#039;) &gt; $max) {
-            throw new PostTooLargeException(&#039;The POST data is too large.&#039;);
-        }
-
-        return $next($request);
-    }
-
-    /**
-     * Determine the server &#039;post_max_size&#039; as bytes.
-     *
-     * @return int
-     */
-    protected function getPostMaxSize()
-    {
-        if (is_numeric($postMaxSize = ini_get(&#039;post_max_size&#039;))) {
-            return (int) $postMaxSize;
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 37">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-37"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 38">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php</span>
-
-											<span class="font-mono text-xs">:110</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-38"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="110"
-                    data-ln-start-from="105"
-                >                null,
-                $this-&gt;getHeaders($data)
-            );
-        }
-
-        return $next($request);
-    }
-
-    /**
-     * Determine if the incoming request has a maintenance mode bypass cookie.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  array  $data
-     * @return bool
-     */
-    protected function hasValidBypassCookie($request, array $data)
-    {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 39">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-39"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 40">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php</span>
-
-											<span class="font-mono text-xs">:62</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-40"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="62"
-                    data-ln-start-from="57"
-                >            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
-
-            return $response;
-        }
-
-        $response = $next($request);
-
-        if ($request-&gt;getMethod() === &#039;OPTIONS&#039;) {
-            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
-        }
-
-        return $this-&gt;cors-&gt;addActualRequestHeaders($response, $request);
-    }
-
-    /**
-     * Get the path from the configuration to determine if the CORS service should run.
-     *
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 41">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-41"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 42">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php</span>
-
-											<span class="font-mono text-xs">:58</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-42"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="58"
-                    data-ln-start-from="53"
-                >    {
-        $request::setTrustedProxies([], $this-&gt;getTrustedHeaderNames());
-
-        $this-&gt;setTrustedProxyIpAddresses($request);
-
-        return $next($request);
-    }
-
-    /**
-     * Sets the trusted proxies on the request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return void
-     */
-    protected function setTrustedProxyIpAddresses(Request $request)
-    {
-        $trustedIps = $this-&gt;proxies() ?: config(&#039;trustedproxy.proxies&#039;);
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 43">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-43"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 44">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php</span>
-
-											<span class="font-mono text-xs">:22</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-44"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="22"
-                    data-ln-start-from="17"
-                >     * @param  \Closure  $next
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function handle(Request $request, Closure $next)
-    {
-        return $next($request);
-    }
-
-    /**
-     * Invoke the deferred callbacks.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Symfony\Component\HttpFoundation\Response  $response
-     * @return void
-     */
-    public function terminate(Request $request, Response $response)
-    {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 45">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-45"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 46">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
 											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
 
 											<span class="font-mono text-xs">:119</span>
@@ -5334,7 +4387,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-46"
+                    id="frame-33"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="119"
                     data-ln-start-from="114"
@@ -5358,7 +4411,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 47">
+							<div class="sm:col-span-2" x-show="index === 34">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -5372,7 +4425,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-47"
+                    id="frame-34"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="176"
                     data-ln-start-from="171"
@@ -5396,7 +4449,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 48">
+							<div class="sm:col-span-2" x-show="index === 35">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -5410,7 +4463,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-48"
+                    id="frame-35"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="145"
                     data-ln-start-from="140"
@@ -5434,7 +4487,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 49">
+							<div class="sm:col-span-2" x-show="index === 36">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -5448,7 +4501,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-49"
+                    id="frame-36"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="1190"
                     data-ln-start-from="1185"
@@ -5472,7 +4525,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 50">
+							<div class="sm:col-span-2" x-show="index === 37">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -5486,7 +4539,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-50"
+                    id="frame-37"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="17"
                     data-ln-start-from="12"
@@ -5499,7 +4552,7 @@ require __DIR__.&#039;/../vendor/autoload.php&#039;;
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 51">
+							<div class="sm:col-span-2" x-show="index === 38">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -5513,7 +4566,7 @@ require __DIR__.&#039;/../vendor/autoload.php&#039;;
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-51"
+                    id="frame-38"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="139"
                     data-ln-start-from="134"
@@ -5538,7 +4591,7 @@ require $frontControllerPath;
 
 					<div class="mt-2">
 						<span>POST</span>
-						<span class="text-gray-500">/api/addproduct</span>
+						<span class="text-gray-500">/api/changepassword</span>
 					</div>
 
 					<div class="mt-4">
@@ -5559,7 +4612,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">255</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">67</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -5623,7 +4676,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">a07c683f-b118-414e-b110-6dcddd0e5b26</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">65b42275-c68b-4345-ac84-d9c37bf1ac5e</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -5660,6 +4713,22 @@ require $frontControllerPath;
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
 							<span
+                    data-tippy-content="authorization"
+                    class="lg:text-md w-[8rem] flex-none cursor-pointer truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]"
+                >
+                    authorization
+                </span>
+							<span
+                    class="min-w-0 flex-grow"
+                    style="
+                        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
+                    "
+                >
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">Bearer 1|1sjoiotdc6SLnE8QJoGy689L6GNjMOipGGkQqVZlfcb7af40</code></pre>
+                </span>
+						</div>
+						<div class="flex items-center gap-2 border-t dark:border-gray-800">
+							<span
                     data-tippy-content="content-type"
                     class="lg:text-md w-[8rem] flex-none cursor-pointer truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]"
                 >
@@ -5687,12 +4756,8 @@ require $frontControllerPath;
                 style="-webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem))"
             >
                 <pre class="scrollbar-hidden mx-5 my-3 overflow-y-hidden text-xs lg:text-sm"><code class="overflow-y-hidden scrollbar-hidden overflow-x-scroll scrollbar-hidden-x">{
-    "name": "product name",
-    "price": "10.5",
-    "description": "The best decision you will ever make, come buy now!",
-    "image": "https://via.placeholder.com/640x480.png/0000ee?text=voluptatem",
-    "quantity": "10",
-    "storeId": "200"
+    "oldPassword": "password",
+    "newPassword": "Password"
 }</code></pre>
             </span>
 						</div>
@@ -5721,7 +4786,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">App\Http\Controllers\ProductCOntroller@create</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">\App\Http\Controllers\UserController@changePassword</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -5735,7 +4800,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">generated::dpH9Ui0B9kbuMEWi</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">generated::oTEEG3FJGxiftq7t</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -5749,7 +4814,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">api</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">api, auth:sanctum</code></pre>
                 </span>
 						</div>
 					</dl>
@@ -5762,12 +4827,51 @@ require $frontControllerPath;
 					</div>
 
 					<dl class="mt-1 grid grid-cols-1 rounded border dark:border-gray-800">
-						<span
-                class="min-w-0 flex-grow"
-                style="-webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem))"
-            >
-                <pre class="scrollbar-hidden mx-5 my-3 overflow-y-hidden text-xs lg:text-sm"><code class="overflow-y-hidden scrollbar-hidden overflow-x-scroll scrollbar-hidden-x">No query data</code></pre>
-            </span>
+						<div class="flex items-center gap-2  dark:border-gray-800">
+							<div
+								class="lg:text-md w-[8rem] flex-none truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]">
+								<span>sqlite</span>
+								<span class="hidden text-xs text-gray-500 lg:inline-block">(0.48 ms)</span>
+							</div>
+							<span
+                    class="min-w-0 flex-grow"
+                    style="
+                        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
+                    "
+                >
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">select * from &quot;personal_access_tokens&quot; where &quot;personal_access_tokens&quot;.&quot;id&quot; = &#039;1&#039; limit 1</code></pre>
+                </span>
+						</div>
+						<div class="flex items-center gap-2 border-t dark:border-gray-800">
+							<div
+								class="lg:text-md w-[8rem] flex-none truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]">
+								<span>sqlite</span>
+								<span class="hidden text-xs text-gray-500 lg:inline-block">(0.15 ms)</span>
+							</div>
+							<span
+                    class="min-w-0 flex-grow"
+                    style="
+                        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
+                    "
+                >
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">select * from &quot;users&quot; where &quot;users&quot;.&quot;id&quot; = 21 limit 1</code></pre>
+                </span>
+						</div>
+						<div class="flex items-center gap-2 border-t dark:border-gray-800">
+							<div
+								class="lg:text-md w-[8rem] flex-none truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]">
+								<span>sqlite</span>
+								<span class="hidden text-xs text-gray-500 lg:inline-block">(11.31 ms)</span>
+							</div>
+							<span
+                    class="min-w-0 flex-grow"
+                    style="
+                        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
+                    "
+                >
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">update &quot;personal_access_tokens&quot; set &quot;last_used_at&quot; = &#039;2024-12-03 16:12:33&#039;, &quot;updated_at&quot; = &#039;2024-12-03 16:12:33&#039; where &quot;id&quot; = 1</code></pre>
+                </span>
+						</div>
 					</dl>
 				</section>
 			</div>

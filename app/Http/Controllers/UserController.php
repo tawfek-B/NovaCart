@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -17,6 +19,7 @@ class UserController extends Controller
         ]);
     }
 
+
     public function signUp(Request $request)
     {
         $userAttributes = $request->validate([
@@ -29,16 +32,9 @@ class UserController extends Controller
             $password = 'password' => ['required'],
         ]);
 
-        User::factory()->create([
-            'firstname' => $firstname,
-            'lastname' => $lastname,
-            'location' => $location,
-            'userName' => $userName,
-            'email' => $email,
-            'number' => $number,
-            'password' => $password
-        ]);
+        $user = User::create($userAttributes);
 
+        Auth::login($user);
         return response()->json(['message' => 'ok', 'data' => $userAttributes]);
     }
 
@@ -53,5 +49,23 @@ class UserController extends Controller
 
         $user = User::where('userName', $userName)->first();
         $user->logo = $newLogo;
+    }
+    public function changePassword(Request $request) {
+        $request->validate([
+            'oldPassword' => 'required',
+            'newPassword' => 'required'
+        ]);
+        $oldPassword = $request->input('oldPassword');
+        $newPassword = $request->input('newPassword');
+        $user = Auth::user();
+        if(Hash::check($oldPassword, $user->password)) {
+            $user->password = Hash::make($newPassword);
+            $user->save();
+
+            return response()->json(['message' => 'Password updated successfully']);
+            }
+        else {
+            echo($oldPassword);
+        }
     }
 }

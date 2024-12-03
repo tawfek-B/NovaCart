@@ -42,21 +42,7 @@ class ProductController extends Controller
         ]);
     }
 
-    public function update(Request $request)
-    {
-        $request->validate([
-            'id' => 'required|string',
-            'quantity' => 'required|integer',
-        ]);
-        $id = $request->input('id');
-        $quantity = $request->input('quantity');
-
-        $product = Product::where('id', $id)->first();
-        if ($product->quantity > $quantity) {
-            $product->quantity = $product->quantity - $quantity;
-            $product->save();
-        } else {
-            return response()->json(['messeage' => 'sry, we only have ' . $product->quantity . ' left']);
-        }
+    public function update(Request $request){
+        //This is where we should put updating the product to change its properties
     }
 }

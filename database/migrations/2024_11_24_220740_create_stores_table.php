@@ -18,8 +18,6 @@ return new class extends Migration
             $table->time('closing time');
             $table->string('location');
             // $table->foreignIdFor(App\Models\Product::class);
-            $table->float('delivery fee');
-            $table->float('distance');
             $table->timestamps();
         });
     }

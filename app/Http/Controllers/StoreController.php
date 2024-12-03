@@ -26,17 +26,14 @@ class StoreController extends Controller
             $openingTime = $request->input('openingTime'),
             $closingTime = $request->input('closingTime'),
             $location = $request->input('location'),
-            $deliveryFee = $request->input('deliveryFee'),
-            $distance = $request->input('distance'),
         ];
         $store = Store::factory()->create([
             'name' => $name,
             'opening time' => $openingTime,
             'closing time' => $closingTime,
             'location' => $location,
-            'delivery fee' => $deliveryFee,
-            'distance' => $distance,
         ]);
 
     }
+
 }
