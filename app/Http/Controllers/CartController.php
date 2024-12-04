@@ -17,7 +17,7 @@ class CartController extends Controller
                 'message' => 'Product not found'
             ], 400);
         }
-        Auth::login($user = User::find(2));
+        $user = Auth::user();
         //We have to change this later
         $productId = $request->input('product_id');
         $quantity = $request->input('quantity');
@@ -45,7 +45,7 @@ class CartController extends Controller
         $user->save();
     }
     public function update(Request $request) {
-        Auth::login($user = User::find(2));
+        $user = Auth::user();
         //We have to change this later
 
         $cart = json_decode($user->cart, true);
@@ -64,7 +64,7 @@ class CartController extends Controller
     }
 
     public function delete(Request $request) {
-        Auth::login($user = User::find(2));
+        $user = Auth::user();
         //We have to change this later
 
         $cart = json_decode($user->cart, true);
@@ -82,7 +82,7 @@ class CartController extends Controller
     }
 
     public function deleteCart(Request $request) {
-        Auth::login($user = User::find(2));
+        $user = Auth::user();
         //We have to change this later
 
         if(!is_null($user->cart)) {
