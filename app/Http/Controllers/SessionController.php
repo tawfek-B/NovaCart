@@ -22,8 +22,9 @@ class SessionController extends Controller
         ]);
         if (Auth::attempt($credentials)) {
             $user = User::where('email',request('email'))->first();
+            $user->rememberToken = $user->createToken('API Token Of'.$user->name)->plainTextToken;
             return response()->json([
-                $user->createToken('API Token Of'.$user->name)->plainTextToken,
+                'token' => $user->rememberToken,
                 'user' => $user,
             ]);
         } else {

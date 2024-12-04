@@ -45,7 +45,7 @@ class UserController extends Controller
         $oldPassword = $request->input('oldPassword');
         $newPassword = $request->input('newPassword');
         
-        // $user = Auth::user();
+        $user = Auth::user();
         if (Hash::check($oldPassword, $user->password)) {
             $user->password = Hash::make($newPassword);
             $user->save();

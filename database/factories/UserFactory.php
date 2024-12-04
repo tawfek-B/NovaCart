@@ -39,7 +39,7 @@ class UserFactory extends Factory
             'number' => fake()->phoneNumber(),
             'admin' => false,
             'email' => fake()->unique()->safeEmail(),
-            'password' => static::$password ??= Hash::make('password'),
+            'password' => static::$password ??= bcrypt('password'),
             'email_verified_at' => now(),
             'logo' => fake()->imageUrl(),
             'location' => fake()->streetAddress(),
