@@ -14,13 +14,34 @@ class SessionController extends Controller
 {
     public function login(Request $request)
     {
-        $user = User::where('email', $request->email)->first();
+        // $user = User::where('email', $request->email)->first();
 
-        if (! $user || ! Hash::check($request->password, $user->password)) {
-            return response()->json(['message' => 'Invalid credentials'], 401);
+        $credentials = $request->validate([
+            'email' => 'required',
+            'password' => 'required'
+        ]);
+        if(Auth::attempt($credentials)) {
+            $user = Auth::user();
+            $token = $user->createToken('API Token Of'.$user->name)->plainTextToken;
+            $user->remember_token = $token;
+            $user->save();
+            return response()->json([
+                'token' => $user->remember_token,//get the names right UwU
+                'user' => $user,
+            ]);
+            }
+            else {
+                return response()->json([
+                    'you are an idiot',
+                ]);
         }
-        Auth::login($user, true);
-        return response()->json(['messeage' => 'WEllcum']);
+
+        // if (! $user || ! Hash::check($request->password, $user->password)) {
+        //     return response()->json(['message' => 'Invalid credentials'], 401);
+        // }
+        // Auth::login($user, true);
+        // $token = $user->createToken('API Token')->plainTextToken;
+        // $user->rememberToken->$token;
 
 
         // dd('login');
@@ -36,8 +57,27 @@ class SessionController extends Controller
         // request()->session()->regenerate();
     }
 
+    public function signUp(Request $request)
+    {
+        $userAttributes = $request->validate([
+            $firstname = 'firstName' => ['required'],
+            $lastname = 'lastName' => ['required'],
+            $userName = 'userName' => ['required'],
+            $location = 'location' => ['required'],
+            $email = 'email' => ['required'],
+            $number = 'number' => ['required'],
+            $password = 'password' => ['required'],
+        ]);
+
+        $user = User::create($userAttributes);
+
+        Auth::login($user);
+        return response()->json(['message' => 'ok', 'data' => $userAttributes]);
+    }
+
     public function logout()
     {
         Auth::logout();
+        return response()->json(['msg' =>'kicked out by dasdqw clan leader']);
     }
 }

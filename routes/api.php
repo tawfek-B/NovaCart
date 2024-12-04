@@ -3,8 +3,9 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StoreController;
-use App\Http\Controllers\ProductCOntroller;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
+use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -14,18 +15,34 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-
-Route::post('/signUp', [UserController::class, 'signUp']);
-Route::get('/fetch', [UserController::class, 'fetch']);
-Route::put('/changelogo', [UserController::class, 'changeLogo']);
-
-Route::post('/addstore', [StoreController::class, 'create']);
-
-Route::post('/addproduct', [ProductController::class, 'create']);
-Route::put('/buyproduct', [ProductController::class, 'update']);
-
+//Public routes
+Route::post('/signup', [SessionController::class, 'signUp']);
 Route::post('/login', [SessionController::class, 'login']);
-Route::post('/logout', [SessionController::class, 'logout']);
+
+
+//Protected routes
+Route::group(['middleware'=>['auth:sanctum']],function() {
+
+    Route::post('/additem', [CartController::class, 'addItem']);
+    Route::put('/updateorder', [CartController::class, 'update']);
+    Route::delete('/deleteorder', [CartController::class, 'delete']);
+    Route::delete('/deletecart', [CartController::class, 'deleteCart']);
+
+    Route::post('/addstore', [StoreController::class, 'create']);
+    Route::put('/updatestore', [StoreController::class, 'update']);
+
+    Route::post('/addproduct', [ProductController::class, 'create']);
+    Route::put('/updateproduct', [ProductController::class, 'update']);
+
+    Route::get('/fetch', [UserController::class, 'fetch']);
+    Route::put('/changelogo', [UserController::class, 'changeLogo']);
+    Route::post('/changepassword', [UserController::class, 'changePassword']);
+
+    Route::post('/logout', [SessionController::class, 'logout']);
+});
+
+
+
 
 
 Route::post('/token', function (Request $request) {
