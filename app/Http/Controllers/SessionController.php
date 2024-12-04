@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Http\Request;
+
 
 class SessionController extends Controller
 
@@ -75,9 +76,10 @@ class SessionController extends Controller
         return response()->json(['message' => 'ok', 'data' => $userAttributes]);
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
-        Auth::logout();
+        $request->user()->currentAccessToken()->delete();
+
         return response()->json(['msg' =>'kicked out by dasdqw clan leader']);
     }
 }
