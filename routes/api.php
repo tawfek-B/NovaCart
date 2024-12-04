@@ -15,11 +15,13 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
+//Public routes
+Route::post('/signup', [SessionController::class, 'signUp']);
+Route::post('/login', [SessionController::class, 'login']);
 
-Route::post('/signup', [UserController::class, 'signUp']);
-Route::get('/fetch', [UserController::class, 'fetch']);
-Route::put('/changelogo', [UserController::class, 'changeLogo']);
-Route::middleware('auth:sanctum')->post('/changepassword', [UserController::class, 'changePassword']);
+
+//Protected routes
+Route::group(['middleware'=>['auth:sanctum']],function(){
 
 Route::post('/additem', [CartController::class, 'addItem']);
 Route::put('/updateorder', [CartController::class, 'update']);
@@ -31,8 +33,14 @@ Route::post('/addstore', [StoreController::class, 'create']);//add patch for sto
 Route::post('/addproduct', [ProductController::class, 'create']);
 Route::put('/updateproduct', [ProductController::class, 'update']);
 
-Route::post('/login', [SessionController::class, 'login']);
+Route::get('/fetch', [UserController::class, 'fetch']);
+Route::put('/changelogo', [UserController::class, 'changeLogo']);
+Route::post('/changepassword', [UserController::class, 'changePassword'])->middleware('auth:sanctum');
+
 Route::post('/logout', [SessionController::class, 'logout']);
+
+});
+
 
 
 
