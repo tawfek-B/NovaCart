@@ -16,7 +16,7 @@ return new class extends Migration
             $table->id();
             $table->string('firstName');
             $table->string('lastName'); //for the love of god, use camelCase
-            $table->string('userName')->Unique();
+            $table->string('userName')->unique();
             $table->integer('number')->unique();
             $table->boolean('admin');
             $table->string('email')->unique();
@@ -25,7 +25,9 @@ return new class extends Migration
             $table->string('location');
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
-            $table->timestamps();
+            $table->json('cart')->nullable();
+            $table->timestamps();//for some reason, users can sign up on the same username, even though it's unique. We have to solve that
+            //nevermind, im an idiot, we wrote Unique instead of unique in front of userName
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
