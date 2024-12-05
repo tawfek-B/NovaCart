@@ -21,13 +21,16 @@ Route::post('/login', [SessionController::class, 'login']);
 
 
 //Protected routes
-Route::group(['middleware'=>['auth:sanctum']],function() {
+Route::group(['middleware' => ['auth:sanctum']], function () {
 
     Route::post('/additem', [CartController::class, 'addItem']);
     Route::put('/updateorder', [CartController::class, 'update']);
     Route::delete('/deleteorder', [CartController::class, 'delete']);
     Route::delete('/deletecart', [CartController::class, 'deleteCart']);
-    //we have to add a method that buys the products for the user, causing the "quantity" in each of the products to decrease and remove the contents of the "cart" for the user, maybe save the content somewhere else for a log or for the driver bullshit
+    Route::put('/itemspurchased', [CartController::class, 'itemsPurchased']);
+    //we have to add a method that buys the products for the user, causing the "quantity" in each of the products to decrease and remove the contents 
+    //of the "cart" for the user, maybe save the content somewhere else for a log or for the driver bullshit
+    //haydra:did it, should be good now
 
     Route::post('/addstore', [StoreController::class, 'create']);
     Route::put('/updatestore', [StoreController::class, 'update']);
@@ -53,7 +56,7 @@ Route::group(['middleware'=>['auth:sanctum']],function() {
 Route::post('/token', function (Request $request) {
     $user = User::where('email', $request->email)->first();
 
-    if (! $user || ! Hash::check($request->password, $user->password)) {
+    if (!$user || !Hash::check($request->password, $user->password)) {
         return response()->json(['message' => 'Invalid credentials'], 401);
     }
 

@@ -28,6 +28,7 @@ return new class extends Migration
             $table->json('cart')->nullable();
             $table->timestamps();//for some reason, users can sign up on the same username, even though it's unique. We have to solve that
             //nevermind, im an idiot, we wrote Unique instead of unique in front of userName
+            //xD
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
