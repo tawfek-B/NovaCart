@@ -23,7 +23,7 @@ class ProductController extends Controller
 
         //for some reason, putting 'required' on these causes postman to return a redirection to "novacart.test"
 
-        $storeAttributes = [
+        $productAttributes = [
             $name = $request->input('name'),
             $price = $request->input('price'),
             $description = $request->input('description'),
@@ -43,6 +43,28 @@ class ProductController extends Controller
     }
 
     public function update(Request $request){
-        //This is where we should put updating the product to change its properties
+
+        $validated = [
+            $name = $request->input('name'),
+            $price = $request->input('price'),
+            $description = $request->input('description'),
+            $image = $request->input('image'),
+            $quantity = $request->input('quantity'),
+        ];
+
+            $product = Product::where('id', $request->input('productID'))->first();
+
+            $product->name = $name;
+            $product->price = $price;
+            $product->description = $description;
+            $product->image = $image;
+            $product->quantity = $quantity;//i don't think we need to change the store id of a product, so......
+
+            $product->save();
+
+            return response()->json([
+                'message' => 'product updated successfully',
+                'data' => $product,
+            ], 200);
     }
 }

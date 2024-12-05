@@ -36,4 +36,26 @@ class StoreController extends Controller
 
     }
 
-}
+    public function update(Request $request) {
+
+        $validated = $request->validate(rules: [
+            'name' => 'required',
+            'opening time' => 'required',
+            'closing time' => 'required',
+            'location' => 'required',
+        ]);
+
+            $store = Store::where('id', $request->input('storeID'))->first();
+
+            $store->update($validated);
+
+            return response()->json([
+                'message' => 'Store updated successfully',
+                'data' => $store,
+            ], 200);
+
+    }
+
+
+
+    }

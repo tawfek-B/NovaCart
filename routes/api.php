@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\StoreController;
-use App\Http\Controllers\ProductCOntroller;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
@@ -21,25 +21,31 @@ Route::post('/login', [SessionController::class, 'login']);
 
 
 //Protected routes
-Route::group(['middleware'=>['auth:sanctum']],function(){
+Route::group(['middleware'=>['auth:sanctum']],function() {
 
-Route::post('/additem', [CartController::class, 'addItem']);
-Route::put('/updateorder', [CartController::class, 'update']);
-Route::delete('/deleteorder', [CartController::class, 'delete']);
-Route::delete('/deletecart', [CartController::class, 'deleteCart']);
+    Route::post('/additem', [CartController::class, 'addItem']);
+    Route::put('/updateorder', [CartController::class, 'update']);
+    Route::delete('/deleteorder', [CartController::class, 'delete']);
+    Route::delete('/deletecart', [CartController::class, 'deleteCart']);
+    //we have to add a method that buys the products for the user, causing the "quantity" in each of the products to decrease and remove the contents of the "cart" for the user, maybe save the content somewhere else for a log or for the driver bullshit
 
-Route::post('/addstore', [StoreController::class, 'create']);//add patch for store attributes like name, location, opening and closing time
+    Route::post('/addstore', [StoreController::class, 'create']);
+    Route::put('/updatestore', [StoreController::class, 'update']);
 
-Route::post('/addproduct', [ProductController::class, 'create']);
-Route::put('/updateproduct', [ProductController::class, 'update']);
+    Route::post('/addproduct', [ProductController::class, 'create']);
+    Route::put('/updateproduct', [ProductController::class, 'update']);
 
-Route::get('/fetch', [UserController::class, 'fetch']);
-Route::put('/changelogo', [UserController::class, 'changeLogo']);
-Route::post('/changepassword', [UserController::class, 'changePassword'])->middleware('auth:sanctum');
+    Route::get('/fetch', [UserController::class, 'fetch']);
+    Route::put('/changelogo', [UserController::class, 'changeLogo']);
+    Route::post('/changepassword', [UserController::class, 'changePassword']);
 
-Route::post('/logout', [SessionController::class, 'logout']);
-
+    Route::post('/logout', [SessionController::class, 'logout']);
 });
+
+
+
+
+
 
 
 

@@ -3,11 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
-use Illuminate\Http\Request;
-
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
+use Illuminate\Http\Request;
+
 
 class SessionController extends Controller
 
@@ -20,21 +21,21 @@ class SessionController extends Controller
             'email' => 'required',
             'password' => 'required'
         ]);
-        if (Auth::attempt($credentials)) {
-            $user = User::where('email',request('email'))->first();
-            $user->rememberToken = $user->createToken('API Token Of'.$user->name)->plainTextToken;
+        if(Auth::attempt($credentials)) {
+            $user = Auth::user();
+            $token = $user->createToken('API Token Of'.$user->name)->plainTextToken;
+            $user->remember_token = $token;
+            $user->save();
             return response()->json([
-                'token' => $user->rememberToken,
+                'token' => $user->remember_token,//get the names right UwU
                 'user' => $user,
             ]);
-        } else {
-            return response()->json([
-                'you are an idiot',
-            ]);
+            }
+            else {
+                return response()->json([
+                    'you are an idiot',
+                ]);
         }
-        
-        // return response()->json(['messeage' => 'WEllcum']);
-
 
         // if (! $user || ! Hash::check($request->password, $user->password)) {
         //     return response()->json(['message' => 'Invalid credentials'], 401);
@@ -66,21 +67,19 @@ class SessionController extends Controller
             $location = 'location' => ['required'],
             $email = 'email' => ['required'],
             $number = 'number' => ['required'],
-            $password = 'password' => ['required']
+            $password = 'password' => ['required'],
         ]);
 
         $user = User::create($userAttributes);
 
         Auth::login($user);
-        return response()->json(
-         ['message' => 'ok', 'data' => $userAttributes,
-                'token' =>$user->createToken['Api Token Of'.$user->name]->plainTextToken
-            ]);
+        return response()->json(['message' => 'ok', 'data' => $userAttributes]);
     }
 
-    public function logout()
+    public function logout(Request $request)
     {
-        Auth::logout();
+        $request->user()->currentAccessToken()->delete();
+
         return response()->json(['msg' =>'kicked out by dasdqw clan leader']);
     }
 }

@@ -1560,107 +1560,107 @@
 	</style>
 
 	<style>
-		#frame-0 .hljs-ln-line[data-line-number='62'] {
+		#frame-0 .hljs-ln-line[data-line-number='616'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-1 .hljs-ln-line[data-line-number='46'] {
+		#frame-1 .hljs-ln-line[data-line-number='559'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-2 .hljs-ln-line[data-line-number='265'] {
+		#frame-2 .hljs-ln-line[data-line-number='484'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-3 .hljs-ln-line[data-line-number='211'] {
+		#frame-3 .hljs-ln-line[data-line-number='2259'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-4 .hljs-ln-line[data-line-number='808'] {
+		#frame-4 .hljs-ln-line[data-line-number='80'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-5 .hljs-ln-line[data-line-number='144'] {
+		#frame-5 .hljs-ln-line[data-line-number='46'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-6 .hljs-ln-line[data-line-number='51'] {
+		#frame-6 .hljs-ln-line[data-line-number='265'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-7 .hljs-ln-line[data-line-number='183'] {
+		#frame-7 .hljs-ln-line[data-line-number='211'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-8 .hljs-ln-line[data-line-number='64'] {
+		#frame-8 .hljs-ln-line[data-line-number='808'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-9 .hljs-ln-line[data-line-number='183'] {
+		#frame-9 .hljs-ln-line[data-line-number='144'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-10 .hljs-ln-line[data-line-number='119'] {
+		#frame-10 .hljs-ln-line[data-line-number='51'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-11 .hljs-ln-line[data-line-number='807'] {
+		#frame-11 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-12 .hljs-ln-line[data-line-number='786'] {
+		#frame-12 .hljs-ln-line[data-line-number='64'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-13 .hljs-ln-line[data-line-number='750'] {
+		#frame-13 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-14 .hljs-ln-line[data-line-number='739'] {
+		#frame-14 .hljs-ln-line[data-line-number='119'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-15 .hljs-ln-line[data-line-number='201'] {
+		#frame-15 .hljs-ln-line[data-line-number='807'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-16 .hljs-ln-line[data-line-number='144'] {
+		#frame-16 .hljs-ln-line[data-line-number='786'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-17 .hljs-ln-line[data-line-number='21'] {
+		#frame-17 .hljs-ln-line[data-line-number='750'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-18 .hljs-ln-line[data-line-number='31'] {
+		#frame-18 .hljs-ln-line[data-line-number='739'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-19 .hljs-ln-line[data-line-number='183'] {
+		#frame-19 .hljs-ln-line[data-line-number='201'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-20 .hljs-ln-line[data-line-number='21'] {
+		#frame-20 .hljs-ln-line[data-line-number='144'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-21 .hljs-ln-line[data-line-number='51'] {
+		#frame-21 .hljs-ln-line[data-line-number='21'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-22 .hljs-ln-line[data-line-number='183'] {
+		#frame-22 .hljs-ln-line[data-line-number='31'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-23 .hljs-ln-line[data-line-number='27'] {
+		#frame-23 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-24 .hljs-ln-line[data-line-number='183'] {
+		#frame-24 .hljs-ln-line[data-line-number='21'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-25 .hljs-ln-line[data-line-number='110'] {
+		#frame-25 .hljs-ln-line[data-line-number='51'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
@@ -1668,7 +1668,7 @@
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-27 .hljs-ln-line[data-line-number='62'] {
+		#frame-27 .hljs-ln-line[data-line-number='27'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
@@ -1676,7 +1676,7 @@
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-29 .hljs-ln-line[data-line-number='58'] {
+		#frame-29 .hljs-ln-line[data-line-number='110'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
@@ -1684,7 +1684,7 @@
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-31 .hljs-ln-line[data-line-number='22'] {
+		#frame-31 .hljs-ln-line[data-line-number='62'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
@@ -1692,27 +1692,43 @@
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-33 .hljs-ln-line[data-line-number='119'] {
+		#frame-33 .hljs-ln-line[data-line-number='58'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-34 .hljs-ln-line[data-line-number='176'] {
+		#frame-34 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-35 .hljs-ln-line[data-line-number='145'] {
+		#frame-35 .hljs-ln-line[data-line-number='22'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-36 .hljs-ln-line[data-line-number='1190'] {
+		#frame-36 .hljs-ln-line[data-line-number='183'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-37 .hljs-ln-line[data-line-number='17'] {
+		#frame-37 .hljs-ln-line[data-line-number='119'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 
-		#frame-38 .hljs-ln-line[data-line-number='139'] {
+		#frame-38 .hljs-ln-line[data-line-number='176'] {
+			background-color: rgba(242, 95, 95, 0.4);
+		}
+
+		#frame-39 .hljs-ln-line[data-line-number='145'] {
+			background-color: rgba(242, 95, 95, 0.4);
+		}
+
+		#frame-40 .hljs-ln-line[data-line-number='1190'] {
+			background-color: rgba(242, 95, 95, 0.4);
+		}
+
+		#frame-41 .hljs-ln-line[data-line-number='17'] {
+			background-color: rgba(242, 95, 95, 0.4);
+		}
+
+		#frame-42 .hljs-ln-line[data-line-number='139'] {
 			background-color: rgba(242, 95, 95, 0.4);
 		}
 	</style>
@@ -1887,15 +1903,15 @@
 							<div
 								class="inline-block rounded-full bg-red-500/20 px-3 py-2 max-w-full text-sm font-bold leading-5 text-red-500 truncate lg:text-base dark:bg-red-500/20">
 								<span class="hidden md:inline">
-                    ErrorException
+                    LogicException
                 </span>
 								<span class="md:hidden">
-                    ErrorException
+                    LogicException
                 </span>
 							</div>
 							<div
 								class="mt-4 text-lg font-semibold text-gray-900 break-words dark:text-white lg:text-2xl">
-								Attempt to read property &quot;Password&quot; on string
+								App\Models\User::getRememberToken must return a relationship instance.
 							</div>
 						</div>
 
@@ -1976,12 +1992,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">App\Http\Controllers\UserController</span>
-                                    <span class="font-mono text-xs">:62</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Concerns\HasAttributes</span>
+                                    <span class="font-mono text-xs">:616</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                changePassword
+                                getRelationshipFromMethod
                             </div>
                         </div>
                     </div>
@@ -1999,6 +2015,126 @@
                     <div
                         x-bind:class="
                             index === 1
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Concerns\HasAttributes</span>
+                                    <span class="font-mono text-xs">:559</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                getRelationValue
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 2"
+                >
+                    <div
+                        x-bind:class="
+                            index === 2
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Concerns\HasAttributes</span>
+                                    <span class="font-mono text-xs">:484</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                getAttribute
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 3"
+                >
+                    <div
+                        x-bind:class="
+                            index === 3
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Database\Eloquent\Model</span>
+                                    <span class="font-mono text-xs">:2259</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                __get
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 4"
+                >
+                    <div
+                        x-bind:class="
+                            index === 4
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">App\Http\Controllers\SessionController</span>
+                                    <span class="font-mono text-xs">:80</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                logout
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 5"
+                >
+                    <div
+                        x-bind:class="
+                            index === 5
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2024,11 +2160,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 2"
+                    @click="index = 6"
                 >
                     <div
                         x-bind:class="
-                            index === 2
+                            index === 6
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2054,11 +2190,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 3"
+                    @click="index = 7"
                 >
                     <div
                         x-bind:class="
-                            index === 3
+                            index === 7
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2084,11 +2220,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 4"
+                    @click="index = 8"
                 >
                     <div
                         x-bind:class="
-                            index === 4
+                            index === 8
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2114,11 +2250,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 5"
+                    @click="index = 9"
                 >
                     <div
                         x-bind:class="
-                            index === 5
+                            index === 9
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2144,11 +2280,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 6"
+                    @click="index = 10"
                 >
                     <div
                         x-bind:class="
-                            index === 6
+                            index === 10
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2174,11 +2310,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 7"
+                    @click="index = 11"
                 >
                     <div
                         x-bind:class="
-                            index === 7
+                            index === 11
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2204,11 +2340,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 8"
+                    @click="index = 12"
                 >
                     <div
                         x-bind:class="
-                            index === 8
+                            index === 12
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2234,11 +2370,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 9"
+                    @click="index = 13"
                 >
                     <div
                         x-bind:class="
-                            index === 9
+                            index === 13
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2264,11 +2400,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 10"
+                    @click="index = 14"
                 >
                     <div
                         x-bind:class="
-                            index === 10
+                            index === 14
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2294,11 +2430,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 11"
+                    @click="index = 15"
                 >
                     <div
                         x-bind:class="
-                            index === 11
+                            index === 15
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2324,11 +2460,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 12"
+                    @click="index = 16"
                 >
                     <div
                         x-bind:class="
-                            index === 12
+                            index === 16
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2354,11 +2490,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 13"
+                    @click="index = 17"
                 >
                     <div
                         x-bind:class="
-                            index === 13
+                            index === 17
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2384,11 +2520,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 14"
+                    @click="index = 18"
                 >
                     <div
                         x-bind:class="
-                            index === 14
+                            index === 18
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2414,11 +2550,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 15"
+                    @click="index = 19"
                 >
                     <div
                         x-bind:class="
-                            index === 15
+                            index === 19
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2444,11 +2580,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 16"
+                    @click="index = 20"
                 >
                     <div
                         x-bind:class="
-                            index === 16
+                            index === 20
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -2474,126 +2610,6 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 17"
-                >
-                    <div
-                        x-bind:class="
-                            index === 17
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
-                                    <span class="font-mono text-xs">:21</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 18"
-                >
-                    <div
-                        x-bind:class="
-                            index === 18
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull</span>
-                                    <span class="font-mono text-xs">:31</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 19"
-                >
-                    <div
-                        x-bind:class="
-                            index === 19
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
-                    @click="index = 20"
-                >
-                    <div
-                        x-bind:class="
-                            index === 20
-                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
-                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
-                        "
-                    >
-                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
-                            <div class="nowrap text-gray-900 dark:text-gray-300">
-                                <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
-                                    <span class="font-mono text-xs">:21</span>
-                                </span>
-                            </div>
-                            <div class="text-gray-500 dark:text-gray-400">
-                                handle
-                            </div>
-                        </div>
-                    </div>
-                </button>
-
-
-										<div x-show="! includeVendorFrames">
-										</div>
-
-										<button
-                    class="w-full text-left dark:border-gray-900"
-                    x-show="true"
                     @click="index = 21"
                 >
                     <div
@@ -2606,8 +2622,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TrimStrings</span>
-                                    <span class="font-mono text-xs">:51</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
+                                    <span class="font-mono text-xs">:21</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -2636,12 +2652,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull</span>
+                                    <span class="font-mono text-xs">:31</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2666,12 +2682,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\ValidatePostSize</span>
-                                    <span class="font-mono text-xs">:27</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                handle
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
                             </div>
                         </div>
                     </div>
@@ -2696,12 +2712,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:183</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TransformsRequest</span>
+                                    <span class="font-mono text-xs">:21</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2726,8 +2742,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance</span>
-                                    <span class="font-mono text-xs">:110</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\TrimStrings</span>
+                                    <span class="font-mono text-xs">:51</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -2786,8 +2802,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\HandleCors</span>
-                                    <span class="font-mono text-xs">:62</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\ValidatePostSize</span>
+                                    <span class="font-mono text-xs">:27</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -2846,8 +2862,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\TrustProxies</span>
-                                    <span class="font-mono text-xs">:58</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance</span>
+                                    <span class="font-mono text-xs">:110</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -2906,8 +2922,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks</span>
-                                    <span class="font-mono text-xs">:22</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\HandleCors</span>
+                                    <span class="font-mono text-xs">:62</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -2966,12 +2982,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
-                                    <span class="font-mono text-xs">:119</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Http\Middleware\TrustProxies</span>
+                                    <span class="font-mono text-xs">:58</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                then
+                                handle
                             </div>
                         </div>
                     </div>
@@ -2996,12 +3012,12 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Kernel</span>
-                                    <span class="font-mono text-xs">:176</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
-                                sendRequestThroughRouter
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
                             </div>
                         </div>
                     </div>
@@ -3026,8 +3042,8 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
-                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Kernel</span>
-                                    <span class="font-mono text-xs">:145</span>
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks</span>
+                                    <span class="font-mono text-xs">:22</span>
                                 </span>
                             </div>
                             <div class="text-gray-500 dark:text-gray-400">
@@ -3056,6 +3072,126 @@
                         <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
                             <div class="nowrap text-gray-900 dark:text-gray-300">
                                 <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:183</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                {closure:{closure:Illuminate\Pipeline\Pipeline::carry():158}:159}
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 37"
+                >
+                    <div
+                        x-bind:class="
+                            index === 37
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Pipeline\Pipeline</span>
+                                    <span class="font-mono text-xs">:119</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                then
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 38"
+                >
+                    <div
+                        x-bind:class="
+                            index === 38
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Kernel</span>
+                                    <span class="font-mono text-xs">:176</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                sendRequestThroughRouter
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 39"
+                >
+                    <div
+                        x-bind:class="
+                            index === 39
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
+                                    <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Http\Kernel</span>
+                                    <span class="font-mono text-xs">:145</span>
+                                </span>
+                            </div>
+                            <div class="text-gray-500 dark:text-gray-400">
+                                handle
+                            </div>
+                        </div>
+                    </div>
+                </button>
+
+
+										<div x-show="! includeVendorFrames">
+										</div>
+
+										<button
+                    class="w-full text-left dark:border-gray-900"
+                    x-show="true"
+                    @click="index = 40"
+                >
+                    <div
+                        x-bind:class="
+                            index === 40
+                                ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
+                                : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
+                        "
+                    >
+                        <div class="scrollbar-hidden overflow-x-auto border-l-2 border-transparent p-2">
+                            <div class="nowrap text-gray-900 dark:text-gray-300">
+                                <span class="inline-flex items-baseline">
                                     <span class="text-gray-900 dark:text-gray-300">Illuminate\Foundation\Application</span>
                                     <span class="font-mono text-xs">:1190</span>
                                 </span>
@@ -3074,11 +3210,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="true"
-                    @click="index = 37"
+                    @click="index = 41"
                 >
                     <div
                         x-bind:class="
-                            index === 37
+                            index === 41
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3107,11 +3243,11 @@
 										<button
                     class="w-full text-left dark:border-gray-900"
                     x-show="includeVendorFrames"
-                    @click="index = 38"
+                    @click="index = 42"
                 >
                     <div
                         x-bind:class="
-                            index === 38
+                            index === 42
                                 ? 'rounded-r-md bg-gray-100 dark:bg-gray-800 border-l dark:border dark:border-gray-700 border-l-red-500 dark:border-l-red-500'
                                 : 'hover:bg-gray-100/75 dark:hover:bg-gray-800/75'
                         "
@@ -3138,9 +3274,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\app\Http\Controllers\UserController.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasAttributes.php</span>
 
-											<span class="font-mono text-xs">:62</span>
+											<span class="font-mono text-xs">:616</span>
 										</div>
 									</div>
 								</div>
@@ -3149,24 +3285,173 @@
                     style="display: none;"
                     id="frame-0"
                     class="language-php highlightable-code  default-highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="62"
-                    data-ln-start-from="57"
-                >        ]);
-        $oldPassword = $request-&gt;input(&#039;oldPassword&#039;);
-        $newPassword = $request-&gt;input(&#039;newPassword&#039;);
-        $user = Auth::user();
-        if(Hash::check($oldPassword, $user-&gt;password)) {
-            $user-&gt;password-&gt;$newPassword;
+                    data-line-number="616"
+                    data-ln-start-from="611"
+                >                throw new LogicException(sprintf(
+                    &#039;%s::%s must return a relationship instance, but &quot;null&quot; was returned. Was the &quot;return&quot; keyword used?&#039;, static::class, $method
+                ));
+            }
+
+            throw new LogicException(sprintf(
+                &#039;%s::%s must return a relationship instance.&#039;, static::class, $method
+            ));
         }
-        else {
-            echo($oldPassword);
+
+        return tap($relation-&gt;getResults(), function ($results) use ($method) {
+            $this-&gt;setRelation($method, $results);
+        });
+    }
+
+    /**
+     * Determine if a get mutator exists for an attribute.
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 1">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasAttributes.php</span>
+
+											<span class="font-mono text-xs">:559</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-1"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="559"
+                    data-ln-start-from="554"
+                >        }
+
+        // If the &quot;attribute&quot; exists as a method on the model, we will just assume
+        // it is a relationship and will load and return results from the query
+        // and hydrate the relationship&#039;s value on the &quot;relationships&quot; array.
+        return $this-&gt;getRelationshipFromMethod($key);
+    }
+
+    /**
+     * Determine if the given key is a relationship method on the model.
+     *
+     * @param  string  $key
+     * @return bool
+     */
+    public function isRelation($key)
+    {
+        if ($this-&gt;hasAttributeMutator($key)) {
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 2">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Concerns\HasAttributes.php</span>
+
+											<span class="font-mono text-xs">:484</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-2"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="484"
+                    data-ln-start-from="479"
+                >        if (method_exists(self::class, $key)) {
+            return $this-&gt;throwMissingAttributeExceptionIfApplicable($key);
         }
+
+        return $this-&gt;isRelation($key) || $this-&gt;relationLoaded($key)
+                    ? $this-&gt;getRelationValue($key)
+                    : $this-&gt;throwMissingAttributeExceptionIfApplicable($key);
+    }
+
+    /**
+     * Either throw a missing attribute exception or return null depending on Eloquent&#039;s configuration.
+     *
+     * @param  string  $key
+     * @return null
+     *
+     * @throws \Illuminate\Database\Eloquent\MissingAttributeException
+     */
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 3">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php</span>
+
+											<span class="font-mono text-xs">:2259</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-3"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="2259"
+                    data-ln-start-from="2254"
+                >     * @param  string  $key
+     * @return mixed
+     */
+    public function __get($key)
+    {
+        return $this-&gt;getAttribute($key);
+    }
+
+    /**
+     * Dynamically set attributes on the model.
+     *
+     * @param  string  $key
+     * @param  mixed  $value
+     * @return void
+     */
+    public function __set($key, $value)
+    {
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 4">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\app\Http\Controllers\SessionController.php</span>
+
+											<span class="font-mono text-xs">:80</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-4"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="80"
+                    data-ln-start-from="75"
+                >        return response()-&gt;json([&#039;message&#039; =&gt; &#039;ok&#039;, &#039;data&#039; =&gt; $userAttributes]);
+    }
+
+    public function logout()
+    {
+        echo(Auth::user()-&gt;getRememberToken);
+        return response()-&gt;json([&#039;msg&#039; =&gt;&#039;kicked out by dasdqw clan leader&#039;]);
     }
 }
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 1">
+							<div class="sm:col-span-2" x-show="index === 5">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3180,7 +3465,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-1"
+                    id="frame-5"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="46"
                     data-ln-start-from="41"
@@ -3204,7 +3489,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 2">
+							<div class="sm:col-span-2" x-show="index === 6">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3218,7 +3503,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-2"
+                    id="frame-6"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="265"
                     data-ln-start-from="260"
@@ -3242,7 +3527,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 3">
+							<div class="sm:col-span-2" x-show="index === 7">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3256,7 +3541,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-3"
+                    id="frame-7"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="211"
                     data-ln-start-from="206"
@@ -3280,7 +3565,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 4">
+							<div class="sm:col-span-2" x-show="index === 8">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3294,7 +3579,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-4"
+                    id="frame-8"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="808"
                     data-ln-start-from="803"
@@ -3318,7 +3603,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 5">
+							<div class="sm:col-span-2" x-show="index === 9">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3332,7 +3617,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-5"
+                    id="frame-9"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="144"
                     data-ln-start-from="139"
@@ -3356,7 +3641,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 6">
+							<div class="sm:col-span-2" x-show="index === 10">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3370,7 +3655,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-6"
+                    id="frame-10"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="51"
                     data-ln-start-from="46"
@@ -3385,7 +3670,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 7">
+							<div class="sm:col-span-2" x-show="index === 11">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3399,7 +3684,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-7"
+                    id="frame-11"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="183"
                     data-ln-start-from="178"
@@ -3423,7 +3708,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 8">
+							<div class="sm:col-span-2" x-show="index === 12">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3437,7 +3722,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-8"
+                    id="frame-12"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="64"
                     data-ln-start-from="59"
@@ -3461,7 +3746,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 9">
+							<div class="sm:col-span-2" x-show="index === 13">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3475,7 +3760,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-9"
+                    id="frame-13"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="183"
                     data-ln-start-from="178"
@@ -3499,7 +3784,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 10">
+							<div class="sm:col-span-2" x-show="index === 14">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3513,7 +3798,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-10"
+                    id="frame-14"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="119"
                     data-ln-start-from="114"
@@ -3537,7 +3822,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 11">
+							<div class="sm:col-span-2" x-show="index === 15">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3551,7 +3836,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-11"
+                    id="frame-15"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="807"
                     data-ln-start-from="802"
@@ -3575,7 +3860,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 12">
+							<div class="sm:col-span-2" x-show="index === 16">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3589,7 +3874,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-12"
+                    id="frame-16"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="786"
                     data-ln-start-from="781"
@@ -3613,7 +3898,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 13">
+							<div class="sm:col-span-2" x-show="index === 17">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3627,7 +3912,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-13"
+                    id="frame-17"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="750"
                     data-ln-start-from="745"
@@ -3651,7 +3936,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 14">
+							<div class="sm:col-span-2" x-show="index === 18">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3665,7 +3950,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-14"
+                    id="frame-18"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="739"
                     data-ln-start-from="734"
@@ -3689,7 +3974,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 15">
+							<div class="sm:col-span-2" x-show="index === 19">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3703,7 +3988,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-15"
+                    id="frame-19"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="201"
                     data-ln-start-from="196"
@@ -3727,7 +4012,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 16">
+							<div class="sm:col-span-2" x-show="index === 20">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3741,7 +4026,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-16"
+                    id="frame-20"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="144"
                     data-ln-start-from="139"
@@ -3765,7 +4050,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 17">
+							<div class="sm:col-span-2" x-show="index === 21">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3779,7 +4064,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-17"
+                    id="frame-21"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="21"
                     data-ln-start-from="16"
@@ -3803,7 +4088,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 18">
+							<div class="sm:col-span-2" x-show="index === 22">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3817,7 +4102,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-18"
+                    id="frame-22"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="31"
                     data-ln-start-from="26"
@@ -3841,7 +4126,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 19">
+							<div class="sm:col-span-2" x-show="index === 23">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3855,7 +4140,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-19"
+                    id="frame-23"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="183"
                     data-ln-start-from="178"
@@ -3879,7 +4164,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 20">
+							<div class="sm:col-span-2" x-show="index === 24">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3893,7 +4178,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-20"
+                    id="frame-24"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="21"
                     data-ln-start-from="16"
@@ -3917,7 +4202,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 21">
+							<div class="sm:col-span-2" x-show="index === 25">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -3931,7 +4216,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-21"
+                    id="frame-25"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="51"
                     data-ln-start-from="46"
@@ -3951,158 +4236,6 @@
      * @return mixed
      */
     protected function transform($key, $value)
-    {
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 22">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-22"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 23">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php</span>
-
-											<span class="font-mono text-xs">:27</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-23"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="27"
-                    data-ln-start-from="22"
-                >
-        if ($max &gt; 0 &amp;&amp; $request-&gt;server(&#039;CONTENT_LENGTH&#039;) &gt; $max) {
-            throw new PostTooLargeException(&#039;The POST data is too large.&#039;);
-        }
-
-        return $next($request);
-    }
-
-    /**
-     * Determine the server &#039;post_max_size&#039; as bytes.
-     *
-     * @return int
-     */
-    protected function getPostMaxSize()
-    {
-        if (is_numeric($postMaxSize = ini_get(&#039;post_max_size&#039;))) {
-            return (int) $postMaxSize;
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 24">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
-
-											<span class="font-mono text-xs">:183</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-24"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="183"
-                    data-ln-start-from="178"
-                >                        // since the object we&#039;re given was already a fully instantiated object.
-                        $parameters = [$passable, $stack];
-                    }
-
-                    $carry = method_exists($pipe, $this-&gt;method)
-                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
-                                    : $pipe(...$parameters);
-
-                    return $this-&gt;handleCarry($carry);
-                } catch (Throwable $e) {
-                    return $this-&gt;handleException($passable, $e);
-                }
-            };
-        };
-    }
-
-    /**
-</code></template></pre>
-								</div>
-							</div>
-							<div class="sm:col-span-2" x-show="index === 25">
-								<div class="mb-3">
-									<div class="text-md text-gray-500 dark:text-gray-400">
-										<div class="mb-2">
-
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php</span>
-
-											<span class="font-mono text-xs">:110</span>
-										</div>
-									</div>
-								</div>
-								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
-									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
-                    style="display: none;"
-                    id="frame-25"
-                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="110"
-                    data-ln-start-from="105"
-                >                null,
-                $this-&gt;getHeaders($data)
-            );
-        }
-
-        return $next($request);
-    }
-
-    /**
-     * Determine if the incoming request has a maintenance mode bypass cookie.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  array  $data
-     * @return bool
-     */
-    protected function hasValidBypassCookie($request, array $data)
     {
 </code></template></pre>
 								</div>
@@ -4150,9 +4283,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\ValidatePostSize.php</span>
 
-											<span class="font-mono text-xs">:62</span>
+											<span class="font-mono text-xs">:27</span>
 										</div>
 									</div>
 								</div>
@@ -4161,25 +4294,25 @@
                     style="display: none;"
                     id="frame-27"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="62"
-                    data-ln-start-from="57"
-                >            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
-
-            return $response;
+                    data-line-number="27"
+                    data-ln-start-from="22"
+                >
+        if ($max &gt; 0 &amp;&amp; $request-&gt;server(&#039;CONTENT_LENGTH&#039;) &gt; $max) {
+            throw new PostTooLargeException(&#039;The POST data is too large.&#039;);
         }
 
-        $response = $next($request);
-
-        if ($request-&gt;getMethod() === &#039;OPTIONS&#039;) {
-            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
-        }
-
-        return $this-&gt;cors-&gt;addActualRequestHeaders($response, $request);
+        return $next($request);
     }
 
     /**
-     * Get the path from the configuration to determine if the CORS service should run.
+     * Determine the server &#039;post_max_size&#039; as bytes.
      *
+     * @return int
+     */
+    protected function getPostMaxSize()
+    {
+        if (is_numeric($postMaxSize = ini_get(&#039;post_max_size&#039;))) {
+            return (int) $postMaxSize;
 </code></template></pre>
 								</div>
 							</div>
@@ -4226,9 +4359,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php</span>
 
-											<span class="font-mono text-xs">:58</span>
+											<span class="font-mono text-xs">:110</span>
 										</div>
 									</div>
 								</div>
@@ -4237,25 +4370,25 @@
                     style="display: none;"
                     id="frame-29"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="58"
-                    data-ln-start-from="53"
-                >    {
-        $request::setTrustedProxies([], $this-&gt;getTrustedHeaderNames());
-
-        $this-&gt;setTrustedProxyIpAddresses($request);
+                    data-line-number="110"
+                    data-ln-start-from="105"
+                >                null,
+                $this-&gt;getHeaders($data)
+            );
+        }
 
         return $next($request);
     }
 
     /**
-     * Sets the trusted proxies on the request.
+     * Determine if the incoming request has a maintenance mode bypass cookie.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return void
+     * @param  array  $data
+     * @return bool
      */
-    protected function setTrustedProxyIpAddresses(Request $request)
+    protected function hasValidBypassCookie($request, array $data)
     {
-        $trustedIps = $this-&gt;proxies() ?: config(&#039;trustedproxy.proxies&#039;);
 </code></template></pre>
 								</div>
 							</div>
@@ -4302,9 +4435,9 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
-											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php</span>
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php</span>
 
-											<span class="font-mono text-xs">:22</span>
+											<span class="font-mono text-xs">:62</span>
 										</div>
 									</div>
 								</div>
@@ -4313,25 +4446,25 @@
                     style="display: none;"
                     id="frame-31"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
-                    data-line-number="22"
-                    data-ln-start-from="17"
-                >     * @param  \Closure  $next
-     * @return \Symfony\Component\HttpFoundation\Response
-     */
-    public function handle(Request $request, Closure $next)
-    {
-        return $next($request);
+                    data-line-number="62"
+                    data-ln-start-from="57"
+                >            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
+
+            return $response;
+        }
+
+        $response = $next($request);
+
+        if ($request-&gt;getMethod() === &#039;OPTIONS&#039;) {
+            $this-&gt;cors-&gt;varyHeader($response, &#039;Access-Control-Request-Method&#039;);
+        }
+
+        return $this-&gt;cors-&gt;addActualRequestHeaders($response, $request);
     }
 
     /**
-     * Invoke the deferred callbacks.
+     * Get the path from the configuration to determine if the CORS service should run.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Symfony\Component\HttpFoundation\Response  $response
-     * @return void
-     */
-    public function terminate(Request $request, Response $response)
-    {
 </code></template></pre>
 								</div>
 							</div>
@@ -4378,6 +4511,158 @@
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
 
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php</span>
+
+											<span class="font-mono text-xs">:58</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-33"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="58"
+                    data-ln-start-from="53"
+                >    {
+        $request::setTrustedProxies([], $this-&gt;getTrustedHeaderNames());
+
+        $this-&gt;setTrustedProxyIpAddresses($request);
+
+        return $next($request);
+    }
+
+    /**
+     * Sets the trusted proxies on the request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return void
+     */
+    protected function setTrustedProxyIpAddresses(Request $request)
+    {
+        $trustedIps = $this-&gt;proxies() ?: config(&#039;trustedproxy.proxies&#039;);
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 34">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:183</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-34"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
+
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
+    }
+
+    /**
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 35">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\InvokeDeferredCallbacks.php</span>
+
+											<span class="font-mono text-xs">:22</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-35"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="22"
+                    data-ln-start-from="17"
+                >     * @param  \Closure  $next
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function handle(Request $request, Closure $next)
+    {
+        return $next($request);
+    }
+
+    /**
+     * Invoke the deferred callbacks.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Symfony\Component\HttpFoundation\Response  $response
+     * @return void
+     */
+    public function terminate(Request $request, Response $response)
+    {
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 36">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
+											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
+
+											<span class="font-mono text-xs">:183</span>
+										</div>
+									</div>
+								</div>
+								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
+									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
+                    style="display: none;"
+                    id="frame-36"
+                    class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
+                    data-line-number="183"
+                    data-ln-start-from="178"
+                >                        // since the object we&#039;re given was already a fully instantiated object.
+                        $parameters = [$passable, $stack];
+                    }
+
+                    $carry = method_exists($pipe, $this-&gt;method)
+                                    ? $pipe-&gt;{$this-&gt;method}(...$parameters)
+                                    : $pipe(...$parameters);
+
+                    return $this-&gt;handleCarry($carry);
+                } catch (Throwable $e) {
+                    return $this-&gt;handleException($passable, $e);
+                }
+            };
+        };
+    }
+
+    /**
+</code></template></pre>
+								</div>
+							</div>
+							<div class="sm:col-span-2" x-show="index === 37">
+								<div class="mb-3">
+									<div class="text-md text-gray-500 dark:text-gray-400">
+										<div class="mb-2">
+
 											<span class="wrap text-gray-900 dark:text-gray-300">C:\Users\Asus\Herd\NovaCart\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php</span>
 
 											<span class="font-mono text-xs">:119</span>
@@ -4387,7 +4672,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-33"
+                    id="frame-37"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="119"
                     data-ln-start-from="114"
@@ -4411,7 +4696,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 34">
+							<div class="sm:col-span-2" x-show="index === 38">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4425,7 +4710,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-34"
+                    id="frame-38"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="176"
                     data-ln-start-from="171"
@@ -4449,7 +4734,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 35">
+							<div class="sm:col-span-2" x-show="index === 39">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4463,7 +4748,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-35"
+                    id="frame-39"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="145"
                     data-ln-start-from="140"
@@ -4487,7 +4772,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 36">
+							<div class="sm:col-span-2" x-show="index === 40">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4501,7 +4786,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-36"
+                    id="frame-40"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="1190"
                     data-ln-start-from="1185"
@@ -4525,7 +4810,7 @@
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 37">
+							<div class="sm:col-span-2" x-show="index === 41">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4539,7 +4824,7 @@
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-37"
+                    id="frame-41"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="17"
                     data-ln-start-from="12"
@@ -4552,7 +4837,7 @@ require __DIR__.&#039;/../vendor/autoload.php&#039;;
 </code></template></pre>
 								</div>
 							</div>
-							<div class="sm:col-span-2" x-show="index === 38">
+							<div class="sm:col-span-2" x-show="index === 42">
 								<div class="mb-3">
 									<div class="text-md text-gray-500 dark:text-gray-400">
 										<div class="mb-2">
@@ -4566,7 +4851,7 @@ require __DIR__.&#039;/../vendor/autoload.php&#039;;
 								<div class="pt-4 text-sm text-gray-500 dark:text-gray-400">
 									<pre class="h-[32.5rem] rounded-md dark:bg-gray-800 border dark:border-gray-700"><template x-if="true"><code
                     style="display: none;"
-                    id="frame-38"
+                    id="frame-42"
                     class="language-php highlightable-code  scrollbar-hidden overflow-y-hidden"
                     data-line-number="139"
                     data-ln-start-from="134"
@@ -4591,7 +4876,7 @@ require $frontControllerPath;
 
 					<div class="mt-2">
 						<span>POST</span>
-						<span class="text-gray-500">/api/changepassword</span>
+						<span class="text-gray-500">/api/logout</span>
 					</div>
 
 					<div class="mt-4">
@@ -4612,7 +4897,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">67</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">4</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -4676,7 +4961,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">65b42275-c68b-4345-ac84-d9c37bf1ac5e</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">729054fb-032a-4e72-8811-0b6e8ed97c0c</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -4724,7 +5009,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">Bearer 1|1sjoiotdc6SLnE8QJoGy689L6GNjMOipGGkQqVZlfcb7af40</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">Bearer 8|BaTGZ1MnnVN6KTREbV917mKskIMpVuuqkntKjK4k8c9c7be4</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -4755,10 +5040,7 @@ require $frontControllerPath;
                 class="min-w-0 flex-grow"
                 style="-webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem))"
             >
-                <pre class="scrollbar-hidden mx-5 my-3 overflow-y-hidden text-xs lg:text-sm"><code class="overflow-y-hidden scrollbar-hidden overflow-x-scroll scrollbar-hidden-x">{
-    "oldPassword": "password",
-    "newPassword": "Password"
-}</code></pre>
+                <pre class="scrollbar-hidden mx-5 my-3 overflow-y-hidden text-xs lg:text-sm"><code class="overflow-y-hidden scrollbar-hidden overflow-x-scroll scrollbar-hidden-x">No body data</code></pre>
             </span>
 						</div>
 					</div>
@@ -4786,21 +5068,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">\App\Http\Controllers\UserController@changePassword</code></pre>
-                </span>
-						</div>
-						<div class="flex items-center gap-2 border-t dark:border-gray-800">
-							<span
-                    data-tippy-content="route name"
-                    class="lg:text-md w-[8rem] flex-none cursor-pointer truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]"
-                    >route name</span>
-							<span
-                    class="min-w-0 flex-grow"
-                    style="
-                        -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
-                    "
-                >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">generated::oTEEG3FJGxiftq7t</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">App\Http\Controllers\SessionController@logout</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
@@ -4831,7 +5099,7 @@ require $frontControllerPath;
 							<div
 								class="lg:text-md w-[8rem] flex-none truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]">
 								<span>sqlite</span>
-								<span class="hidden text-xs text-gray-500 lg:inline-block">(0.48 ms)</span>
+								<span class="hidden text-xs text-gray-500 lg:inline-block">(1.55 ms)</span>
 							</div>
 							<span
                     class="min-w-0 flex-grow"
@@ -4839,14 +5107,14 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">select * from &quot;personal_access_tokens&quot; where &quot;personal_access_tokens&quot;.&quot;id&quot; = &#039;1&#039; limit 1</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">select * from &quot;personal_access_tokens&quot; where &quot;personal_access_tokens&quot;.&quot;id&quot; = &#039;8&#039; limit 1</code></pre>
                 </span>
 						</div>
 						<div class="flex items-center gap-2 border-t dark:border-gray-800">
 							<div
 								class="lg:text-md w-[8rem] flex-none truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]">
 								<span>sqlite</span>
-								<span class="hidden text-xs text-gray-500 lg:inline-block">(0.15 ms)</span>
+								<span class="hidden text-xs text-gray-500 lg:inline-block">(0.49 ms)</span>
 							</div>
 							<span
                     class="min-w-0 flex-grow"
@@ -4861,7 +5129,7 @@ require $frontControllerPath;
 							<div
 								class="lg:text-md w-[8rem] flex-none truncate border-r px-5 py-3 text-sm dark:border-gray-800 lg:w-[12rem]">
 								<span>sqlite</span>
-								<span class="hidden text-xs text-gray-500 lg:inline-block">(11.31 ms)</span>
+								<span class="hidden text-xs text-gray-500 lg:inline-block">(14.32 ms)</span>
 							</div>
 							<span
                     class="min-w-0 flex-grow"
@@ -4869,7 +5137,7 @@ require $frontControllerPath;
                         -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1rem, #000 calc(100% - 3rem), transparent calc(100% - 1rem));
                     "
                 >
-                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">update &quot;personal_access_tokens&quot; set &quot;last_used_at&quot; = &#039;2024-12-03 16:12:33&#039;, &quot;updated_at&quot; = &#039;2024-12-03 16:12:33&#039; where &quot;id&quot; = 1</code></pre>
+                    <pre class="scrollbar-hidden overflow-y-hidden text-xs lg:text-sm"><code class="px-5 py-3 overflow-y-hidden scrollbar-hidden max-h-32 overflow-x-scroll scrollbar-hidden-x">update &quot;personal_access_tokens&quot; set &quot;last_used_at&quot; = &#039;2024-12-04 19:32:15&#039;, &quot;updated_at&quot; = &#039;2024-12-04 19:32:15&#039; where &quot;id&quot; = 8</code></pre>
                 </span>
 						</div>
 					</dl>
