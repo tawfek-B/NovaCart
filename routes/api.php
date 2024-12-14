@@ -28,9 +28,10 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::delete('/deleteorder', [CartController::class, 'delete']);
     Route::delete('/deletecart', [CartController::class, 'deleteCart']);
     Route::put('/itemspurchased', [CartController::class, 'itemsPurchased']);
-    //we have to add a method that buys the products for the user, causing the "quantity" in each of the products to decrease and remove the contents 
+    //we have to add a method that buys the products for the user, causing the "quantity" in each of the products to decrease and remove the contents
     //of the "cart" for the user, maybe save the content somewhere else for a log or for the driver bullshit
     //haydra:did it, should be good now
+    //tawfek: Nice!
 
     Route::post('/addstore', [StoreController::class, 'create']);
     Route::put('/updatestore', [StoreController::class, 'update']);

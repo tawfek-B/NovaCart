@@ -18,7 +18,7 @@ class SessionController extends Controller
         // $user = User::where('email', $request->email)->first();
 
         $credentials = $request->validate([
-            'email' => 'required',
+            'userName' => 'required',
             'password' => 'required'
         ]);
         if(Auth::attempt($credentials)) {
