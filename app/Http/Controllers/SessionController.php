@@ -11,19 +11,17 @@ use Illuminate\Http\Request;
 
 
 class SessionController extends Controller
-
 {
     public function login(Request $request)
     {
         // $user = User::where('email', $request->email)->first();
 
-        if($request->input('email')==null) {
+        if ($request->input('email') == null) {
             $credentials = $request->validate([
                 'number' => 'required',
                 'password' => 'required'
             ]);
-        }
-        else {
+        } else {
             $credentials = $request->validate([
                 'number' => 'required',
                 'email' => 'required',
@@ -31,20 +29,19 @@ class SessionController extends Controller
             ]);
         }
         //this if-else was made so whether the user decides to input his email or not.
-        if(Auth::attempt($credentials)) {
+        if (Auth::attempt($credentials)) {
             $user = Auth::user();
-            $token = $user->createToken('API Token Of'.$user->name)->plainTextToken;
+            $token = $user->createToken('API Token Of' . $user->name)->plainTextToken;
             $user->remember_token = $token;
             $user->save();
             return response()->json([
-                'token' => $user->remember_token,//get the names right UwU
+                'token' => $user->remember_token,//get the names right UwU (O_O)
                 'user' => $user,
             ]);
-            }
-            else {
-                return response()->json([
-                    'you are an idiot',
-                ]);
+        } else {
+            return response()->json([
+                'you are an idiot',
+            ]);
         }
 
         // if (! $user || ! Hash::check($request->password, $user->password)) {
@@ -90,6 +87,6 @@ class SessionController extends Controller
     {
         $request->user()->currentAccessToken()->delete();
 
-        return response()->json(['msg' =>'kicked out by dasdqw clan leader']);
+        return response()->json(['msg' => 'kicked out by dasdqw clan leader']);
     }
 }

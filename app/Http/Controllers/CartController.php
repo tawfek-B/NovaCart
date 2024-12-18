@@ -6,6 +6,7 @@ use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\DriverController;
 
 
 class CartController extends Controller
@@ -35,7 +36,8 @@ class CartController extends Controller
                     return;
                 }
             }
-        }//this first checks if the cart has items, then checks each element and compares its ID to the ID in the JSON file, if the ID matches in one of them, it updates it.
+        }//haydra: we dont need to check if we have enough of the item right da boys at front end are goin to do it ?
+        //this first checks if the cart has items, then checks each element and compares its ID to the ID in the JSON file, if the ID matches in one of them, it updates it.
 
         //we'll have this just in case, why not?
         $newItem = [
@@ -125,12 +127,15 @@ class CartController extends Controller
             //     echo $firstProduct['product_id']; // This will print 3
 
             // }
+            $DriverController = new DriverController();
+            $DriverController->makeDelivery();
             return response()->json(['msg' => 'worked'], 200);
 
         }
 
     }
-    public function fetch() {
+    public function fetch()
+    {
         $user = Auth::user();
         return $user->cart;
     }
