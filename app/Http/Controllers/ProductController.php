@@ -67,4 +67,7 @@ class ProductController extends Controller
                 'data' => $product,
             ], 200);
     }
+    public function fetch(Request $request) {
+        return Product::where('id', $request->input('productID'))->first();
+    }
 }

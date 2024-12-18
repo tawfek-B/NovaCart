@@ -56,6 +56,9 @@ class StoreController extends Controller
 
     }
 
+    public function fetch(Request $request) {
 
-
+        return Store::where('id', $request->input('storeID'))->first();
     }
+
+}

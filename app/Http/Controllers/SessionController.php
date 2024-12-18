@@ -17,10 +17,20 @@ class SessionController extends Controller
     {
         // $user = User::where('email', $request->email)->first();
 
-        $credentials = $request->validate([
-            'userName' => 'required',
-            'password' => 'required'
-        ]);
+        if($request->input('email')==null) {
+            $credentials = $request->validate([
+                'number' => 'required',
+                'password' => 'required'
+            ]);
+        }
+        else {
+            $credentials = $request->validate([
+                'number' => 'required',
+                'email' => 'required',
+                'password' => 'required'
+            ]);
+        }
+        //this if-else was made so whether the user decides to input his email or not.
         if(Auth::attempt($credentials)) {
             $user = Auth::user();
             $token = $user->createToken('API Token Of'.$user->name)->plainTextToken;
