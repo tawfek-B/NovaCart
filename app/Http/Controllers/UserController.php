@@ -9,27 +9,14 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-
-    public function fetch()
-    {
-        $users = User::all();
-        return response()->json([
-            'message' => 'yes',
-            'data' => $users,
-        ]);
-    }
-
-
     public function changeLogo(Request $request)
     {
+        $user = Auth::user();//we didnt use the token before, fixed it
+
         $validated = $request->validate([
-            'userName' => 'required|string',
             'newLogo' => 'required|string',
         ]);
-        $userName = $request->input('userName');
         $newLogo = $request->input('newLogo');
-
-        $user = User::where('userName', $userName)->first();
         $user->logo = $newLogo;
         return response()->json([
             $user
@@ -53,5 +40,18 @@ class UserController extends Controller
             echo($oldPassword);
         }
     }
-    
+
+    public function fetch() {
+        return Auth::user();
+    }
+
+
+    public function getUsers()//don't worry, I kept your fetch function ;)
+    {
+        $users = User::all();
+        return response()->json([
+            'message' => 'yes',
+            'data' => $users,
+        ]);
+    }
 }

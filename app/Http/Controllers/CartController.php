@@ -130,4 +130,8 @@ class CartController extends Controller
         }
 
     }
+    public function fetch() {
+        $user = Auth::user();
+        return $user->cart;
+    }
 }
