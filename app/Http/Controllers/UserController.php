@@ -4,87 +4,54 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
-    //
-    public function create(Request $request)
+    public function changeLogo(Request $request)
     {
-        return view('auth.register');
+        $user = Auth::user();//we didnt use the token before, fixed it
+
+        $validated = $request->validate([
+            'newLogo' => 'required|string',
+        ]);
+        $newLogo = $request->input('newLogo');
+        $user->logo = $newLogo;
+        return response()->json([
+            $user
+        ]);
+    }
+    public function changePassword(Request $request) {
+        $request->validate([
+            'oldPassword' => 'required',
+            'newPassword' => 'required'
+        ]);
+        $oldPassword = $request->input('oldPassword');
+        $newPassword = $request->input('newPassword');
+        $user = Auth::user();
+        if(Hash::check($oldPassword, $user->password)) {
+            $user->password = Hash::make($newPassword);
+            $user->save();
+
+            return response()->json(['message' => 'Password updated successfully']);
+            }
+        else {
+            echo($oldPassword);
+        }
     }
 
-    public function fetch()
+    public function fetch() {
+        return Auth::user();
+    }
+
+
+    public function getUsers()//don't worry, I kept your fetch function ;)
     {
-        // $filecont = file_get_contents(public_path('user.json'));
-        // $filedeco = json;_decode($filecont, true);
-
-        //note: we want to return the users from the databse and not a file 
-
         $users = User::all();
         return response()->json([
             'message' => 'yes',
             'data' => $users,
         ]);
-    }
-
-
-
-    public function store(Request $request)
-    {
-        $userAttributes = $request->validate([
-            $firstname = 'firstname' => ['required'],
-            $lastname = 'lastname' => ['required'],
-            $userName = 'userName' => ['required'],
-            $location = 'location' => ['required'],
-            $email = 'email' => ['required'],
-            $number = 'number' => ['required'],
-            $password = 'password' => ['required'],
-        ]);
-
-        User::factory()->create([
-            'firstname' => $firstname,
-            'lastname' => $lastname,
-            'location' => $location,
-            'userName' => $userName,
-            'email' => $email,
-            'number' => $number,
-            'password' => $password
-        ]);
-
-        // $filecont = file_get_contents(public_path('user.json'));
-        // $filedeco = json_decode($filecont, true);
-        // $payload = [
-        //     'firstname' => $firstname,
-        //     'lastname' => $lastname,
-        //     'location' => $location,
-        //     'userName' => $userName,
-        //     'email' => $email,
-        //     'number' => $number,
-        //     'password' => $password,
-        // ];
-
-        // if (!$filedeco || !is_array($filedeco)) {
-        //     $content = [
-        //         $payload
-        //     ];
-
-        //     file_put_contents(public_path('payload.json'), json_encode($content));
-        // } else {
-        //     $filedeco[] = $payload;
-        //     file_put_contents(public_path('payload.json'), json_encode($filedeco));
-        // }
-        // User::create($userAttributes);
-        return response()->json(['message' => 'ok', 'data' => $userAttributes]);
-        // dd($request -> name);
-
-
-        //copied khaled's code from our previous laravel homework to fetch the data in the JSON file
-        //he finally has a use
-    }
-
-    public function update(Request $request)
-    {
-        $logopath = $request->logo->store();
-        // User::update($logopath);
     }
 }

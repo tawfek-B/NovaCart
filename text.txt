@@ -1,0 +1,21 @@
+-Store:
+    title
+    subtitle
+    image
+    location
+-Product:
+    title
+    subtitle
+    price
+    quantity
+    image
+-User:
+    firstNameController
+    lastNameController
+    numberController
+    emailController
+    passwordController
+    location
+    image
+    userNameController
+    cart

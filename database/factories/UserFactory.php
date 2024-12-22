@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -23,17 +24,27 @@ class UserFactory extends Factory
      */
     public function definition(): array
     {
+        $cart =[];
+        $itemCount = rand(1,5);
+        for($i  = 0; $i<5; $i++) {
+            $cart[] = [
+                'product_id' => fake()->unique()->numberBetween(1,100),
+                'quantity' => fake()->numberBetween(1,100),
+            ];
+        }
         return [
             'firstname' => fake()->firstName(),
             'lastname' => fake()->lastName(),
+            'userName' => fake()->name(),
             'number' => fake()->phoneNumber(),
             'admin' => false,
             'email' => fake()->unique()->safeEmail(),
-            'password' => static::$password ??= Hash::make('password'),
+            'password' => static::$password ??= bcrypt('password'),
             'email_verified_at' => now(),
             'logo' => fake()->imageUrl(),
             'location' => fake()->streetAddress(),
-            'remember_token' => Str::random(10),
+            // 'remember_token' => Str::random(10),
+
         ];
     }
 
