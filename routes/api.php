@@ -6,9 +6,11 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Events\OrderShipmentStatusUpdated;
 
 
 Route::get('/user', function (Request $request) {
@@ -18,6 +20,15 @@ Route::get('/user', function (Request $request) {
 //Public routes
 Route::post('/signup', [SessionController::class, 'signUp']);
 Route::post('/login', [SessionController::class, 'login']);
+// Route::post('/message', function(Request $request) {
+//     $message = $request->input('message');
+//     $sender = $request->input('sender');
+
+//     broadcast(new OrderShipmentStatusUpdated($message, $sender))->toOthers();
+//     return response()->json(['status' => 'message sent']);
+// });
+Route::post('/message', [OrderController::class, 'updateShipmentStatus']);
+
 
 
 //Protected routes
