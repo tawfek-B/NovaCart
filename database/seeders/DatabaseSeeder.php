@@ -19,16 +19,7 @@ class DatabaseSeeder extends Seeder
         User::factory(10)->create();
         $this->call(StoreSeeder::class);
 
-        foreach(User::all() as $user) {//this iterates through all the users to check which one is a driver to create an instance of the Driver model
-            if($user->isDriver) {
-                Driver::factory()->create([
-                    'user_id' => $user->id,
-                    'name' => $user->userName,//Maybe change this so it takes both the first and last name instead of the username? Or maybe add a first, last and username for the driver model?
-                    'location' => $user->location,
-                    'isDelivering' => 0,
-                ]);
-            }
-        }
+        Driver::factory(10)->create();
         User::create([
             'firstname' => 'hi',
             'lastname' => fake()->lastName(),
@@ -40,8 +31,6 @@ class DatabaseSeeder extends Seeder
             'email_verified_at' => now(),
             'logo' => fake()->imageUrl(),
             'location' => fake()->streetAddress(),
-            'isAccepted' => 0,
-            'isDriver' => 0,
         ]);
     }
 }

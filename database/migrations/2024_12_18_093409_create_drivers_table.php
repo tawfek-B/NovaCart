@@ -12,10 +12,9 @@ return new class extends Migration {
     {
         Schema::create('drivers', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(App\Models\User::class)->nullable();
-            $table->string('name')->nullable();
-            $table->string('location')->nullable();
-            $table->boolean('isDelivering')->nullable();
+            $table->string('name');
+            $table->string('location');
+            $table->boolean('isDelivering');
             $table->timestamps();
         });
     }

@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use Illuminate\Http\Request;
 use App\Models\User;
-use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DriverController;
 
@@ -119,11 +118,6 @@ class CartController extends Controller
                 }
 
             }
-            $order = Order::create([
-                'content' => json_encode($cart),
-                'user_id' => $user->id,
-                'isAccepted' => 0,
-            ]);
             $user->cart = json_encode(null, true);
             $user->save();
 

@@ -9,6 +9,4 @@ class Driver extends Model
 {
     /** @use HasFactory<\Database\Factories\DriverFactory> */
     use HasFactory;
-
-    protected $guarded = [];
 }

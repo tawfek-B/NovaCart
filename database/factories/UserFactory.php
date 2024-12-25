@@ -43,9 +43,6 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'logo' => fake()->imageUrl(),
             'location' => fake()->streetAddress(),
-            'notifications' => fake() -> text(),
-            'isDriver' => rand(0,1),
-            'isAccepted' => 0,
             // 'remember_token' => Str::random(10),
 
         ];
