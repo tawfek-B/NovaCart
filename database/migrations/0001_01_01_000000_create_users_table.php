@@ -5,8 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Validation\Rules\Unique;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -24,7 +23,7 @@ return new class extends Migration
             $table->string('password');
             $table->string('logo');
             $table->string('location');
-            $table->boolean('isAccepted')->nullable();
+            $table->boolean('isAccepted')->nullable(); //haydra : what is this for ?
             $table->boolean('isDriver')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();

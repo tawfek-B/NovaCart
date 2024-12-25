@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Controllers\DriverController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
@@ -34,7 +36,8 @@ class UpdateNotifications extends Command
         $user = Auth::user();
 
         if ($user) {
-            echo('loop');
+            $OC = new OrderController();
+            echo ('loop');
             // Array of notification statuses in the desired order
             $notifications = ['pending', 'accepted', 'delivering', 'delivered'];
 
@@ -43,9 +46,15 @@ class UpdateNotifications extends Command
             $currentNotification = $user->notifications;
             $currentIndex = array_search($currentNotification, $notifications);
 
-            if($currentIndex==4) {
-                echo('end');
-                $user->notifications=null;
+            if ($currentIndex == 2) {
+                $OC->accept();
+                $DriverController = new DriverController();
+                $DriverController->makeDelivery();
+            }
+
+            if ($currentIndex == 4) {
+                echo ('end');
+                $user->notifications = null;
                 $user->save();
                 return 0;
             }
@@ -56,7 +65,7 @@ class UpdateNotifications extends Command
 
             $this->info('User notifications updated to ' . $user->notifications);
         } else {
-            echo('No authenticated user found.');
+            echo ('No authenticated user found.');
         }
     }
 }

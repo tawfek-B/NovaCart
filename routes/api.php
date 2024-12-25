@@ -22,6 +22,10 @@ Route::post('/signup', [SessionController::class, 'signUp']);
 Route::post('/login', [SessionController::class, 'login']);
 
 
+
+
+
+
 //Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
@@ -51,24 +55,27 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
 
     Route::get('/getOrder', [OrderController::class, 'fetch']);
+    Route::get('/getAllOrders', [OrderController::class, 'fetchAll']);
+    Route::get('/getAllOrders', [OrderController::class, 'fetchAll']);
 
 
-    //i just want you to add these functions, one that returns the order(the whole model, not just the 'content' variable), another functions that returns ALL of the orders
-    //one that turns isAccepted true only when a user that is isDriver accepts the delivery (maybe add a driver_id variable to the Order model?)
+    //i just want you to add these functions, one that returns the order(the whole model, not just the 'content' variable), another functions that returns ALL of the orders haydra: bro dats like 2 lines of code gimme somethin harder (like ur pepe maybe UwU)
+    //one that turns isAccepted true only when a user that is isDriver accepts the delivery (maybe add a driver_id variable to the Order model?) haydra : plz put this in the ordercont cuz my dumbass thoguth i should add an api route for it
+    //haydra: i think i did it but i dont rly think its goin to work, gotta discuss dis shit with u
 
 
-    Route::post('/notif', function() {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
-        Artisan::call('app:update-notifications');
-    });
+
 
     Route::post('/logout', [SessionController::class, 'logout']);
 });
 
-
-
-
-
-
+Route::get('/gettt', function () {
+    return response()->json(["user" => auth()->user()]);
+});
+Route::post('/notif', function () {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
+    Artisan::call('app:update-notifications');
+});
+//haydra: for some reason its tellin me there is no auth users althought i am authed and i can do other shit that requirse a token  can u plz use the url above this /gettt to check if its returning null or anuthin else
 
 
 

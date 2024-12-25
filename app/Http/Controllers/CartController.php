@@ -111,7 +111,7 @@ class CartController extends Controller
                     if ($counter != 1) {
                         $prod = $value;
                     } else {
-                        $dbProd = Product::where('id', $prod)->first();
+                        $dbProd = Product::where('id', operator: $prod)->first();
                         $dbProd->quantity -= $value;
                         $dbProd->save();
                     }
@@ -133,8 +133,7 @@ class CartController extends Controller
             //     echo $firstProduct['product_id']; // This will print 3
 
             // }
-            $DriverController = new DriverController();
-            $DriverController->makeDelivery();
+
             return response()->json(['msg' => 'worked'], 200);
 
         }
