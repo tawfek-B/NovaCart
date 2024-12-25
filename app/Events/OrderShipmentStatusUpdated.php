@@ -10,7 +10,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class OrderShipmentStatusUpdated
+class OrderShipmentStatusUpdated implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -26,6 +26,23 @@ class OrderShipmentStatusUpdated
         //
     }
 
+
+
+
+
+
+//
+//
+//
+//
+// IGNORE THIS GODDAMN USELESS FUCKING FILE!!!
+//
+//
+//
+//
+
+
+
     /**
      * Get the channels the event should broadcast on.
      *
@@ -33,7 +50,7 @@ class OrderShipmentStatusUpdated
      */
     public function broadcastOn(): Channel
     {
-        return new Channel('NovaCart');
+        return new Channel('NovaCart');//not necessary to be the same name as channel in pusher website
     }
 
     public function broadcastAs() {
