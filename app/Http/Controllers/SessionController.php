@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use Illuminate\Database\UniqueConstraintViolationException;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 
 class SessionController extends Controller
@@ -35,12 +37,13 @@ class SessionController extends Controller
             $user->remember_token = $token;
             $user->save();
             return response()->json([
+                'success' => "true",
                 'token' => $user->remember_token,//get the names right UwU (O_O)
                 'user' => $user,
             ]);
         } else {
             return response()->json([
-                'you are an idiot',
+                'success' => "false", //You're still an idiot
             ]);
         }
 
@@ -67,6 +70,25 @@ class SessionController extends Controller
 
     public function signUp(Request $request)
     {
+        $validator = Validator::make($request->all(), [
+        'email' => 'required|email|unique:users,email',
+        'userName' => 'required|string|unique:users,userName',
+        'number' => 'required|string|unique:users,number',
+        'password' => 'required|string',
+    ], [
+        'email.unique' => 'The email is already in use.',
+        'userName.unique' => 'The username is already in use.',
+        'number.unique' => 'The phone number is already in use.',
+    ]);//this will check if these are unique or already in use by other users
+    //we return each one that wasn't unique so the frontend can highlight all the fields that are already in use
+
+    if ($validator->fails()) {
+        // Return all validation errors
+        return response()->json([
+            'success' => false,
+            'errors' => $validator->errors(),
+        ], 422);
+    }
         $userAttributes = $request->validate([
             $firstname = 'firstName' => ['required'],
             $lastname = 'lastName' => ['required'],
@@ -77,10 +99,15 @@ class SessionController extends Controller
             $password = 'password' => ['required'],
         ]);
 
-        $user = User::create($userAttributes);
+            $user = User::create($userAttributes);
+
+        //made it so the user is logged in after signing up... makes sense
+        $token = $user->createToken('API Token Of' . $user->name)->plainTextToken;
+        $user->remember_token = $token;
+        $user->save();
 
         Auth::login($user);
-        return response()->json(['message' => 'ok', 'data' => $userAttributes]);
+        return response()->json(['success' => 'true','token' =>$token, 'data' => $userAttributes]);//we return a "success" field so the frontend can see if the sign up process failed or not
     }
 
     public function logout(Request $request)

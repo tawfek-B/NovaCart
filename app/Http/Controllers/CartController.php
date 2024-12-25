@@ -30,11 +30,18 @@ class CartController extends Controller
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
                     $item['quantity'] = $request->input('quantity');
+                    if($cart[$index]['quantity']+$request->input('quantity') > Product::where('id', $productId)->first()) {
+                        return response()->json([
+                            "success" => "false"
+                        ]);//added this just in case the user orders an extra amount of a product, but they ordered more than what's available
+                    }
                     $cart[$index]['quantity'] += $request->input('quantity');
                     $user->cart = json_encode($cart);
                     $user->save();
 
-                    return;
+                    return response()->json([
+                        "success" => "true"
+                    ]);
                 }
             }
         }//haydra: we dont need to check if we have enough of the item right da boys at front end are goin to do it ?
@@ -124,6 +131,7 @@ class CartController extends Controller
                 'user_id' => $user->id,
                 'isAccepted' => 0,
             ]);
+            $order->save();
             $user->cart = json_encode(null, true);
             $user->save();
 

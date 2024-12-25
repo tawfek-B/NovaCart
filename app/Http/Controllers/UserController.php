@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+
+    public function gett(Request $request) {
+        dd(Auth::id());
+    }
     public function changeLogo(Request $request)
     {
         $user = Auth::user();//we didnt use the token before, fixed it
@@ -18,6 +22,7 @@ class UserController extends Controller
         ]);
         $newLogo = $request->input('newLogo');
         $user->logo = $newLogo;
+        $user->save();
         return response()->json([
             $user
         ]);
@@ -34,10 +39,12 @@ class UserController extends Controller
             $user->password = Hash::make($newPassword);
             $user->save();
 
-            return response()->json(['message' => 'Password updated successfully']);
+            return response()->json(['success' => 'true']);
             }
         else {
-            echo($oldPassword);
+            return response()->json([
+                'success' => "false",
+            ]);
         }
     }
 
@@ -50,7 +57,6 @@ class UserController extends Controller
     {
         $users = User::all();
         return response()->json([
-            'message' => 'yes',
             'data' => $users,
         ]);
     }
