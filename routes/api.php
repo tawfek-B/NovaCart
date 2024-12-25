@@ -6,9 +6,11 @@ use App\Http\Controllers\StoreController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Artisan;
 
 
 Route::get('/user', function (Request $request) {
@@ -46,6 +48,18 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/changepassword', [UserController::class, 'changePassword']);
     Route::get('/getUser', [UserController::class, 'fetch']);
     Route::get('/getUsers', [UserController::class, 'getUsers']);
+
+
+    Route::get('/getOrder', [OrderController::class, 'fetch']);
+
+
+    //i just want you to add these functions, one that returns the order(the whole model, not just the 'content' variable), another functions that returns ALL of the orders
+    //one that turns isAccepted true only when a user that is isDriver accepts the delivery (maybe add a driver_id variable to the Order model?)
+
+
+    Route::post('/notif', function() {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
+        Artisan::call('app:update-notifications');
+    });
 
     Route::post('/logout', [SessionController::class, 'logout']);
 });
