@@ -20,9 +20,12 @@ return new class extends Migration
             $table->integer('number')->unique();
             $table->boolean('admin');
             $table->string('email')->unique();
+            $table->string('notifications')->nullable();
             $table->string('password');
             $table->string('logo');
             $table->string('location');
+            $table->boolean('isAccepted')->nullable();
+            $table->boolean('isDriver')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->json('cart')->nullable();
