@@ -76,9 +76,9 @@ class SessionController extends Controller
         'number' => 'required|string|unique:users,number',
         'password' => 'required|string',
     ], [
-        'email.unique' => 'The email is already in use.',
-        'userName.unique' => 'The username is already in use.',
-        'number.unique' => 'The phone number is already in use.',
+        'email.unique' => 'alreadyUsed',
+        'userName.unique' => 'alreadyUsed',
+        'number.unique' => 'alreadyUsed',
     ]);//this will check if these are unique or already in use by other users
     //we return each one that wasn't unique so the frontend can highlight all the fields that are already in use
 
@@ -100,6 +100,7 @@ class SessionController extends Controller
         ]);
 
             $user = User::create($userAttributes);
+            $user ->isDriver = 0;
 
         //made it so the user is logged in after signing up... makes sense
         $token = $user->createToken('API Token Of' . $user->name)->plainTextToken;
@@ -112,7 +113,10 @@ class SessionController extends Controller
 
     public function logout(Request $request)
     {
-        $request->user()->currentAccessToken()->delete();
+        Auth::user()->remember_token = null;
+        Auth::user()->save();//did this because the token didn't get deleted from the database when logging out before
+        Auth::user()->currentAccessToken()->delete();
+
 
         return response()->json(['msg' => 'kicked out by dasdqw clan leader']);
     }

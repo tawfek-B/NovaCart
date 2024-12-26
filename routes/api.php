@@ -67,17 +67,18 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
 
 
-    Route::get('/gettt', function () {
-        return response()->json(["user" => auth()->user()]);
+    Route::post('/notif', function () {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
+        Artisan::call('app:update-notifications', ['userID' => Auth::id()]);
     });
+
+    // Route::get('/gettt', function () {
+    //     return response()->json(["user" => auth()->user()]);
+    // });
+
     //haydra: for some reason its tellin me there is no auth users althought i am authed and i can do other shit that requirse a token  can u plz use the url above this /gettt to check if its returning null or anuthin else
     //tawfek: because you had the method OUTSIDE THE FUCKING PROTECTED ROUTES GROUP!
 
     Route::post('/logout', [SessionController::class, 'logout']);
-});
-
-Route::post('/notif', function () {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
-    Artisan::call('app:update-notifications');
 });
 
 

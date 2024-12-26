@@ -19,6 +19,20 @@ class DatabaseSeeder extends Seeder
         User::factory(10)->create();
         $this->call(StoreSeeder::class);
 
+        User::create([
+            'firstname' => 'hi',
+            'lastname' => fake()->lastName(),
+            'userName' => fake()->name(),
+            'number' => 12345678,
+            'admin' => false,
+            'email' => fake()->unique()->safeEmail(),
+            'password' => '12345678',
+            'email_verified_at' => now(),
+            'logo' => fake()->imageUrl(),
+            'location' => fake()->streetAddress(),
+            'isAccepted' => 0,
+            'isDriver' => 1,
+        ]);
         foreach(User::all() as $user) {//this iterates through all the users to check which one is a driver to create an instance of the Driver model
             if($user->isDriver) {
                 Driver::factory()->create([
@@ -29,19 +43,5 @@ class DatabaseSeeder extends Seeder
                 ]);
             }
         }
-        User::create([
-            'firstname' => 'hi',
-            'lastname' => fake()->lastName(),
-            'userName' => fake()->name(),
-            'number' => fake()->phoneNumber(),
-            'admin' => false,
-            'email' => fake()->unique()->safeEmail(),
-            'password' => '12345678',
-            'email_verified_at' => now(),
-            'logo' => fake()->imageUrl(),
-            'location' => fake()->streetAddress(),
-            'isAccepted' => 0,
-            'isDriver' => 0,
-        ]);
     }
 }

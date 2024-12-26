@@ -11,9 +11,18 @@ use Illuminate\Support\Facades\Session;
 
 class DriverController extends Controller
 {
-    public function makeDelivery(Request $request)
+    public function makeDelivery(Request $request, User $user)
     {
-        $deliveryUser = User::find(6);//test
+        if(is_null(Order::where('id', $request->input('orderID'))->first())) {
+            return null;
+        }
+        // dd($user->isDriver);
+        if(($user->isDriver) == 0) {
+            return response()->json([
+                'success' => 'false',
+            ]);
+        }
+        $deliveryUser = Auth::user();//test
         $driver = Driver::where('user_id', $deliveryUser->id)->first();
         if ($deliveryUser) {
             $driver->isDelivering = true;
@@ -27,14 +36,24 @@ class DriverController extends Controller
     }
 
     public function finishedDelivery(Request $request) {
-        $deliveryUser = User::find(6);//test
+        if(is_null(Order::where('id', $request->input('orderID'))->first())) {
+            return null;
+        }
+        $deliveryUser = auth()->user();//test
+        if(!($deliveryUser->isDriver)) {
+            return response()->json([
+                'success' => 'false',
+            ]);
+        }
         $driver = Driver::where('user_id', $deliveryUser->id)->first();
         if ($deliveryUser) {
             $driver->isDelivering = false;
             $driver->save();
             $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
             $user->isAccepted = false;
+            $user->notifications = 'delivered';
             $user->save();
+            return 1;
         } else {
             echo "No isDelivering found to be false";
         }

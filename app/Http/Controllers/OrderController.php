@@ -11,7 +11,7 @@ class OrderController extends Controller
 {
     public function fetch(Request $request)
     {
-        return $order = Order::where('id', 1)->first();
+        return $order = Order::where('id', $request->input('orderID'))->first();
     }
 
     public function fetchAll(Request $request)
@@ -21,7 +21,13 @@ class OrderController extends Controller
 
     public function accept(Request $request)
     {
-        if (User::where('id', 6)->first()->isDriver == true) {//test
+
+        if(is_null($order = Order::where('id', $request->input('orderID'))->first())) {
+            return response()->json([
+                'success' => 'false',
+            ]);
+        }
+        if (Auth::user()->isDriver == true) {//test
             $order = Order::where('id', $request->input('orderID'))->first();
             $user = User::where('id', $order->user_id)->first();
             $user -> isAccepted = true;
@@ -29,6 +35,10 @@ class OrderController extends Controller
             $user->save();
             $order->save();
         }
+    }
+
+    public function deliveredOrder(Request $request) {//might make some changes here so the user notification will turn into delivered. since the driver will click on a button to confirm the delivery has been.... delivered
+
     }
 
     public function delete(Request $request) {

@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DriverController;
+use Illuminate\Support\Facades\Artisan;
 
 
 class CartController extends Controller
@@ -30,7 +31,7 @@ class CartController extends Controller
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
                     $item['quantity'] = $request->input('quantity');
-                    if($cart[$index]['quantity']+$request->input('quantity') > Product::where('id', $productId)->first()) {
+                    if($cart[$index]['quantity']+$request->input('quantity') > Product::where('id', $productId)->first()->quantity) {
                         return response()->json([
                             "success" => "false"
                         ]);//added this just in case the user orders an extra amount of a product, but they ordered more than what's available
@@ -39,9 +40,6 @@ class CartController extends Controller
                     $user->cart = json_encode($cart);
                     $user->save();
 
-                    return response()->json([
-                        "success" => "true"
-                    ]);
                 }
             }
         }//haydra: we dont need to check if we have enough of the item right da boys at front end are goin to do it ?
@@ -55,6 +53,9 @@ class CartController extends Controller
         $cart[] = $newItem;
         $user->cart = $cart;
         $user->save();
+        return response()->json([
+            "success" => "true"
+        ]);
     }
     public function update(Request $request)
     {
@@ -70,7 +71,9 @@ class CartController extends Controller
                     $user->cart = json_encode($cart);
                     $user->save();
 
-                    return;
+                    return response()->json([
+                        'success' => 'true'
+                    ]);
                 }
             }
         }
@@ -133,6 +136,7 @@ class CartController extends Controller
             ]);
             $order->save();
             $user->cart = json_encode(null, true);
+            $user->notifications = 'pending';
             $user->save();
 
             // foreach ($cart as $product) {
@@ -142,7 +146,8 @@ class CartController extends Controller
 
             // }
 
-            return response()->json(['msg' => 'worked'], 200);
+            //to pending after confirming his purchase
+            return response()->json(['success' => 'true'], 200);
 
         }
 

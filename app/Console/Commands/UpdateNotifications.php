@@ -17,7 +17,7 @@ class UpdateNotifications extends Command
      *
      * @var string
      */
-    protected $signature = 'app:update-notifications';
+    protected $signature = 'app:update-notifications {userID}';
 
     /**
      * The console command description.
@@ -31,13 +31,37 @@ class UpdateNotifications extends Command
      */
     public function handle(Request $request)
     {
+        $userID = $this->argument('userID');
+        $driver = User::find($userID);
         //// Get the user (assumed to be logged in or authenticated)
         // $user = Auth::user();
-        $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
-        // $user = Auth::user();
-        if ($user) {
+
+        // $user = User::where('notifications', 'delivered')->first();
+        //     if ($user -> notifications=="delivered") {
+        //         $user->notifications = null;
+        //         $user->save();
+
+        //         return null;
+        //     }
+
+        foreach(User::all() as $temp) {
+            if($temp->notifications=='delivered') {
+                $temp->notifications = null;
+                $temp->save();
+                return null;
+            }
+        }
+        if(is_null(Order::where('id', $request->input('orderID')))) {
+           return;
+        }
+        if($driver->isDriver==0) {
+            echo(' \'success\': \'false\'');
+        }
+        else {
+        if ($driver) {
+            $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
             $OC = new OrderController();
-            echo ('loop');
+            // echo ('loop');
             // Array of notification statuses in the desired order
             $notifications = [null, 'pending', 'accepted', 'delivering', 'delivered'];
 
@@ -47,23 +71,29 @@ class UpdateNotifications extends Command
             $currentIndex = array_search($currentNotification, $notifications);
 
             if ($currentIndex == 1) {
-                echo(' is delivering');
+                // echo(' is delivering');
                 $OC->accept($request);
                 $DriverController = new DriverController();
-                $DriverController->makeDelivery($request);
+                if(is_null($DriverController->makeDelivery($request, $driver))) {
+                    echo(' \'success\': \'true\'
+                    status: accepted');
+                }
             }
 
-            if ($currentIndex == 4) {
-                echo(' has been delivered');
+            else if ($currentIndex == 3) {
+                // echo(' has been delivered');
                 $DriverController = new DriverController();
-                $DriverController->finishedDelivery($request);
-                $user->notifications = null;
-                $user->save();
-                $OC->delete($request);
+                if(is_null($DriverController->finishedDelivery($request))) {
+                    echo(' \'success\': \'false\'');
+                }
+                else {
+                    $user->save();
+                    $OC->delete($request);
+                }
 
-                response()->json([
-                    'success' => "false",
-                ]);//for some reason, using return with this results in "Object of class Illuminate\Http\JsonResponse could not be converted to int" error
+
+                // echo(' \'success\': \'false\'');
+                //for some reason, using return with this results in "Object of class Illuminate\Http\JsonResponse could not be converted to int" error
                 return;
             }
             // Set the new notification status
@@ -75,5 +105,6 @@ class UpdateNotifications extends Command
         } else {
             echo ('No authenticated user found.');
         }
+    }
     }
 }
