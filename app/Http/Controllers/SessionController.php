@@ -132,8 +132,9 @@ class SessionController extends Controller
             $password = 'password' => ['required'],
         ]);
 
-            $user = User::create($userAttributes);
-            $user ->isDriver = 0;
+        $user = User::create($userAttributes);
+        $user -> isDriver = 0;
+        $user -> isAccepted = 0;
 
         //made it so the user is logged in after signing up... makes sense
         $token = $user->createToken('API Token Of' . $user->name)->plainTextToken;

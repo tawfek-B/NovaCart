@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
+use App\Models\Store;
 
 class ProductController extends Controller
 {
@@ -69,5 +70,19 @@ class ProductController extends Controller
     }
     public function fetch(Request $request) {
         return Product::where('id', $request->input('productID'))->first();
+    }
+
+    public function fetchAllProducts() {
+        return Product::all();
+    }
+    public function fetchStoreProducts(Request $request) {
+        $products = [];
+        $store = Store::where('id', $request->input('storeID'))->first();
+        foreach(Product::all() as $product) {
+            if($product->store_id==$store->id) {
+                $products[] = $product;
+            }
+        }
+        return $products;//do we have to encode this?
     }
 }

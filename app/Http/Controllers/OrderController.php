@@ -14,6 +14,15 @@ class OrderController extends Controller
         return $order = Order::where('id', $request->input('orderID'))->first();
     }
 
+    public function fetchID(Request $request) {//sends the id of the order made by the current user and that isAccepted
+        $userID = Auth::id();
+        foreach(Order::all() as $order) {
+            if($order->user_id == $userID && $order->isAccepted) {
+                return $order->id;
+            }
+        }
+    }
+
     public function fetchAll(Request $request)
     {
         return Order::all();

@@ -7,6 +7,7 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\DriverController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -30,36 +31,40 @@ Route::post('/login', [SessionController::class, 'login']);
 //Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
+    Route::get('/getcart', [CartController::class, 'fetch']);
     Route::post('/additem', [CartController::class, 'addItem']);
     Route::put('/updateorder', [CartController::class, 'update']);
-    Route::delete('/deletefcart', [CartController::class, 'delete']);
-    Route::delete('/deletecart', [CartController::class, 'deleteCart']);
     Route::put('/itemspurchased', [CartController::class, 'itemsPurchased']);
-    Route::get('/getcart', [CartController::class, 'fetch']);
+    Route::delete('/deletecartelement', [CartController::class, 'delete']);
+    Route::delete('/deletecart', [CartController::class, 'deleteCart']);
     //we have to add a method that buys the products for the user, causing the "quantity" in each of the products to decrease and remove the contents
     //of the "cart" for the user, maybe save the content somewhere else for a log or for the driver bullshit
     //haydra:did it, should be good now
     //tawfek: Nice!
 
-    Route::post('/addstore', [StoreController::class, 'create']);
-    Route::put('/updatestore', [StoreController::class, 'update']);
     Route::get('/getstore', [StoreController::class, 'fetch']);
+    Route::get('getallstores', [StoreController::class, 'fetchAll']);
 
-    Route::post('/addproduct', [ProductController::class, 'create']);
-    Route::put('/updateproduct', [ProductController::class, 'update']);
     Route::get('/getproduct', [ProductController::class, 'fetch']);
+    Route::get('/getallproducts', [ProductController::class, 'fetchAllProducts']);//don't think we need this, but might as well have it
+    Route::get('/getstoreproducts', [ProductController::class, 'fetchStoreProducts']);//this returns all products of a certain store
 
-    Route::put('/changelogo', [UserController::class, 'changeLogo']);
-    Route::post('/changepassword', [UserController::class, 'changePassword']);
     Route::get('/getuser', [UserController::class, 'fetch']);
     Route::get('/getusers', [UserController::class, 'getUsers']);
     Route::get('/getfavs', [UserController::class, 'getfavs']);
+    Route::post('/changepassword', [UserController::class, 'changePassword']);
     Route::post('/modifyfavs', [UserController::class, 'modifyFavs']);
+    Route::put('/changelogo', [UserController::class, 'changeLogo']);
 
 
     Route::get('/getorder', [OrderController::class, 'fetch']);
+    Route::get('/getorderid', [OrderController::class, 'fetchID']);
     Route::get('/getallorders', [OrderController::class, 'fetchAll']);
     Route::delete('/deleteorder', [OrderController::class, 'delete']);
+
+    Route::get('/getdriverbydriver', [DriverController::class, 'fetchByDriverID']);//whenever the notif turns to accepted, we use this
+    //to show the user who the driver is.   That's why i asked you to add a driver_id to the order
+    Route::get('/getdriverbyuser', [DriverController::class, 'fetchByUserID']);
 
 
     //i just want you to add these functions, one that returns the order(the whole model, not just the 'content' variable), another functions that returns ALL of the orders haydra: bro dats like 2 lines of code gimme somethin harder (like ur pepe maybe UwU)

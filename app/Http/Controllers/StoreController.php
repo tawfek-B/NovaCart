@@ -61,4 +61,8 @@ class StoreController extends Controller
         return Store::where('id', $request->input('storeID'))->first();
     }
 
+    public function fetchAll() {
+        return Store::all();
+    }
+
 }

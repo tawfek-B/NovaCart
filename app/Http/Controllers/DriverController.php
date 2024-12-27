@@ -11,6 +11,13 @@ use Illuminate\Support\Facades\Session;
 
 class DriverController extends Controller
 {
+
+    public function fetchByDriverID(Request $request) {
+        return Driver::where('id', $request->input('driverID'))->first();
+    }
+    public function fetchByUserID(Request $request) {
+        return Driver::where('user_id', $request->input('driverID'))->first();
+    }
     public function makeDelivery(Request $request, User $user)
     {
         if(is_null(Order::where('id', $request->input('orderID'))->first())) {
@@ -25,6 +32,9 @@ class DriverController extends Controller
         $deliveryUser = Auth::user();//test
         $driver = Driver::where('user_id', $deliveryUser->id)->first();
         if ($deliveryUser) {
+            $order = Order::where('id', $request->input('orderID'))->first();
+            $order->driver_id = $deliveryUser->id;
+            $order->save();
             $driver->isDelivering = true;
             $driver->save();
             $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
@@ -39,7 +49,7 @@ class DriverController extends Controller
         if(is_null(Order::where('id', $request->input('orderID'))->first())) {
             return null;
         }
-        $deliveryUser = auth()->user();//test
+        $deliveryUser = User::where('id', Order::where('id', $request->input('orderID'))->first()->driver_id)->first();//test
         if(!($deliveryUser->isDriver)) {
             return response()->json([
                 'success' => 'false',
