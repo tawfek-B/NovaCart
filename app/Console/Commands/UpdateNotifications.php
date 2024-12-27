@@ -44,67 +44,63 @@ class UpdateNotifications extends Command
         //         return null;
         //     }
 
-        foreach(User::all() as $temp) {
-            if($temp->notifications=='delivered') {
+        foreach (User::all() as $temp) {
+            if ($temp->notifications == 'delivered') {
                 $temp->notifications = null;
                 $temp->save();
                 return null;
             }
         }
-        if(is_null(Order::where('id', $request->input('orderID')))) {
-           return;
+        if (is_null(Order::where('id', $request->input('orderID')))) {
+            return;
         }
-        if($driver->isDriver==0) {
-            echo(' \'success\': \'false\'');
-        }
-        else {
-        if ($driver) {
-            $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
-            $OC = new OrderController();
-            // echo ('loop');
-            // Array of notification statuses in the desired order
-            $notifications = [null, 'pending', 'accepted', 'delivering', 'delivered'];
-
-            // Logic to cycle through the notifications
-            // Get the current notification and find its index
-            $currentNotification = $user->notifications;
-            $currentIndex = array_search($currentNotification, $notifications);
-
-            if ($currentIndex == 1) {
-                // echo(' is delivering');
-                $OC->accept($request);
-                $DriverController = new DriverController();
-                if(is_null($DriverController->makeDelivery($request, $driver))) {
-                    echo(' \'success\': \'true\'
-                    status: accepted');
-                }
-            }
-
-            else if ($currentIndex == 3) {
-                // echo(' has been delivered');
-                $DriverController = new DriverController();
-                if(is_null($DriverController->finishedDelivery($request))) {
-                    echo(' \'success\': \'false\'');
-                }
-                else {
-                    $user->save();
-                    $OC->delete($request);
-                }
-
-
-                // echo(' \'success\': \'false\'');
-                //for some reason, using return with this results in "Object of class Illuminate\Http\JsonResponse could not be converted to int" error
-                return;
-            }
-            // Set the new notification status
-            $currentIndex++;
-            $user->notifications = $notifications[$currentIndex]; // Move to the next status
-            $user->save();
-
-            $this->info('User notifications updated to ' . $user->notifications);
+        if ($driver->isDriver == 0) {
+            echo (' \'success\': \'false\'');
         } else {
-            echo ('No authenticated user found.');
+            if ($driver) {
+                $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
+                $OC = new OrderController();
+                // echo ('loop');
+                // Array of notification statuses in the desired order
+                $notifications = [null, 'pending', 'accepted', 'delivering', 'delivered'];
+
+                // Logic to cycle through the notifications
+                // Get the current notification and find its index
+                $currentNotification = $user->notifications;
+                $currentIndex = array_search($currentNotification, $notifications);
+
+                if ($currentIndex == 1) {
+                    // echo(' is delivering');
+                    $OC->accept($request);
+                    $DriverController = new DriverController();
+                    if (is_null($DriverController->makeDelivery($request, $driver))) {
+                        echo (' \'success\': \'true\'
+                    status: accepted');
+                    }
+                } else if ($currentIndex == 3) {
+                    // echo(' has been delivered');
+                    $DriverController = new DriverController();
+                    if (is_null($DriverController->finishedDelivery($request))) {
+                        echo (' \'success\': \'false\'');
+                    } else {
+                        $user->save();
+                        $OC->delete($request);
+                    }
+
+
+                    // echo(' \'success\': \'false\'');
+                    //for some reason, using return with this results in "Object of class Illuminate\Http\JsonResponse could not be converted to int" error
+                    return;
+                }
+                // Set the new notification status
+                $currentIndex++;
+                $user->notifications = $notifications[$currentIndex]; // Move to the next status
+                $user->save();
+
+                $this->info('User notifications updated to ' . $user->notifications);
+            } else {
+                echo ('No authenticated user found.');
+            }
         }
-    }
     }
 }
