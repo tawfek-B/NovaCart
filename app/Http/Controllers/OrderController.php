@@ -18,7 +18,9 @@ class OrderController extends Controller
         $userID = Auth::id();
         foreach(Order::all() as $order) {
             if($order->user_id == $userID && $order->isAccepted) {
-                return $order->id;
+                return response()->json([
+                    'order_id' => $order->id,
+                ]);
             }
         }
     }
@@ -67,6 +69,9 @@ class OrderController extends Controller
         foreach ($orders as $index => $order) {
             $order->update(['id' => $index + 1]);
         }
+        return response()->json([
+            'success' => 'true',
+        ]);
 
         // $order->isAccepted = false;
         // $order->save();

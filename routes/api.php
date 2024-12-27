@@ -43,7 +43,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     //tawfek: Nice!
 
     Route::get('/getstore', [StoreController::class, 'fetch']);
-    Route::get('/getallstores', [StoreController::class, 'fetchAll']);
+    Route::get('/getallstores', action: [StoreController::class, 'fetchAll']);
 
     Route::get('/getproduct', [ProductController::class, 'fetch']);
     Route::get('/getallproducts', [ProductController::class, 'fetchAllProducts']);//don't think we need this, but might as well have it
@@ -52,8 +52,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/getuser', [UserController::class, 'fetch']);
     Route::get('/getusers', [UserController::class, 'getUsers']);
     Route::get('/getfavs', [UserController::class, 'getfavs']);
-    Route::put('/modifyfavs', [UserController::class, 'modifyFavs']);
-    Route::put('/changepassword', [UserController::class, 'changePassword']);
+    Route::post('/changepassword', [UserController::class, 'changePassword']);
+    Route::post('/modifyfavs', [UserController::class, 'modifyFavs']);
     Route::put('/changelogo', [UserController::class, 'changeLogo']);
 
 

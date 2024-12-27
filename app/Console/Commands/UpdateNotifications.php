@@ -96,8 +96,6 @@ class UpdateNotifications extends Command
                 echo ('\'success\': \'false\'');
                 return;
             }
-            //1|0Yhcgi1a8eN3st8uCIhY5xCy4leFzAVxOmy9YMfM1702dca4    user
-            //2|KscLK4jDPry164AmW2FCqtyEP9Hws3DJXeRYDenV137ed034    driver
             if ($userOrDriver) {
                 $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
                 $OC = new OrderController();

@@ -109,7 +109,9 @@ class CartController extends Controller
             $user->cart = json_encode($cart);
             $user->save();
         }
-        return response()->json(['data' => $cart]);
+        return response()->json([
+            'success' => 'true',
+        ]);
     }
 
     public function deleteCart(Request $request)
@@ -169,6 +171,6 @@ class CartController extends Controller
     public function fetch()
     {
         $user = Auth::user();
-        return $user->cart;
+        return json_decode($user->cart);
     }
 }

@@ -25,7 +25,7 @@ class UserController extends Controller
         $user->logo = $newLogo;
         $user->save();
         return response()->json([
-            $user
+            'success' => 'true',
         ]);
     }
     public function changePassword(Request $request)
@@ -66,7 +66,7 @@ class UserController extends Controller
     public function getfavs()
     {
         return response()->json([
-            'data' => Auth::user()->favourites,
+            'favourites'=>json_decode(Auth::user()->favourites),
         ]);
     }
 
@@ -87,7 +87,9 @@ class UserController extends Controller
                     $favourites = array_filter($favourites, fn($item) => $item['product_id'] != $request->input('product_id'));
                     $user->favourites = json_encode($favourites);
                     $user->save();
-                    return;//you forgot this
+                    return response() -> json([
+                        'success' => 'true',
+                    ]);//you forgot this
                 }
             }
         }

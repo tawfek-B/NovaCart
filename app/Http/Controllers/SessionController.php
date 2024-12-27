@@ -152,6 +152,9 @@ class SessionController extends Controller
         Auth::user()->currentAccessToken()->delete();
 
 
-        return response()->json(['msg' => 'kicked out by dasdqw clan leader']);
+        return response() -> json([
+            'success' => 'true',
+        ]);
+        // return response()->json(['msg' => 'kicked out by dasdqw clan leader']);  //as fun as this message is, it has to go
     }
 }
