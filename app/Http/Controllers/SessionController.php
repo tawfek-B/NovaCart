@@ -42,9 +42,42 @@ class SessionController extends Controller
                 'user' => $user,
             ]);
         } else {
-            return response()->json([
-                'success' => "false", //You're still an idiot
-            ]);
+            $isFound = false;
+            $isMatching = false;
+            foreach(User::all() as $user) {
+                if($user->number == $request->input('number') && $request->input('email')!=null && $user->email == $request->input('email')) {
+                    $isFound = true;
+                    $isMatching = true;
+                    break;
+                }
+                else if($user->number == $request->input('number')  && $request->input('email')!=null && $user->email != $request->input('email')) {
+                    $isFound = true;
+                    break;
+                }
+                else if($user->number == $request->input('number')  && $request->input('email')==null) {
+                    $isFound = true;
+                    $isMatching = true;
+                    break;
+                }
+            }//this basically goes through all of the database to first check for the number
+            if($isFound && $isMatching) {
+                return response()->json([
+                    'success' => "false", //You're still an idiot
+                    'reason' => "wrongPassword",
+                ]);
+            }
+            else if($isFound) {
+                return response()->json([
+                    'success' => "false", //You're still an idiot
+                    'reason' => "wrongEmail",
+                ]);
+            }
+            else {
+                return response()->json([
+                    'success' => "false", //You're still an idiot
+                    'reason' => "wrongNumber",
+                ]);
+            }
         }
 
         // if (! $user || ! Hash::check($request->password, $user->password)) {
@@ -108,7 +141,7 @@ class SessionController extends Controller
         $user->save();
 
         Auth::login($user);
-        return response()->json(['success' => 'true','token' =>$token, 'data' => $userAttributes]);//we return a "success" field so the frontend can see if the sign up process failed or not
+        return response()->json(['success' => 'true','token' =>$token, 'user' => $user]);//we return a "success" field so the frontend can see if the sign up process failed or not
     }
 
     public function logout(Request $request)

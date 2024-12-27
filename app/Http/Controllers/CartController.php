@@ -39,6 +39,9 @@ class CartController extends Controller
                     $cart[$index]['quantity'] += $request->input('quantity');
                     $user->cart = json_encode($cart);
                     $user->save();
+                    return response()->json([
+                        'success' => "true",
+                    ]);
 
                 }
             }
@@ -79,6 +82,10 @@ class CartController extends Controller
         }
     }
 
+
+    // $favourites = array_filter($favourites, fn($item) => $item['product_id'] != $request->input('product_id'));
+    // $user->favourites = json_encode($favourites);
+
     public function delete(Request $request)
     {
         $user = Auth::user();
@@ -88,7 +95,9 @@ class CartController extends Controller
         if (!is_null($cart)) {
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
-                    unset($cart[$index]);
+                    $cart = array_filter($cart, fn($item) => $item['product_id'] != $request->input('product_id'));
+                    $user->cart = $cart;
+                    $user->save();
                     break;
                     // $user->cart = json_encode($cart);
                     // $user->save();
@@ -126,7 +135,7 @@ class CartController extends Controller
                     if ($counter != 1) {
                         $prod = $value;
                     } else {
-                        $dbProd = Product::where('id', operator: $prod)->first();
+                        $dbProd = Product::where('id', $prod)->first();
                         $dbProd->quantity -= $value;
                         $dbProd->save();
                     }

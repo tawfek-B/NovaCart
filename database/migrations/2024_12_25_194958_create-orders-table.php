@@ -14,7 +14,8 @@ return new class extends Migration {
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
-            $table->foreignIdFor(Driver::class);
+            $table->json('content');//why in the hell did you remove this?!
+            $table->foreignIdFor(Driver::class)->nullable();//because the API will wait for a driver to confirm the delivery proccess
             //haydra: tbh i didnot understand why u need this but i added it anyway
             /*
              i want you to find a way to make it so the id resets for the orders after deleting one of them, for example if we have orders with

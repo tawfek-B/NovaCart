@@ -70,7 +70,7 @@ class UserController extends Controller
         ]);
     }
 
-    public function addfavs(Request $request)
+    public function modifyFavs(Request $request)
     {
 
         if (!is_int($request->input('product_id'))) {
@@ -84,8 +84,10 @@ class UserController extends Controller
         if (!is_null($favourites)) {
             foreach ($favourites as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
+                    $favourites = array_filter($favourites, fn($item) => $item['product_id'] != $request->input('product_id'));
                     $user->favourites = json_encode($favourites);
                     $user->save();
+                    return;//you forgot this
                 }
             }
         }

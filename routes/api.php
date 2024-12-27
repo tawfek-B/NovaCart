@@ -54,7 +54,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/getuser', [UserController::class, 'fetch']);
     Route::get('/getusers', [UserController::class, 'getUsers']);
     Route::get('/getfavs', [UserController::class, 'getfavs']);
-    Route::post('/addfavs', [UserController::class, 'addfavs']);
+    Route::post('/modifyfavs', [UserController::class, 'modifyFavs']);
 
 
     Route::get('/getorder', [OrderController::class, 'fetch']);
