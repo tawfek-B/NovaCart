@@ -32,7 +32,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
     Route::post('/additem', [CartController::class, 'addItem']);
     Route::put('/updateorder', [CartController::class, 'update']);
-    Route::delete('/deleteorder', [CartController::class, 'delete']);
+    Route::delete('/deletefcart', [CartController::class, 'delete']);
     Route::delete('/deletecart', [CartController::class, 'deleteCart']);
     Route::put('/itemspurchased', [CartController::class, 'itemsPurchased']);
     Route::get('/getcart', [CartController::class, 'fetch']);
@@ -53,10 +53,11 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/changepassword', [UserController::class, 'changePassword']);
     Route::get('/getuser', [UserController::class, 'fetch']);
     Route::get('/getusers', [UserController::class, 'getUsers']);
+    Route::get('/getfavs', [UserController::class, 'getfavs']);
+    Route::post('/addfavs', [UserController::class, 'addfavs']);
 
 
     Route::get('/getorder', [OrderController::class, 'fetch']);
-    Route::get('/getallorders', [OrderController::class, 'fetchAll']);
     Route::get('/getallorders', [OrderController::class, 'fetchAll']);
     Route::delete('/deleteorder', [OrderController::class, 'delete']);
 

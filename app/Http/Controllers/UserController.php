@@ -10,7 +10,8 @@ use Illuminate\Support\Facades\Hash;
 class UserController extends Controller
 {
 
-    public function gett(Request $request) {
+    public function gett(Request $request)
+    {
         dd(Auth::id());
     }
     public function changeLogo(Request $request)
@@ -27,7 +28,8 @@ class UserController extends Controller
             $user
         ]);
     }
-    public function changePassword(Request $request) {
+    public function changePassword(Request $request)
+    {
         $request->validate([
             'oldPassword' => 'required',
             'newPassword' => 'required'
@@ -35,20 +37,20 @@ class UserController extends Controller
         $oldPassword = $request->input('oldPassword');
         $newPassword = $request->input('newPassword');
         $user = Auth::user();
-        if(Hash::check($oldPassword, $user->password)) {
+        if (Hash::check($oldPassword, $user->password)) {
             $user->password = Hash::make($newPassword);
             $user->save();
 
             return response()->json(['success' => 'true']);
-            }
-        else {
+        } else {
             return response()->json([
                 'success' => "false",
             ]);
         }
     }
 
-    public function fetch() {
+    public function fetch()
+    {
         return Auth::user();
     }
 
@@ -60,4 +62,42 @@ class UserController extends Controller
             'data' => $users,
         ]);
     }
+
+    public function getfavs()
+    {
+        return response()->json([
+            'data' => Auth::user()->favourites,
+        ]);
+    }
+
+    public function addfavs(Request $request)
+    {
+
+        if (!is_int($request->input('product_id'))) {
+            return response()->json([
+                'message' => 'Product not found'
+            ], 400);
+        }
+        $user = Auth::user();
+        $productId = $request->input('product_id');
+        $favourites = json_decode($user->favourites, true);
+        if (!is_null($favourites)) {
+            foreach ($favourites as $index => $item) {
+                if ($item['product_id'] == $request->input('product_id')) {
+                    $user->favourites = json_encode($favourites);
+                    $user->save();
+                }
+            }
+        }
+        $newItem = [
+            'product_id' => $productId,
+        ];
+        $favourites[] = $newItem;
+        $user->favourites = $favourites;
+        $user->save();
+        return response()->json([
+            "success" => "true"
+        ]);
+    }
+
 }

@@ -21,7 +21,6 @@ class OrderController extends Controller
 
     public function accept(Request $request)
     {
-
         if (is_null($order = Order::where('id', $request->input('orderID'))->first())) {
             return response()->json([
                 'success' => 'false',
@@ -35,6 +34,8 @@ class OrderController extends Controller
             $user->save();
             $order->save();
         }
+
+
     }
 
     public function deliveredOrder(Request $request)
@@ -52,6 +53,7 @@ class OrderController extends Controller
             $i++;
             $user->save();
         }
+
         $orders = Order::orderBy('id')->get();
         foreach ($orders as $index => $order) {
             $order->update(['id' => $index + 1]);

@@ -12,7 +12,12 @@ class Order extends Model
 
     protected $guarded = [];
 
-    public function user():BelongsTo {
+    public function user(): BelongsTo
+    {
         return $this->belongsTo(User::class);
+    }
+    public function driver()
+    {
+        return $this->belongsTo(Driver::class);
     }
 }

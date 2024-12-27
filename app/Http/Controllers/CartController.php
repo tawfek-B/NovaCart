@@ -31,7 +31,7 @@ class CartController extends Controller
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
                     $item['quantity'] = $request->input('quantity');
-                    if($cart[$index]['quantity']+$request->input('quantity') > Product::where('id', $productId)->first()->quantity) {
+                    if ($cart[$index]['quantity'] + $request->input('quantity') > Product::where('id', $productId)->first()->quantity) {
                         return response()->json([
                             "success" => "false"
                         ]);//added this just in case the user orders an extra amount of a product, but they ordered more than what's available
@@ -89,13 +89,18 @@ class CartController extends Controller
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
                     unset($cart[$index]);
-                    $user->cart = json_encode($cart);
-                    $user->save();
+                    break;
+                    // $user->cart = json_encode($cart);
+                    // $user->save();
 
-                    return;
+                    // return;
                 }
             }
+            $cart = array_values($cart);
+            $user->cart = json_encode($cart);
+            $user->save();
         }
+        return response()->json(['data' => $cart]);
     }
 
     public function deleteCart(Request $request)

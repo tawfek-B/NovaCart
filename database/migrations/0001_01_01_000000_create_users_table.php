@@ -30,6 +30,7 @@ return new class extends Migration {
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->json('cart')->nullable();
+            $table->json('favourites')->nullable();
             $table->timestamps();//for some reason, users can sign up on the same username, even though it's unique. We have to solve that
             //nevermind, im an idiot, we wrote Unique instead of unique in front of userName
             //xD
