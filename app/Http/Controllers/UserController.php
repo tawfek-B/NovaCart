@@ -49,6 +49,27 @@ class UserController extends Controller
         }
     }
 
+    public function changeUserName(Request $request) {
+        $authUser = Auth::user();
+        $userName = $request->input('userName');
+        foreach(User::all() as $user) {
+            if($user->id == Auth::id()) {
+                continue;
+            }
+            if($user->userName == $userName) {
+                return response()->json([
+                    'success' => 'false',
+                ]);
+            }
+        }
+        $authUser->userName = $userName;
+        $authUser->save();
+        return response()->json([
+            'success' => 'true',
+            'user' => $authUser,
+        ]);
+    }
+
     public function fetch()
     {
         return Auth::user();
