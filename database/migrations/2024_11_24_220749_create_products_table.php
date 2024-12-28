@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\Store;
 
 return new class extends Migration
 {
@@ -18,7 +19,7 @@ return new class extends Migration
             $table->text('description');
             $table->string('image');
             $table->integer('quantity');
-            $table->foreignId('store_id')->constrained()->onDelete('cascade');
+            $table->foreignIdFor(Store::class)->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
