@@ -68,6 +68,7 @@ class OrderController extends Controller
         $orders = Order::orderBy('id')->get();
         foreach ($orders as $index => $order) {
             $order->update(['id' => $index + 1]);
+            $order->save();
         }
         return response()->json([
             'success' => 'true',
