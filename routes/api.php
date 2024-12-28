@@ -52,8 +52,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/getuser', [UserController::class, 'fetch']);
     Route::get('/getusers', [UserController::class, 'getUsers']);
     Route::get('/getfavs', [UserController::class, 'getfavs']);
-    Route::post('/changepassword', [UserController::class, 'changePassword']);
     Route::post('/modifyfavs', [UserController::class, 'modifyFavs']);
+    Route::put('/changepassword', [UserController::class, 'changePassword']);
     Route::put('/changelogo', [UserController::class, 'changeLogo']);
 
 
