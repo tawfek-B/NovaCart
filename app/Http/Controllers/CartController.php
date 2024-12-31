@@ -37,6 +37,7 @@ class CartController extends Controller
                         ]);//added this just in case the user orders an extra amount of a product, but they ordered more than what's available
                     }
                     $cart[$index]['quantity'] += $request->input('quantity');
+                    $cart[$index]['price'] = (Product::where('id', $productId)->first()->price)*$cart[$index]['quantity'];
                     $user->cart = json_encode($cart);
                     $user->save();
                     return response()->json([
@@ -52,6 +53,7 @@ class CartController extends Controller
         $newItem = [
             'product_id' => $productId,
             'quantity' => $quantity,
+            'price' => (Product::where('id', $productId)->first()->price)*$quantity,
         ];
         $cart[] = $newItem;
         $user->cart = $cart;
@@ -71,6 +73,7 @@ class CartController extends Controller
                 if ($item['product_id'] == $request->input('product_id')) {
                     $item['quantity'] = $request->input('newQuantity');
                     $cart[$index]['quantity'] = $request->input('newQuantity');
+                    $cart[$index]['price'] = (Product::where('id', $item['product_id'])->first()->price)*$cart[$index]['quantity'];
                     $user->cart = json_encode($cart);
                     $user->save();
 
