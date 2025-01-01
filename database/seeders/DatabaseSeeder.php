@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
             'email' => fake()->unique()->safeEmail(),
             'password' => '12345678',
             'email_verified_at' => now(),
-            'logo' => fake()->imageUrl(),
+            'logo' => 'Users/default.png',
             'location' => fake()->streetAddress(),
             'isAccepted' => 0,
             'isDriver' => 1,

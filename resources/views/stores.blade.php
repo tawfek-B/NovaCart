@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .grid-container {
             display: grid;
@@ -36,10 +37,13 @@
 
         .edit-icon, .delete-icon {
             position: absolute; /* Position relative to the grid-item */
-            font-size: 18px; /* Appropriate size for the icon */
+            font-size: 16px; /* Size for the icon */
             color: #555; /* Default color */
             cursor: pointer; /* Pointer cursor on hover */
             text-decoration: none; /* Remove underline */
+            padding: 5px;
+            border-radius: 50%; /* Circular icon background on hover */
+            background-color: transparent;
         }
 
         .edit-icon {
@@ -77,7 +81,6 @@
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease; /* Smooth transition for color and border */
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
         .add-store:hover {
@@ -101,7 +104,7 @@
     <div>
         <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:250px; height:250px; margin-left:41.5%">
     </div>
-    <div style="font-size: 30px; margin-left: 43.5%; margin-bottom: 5%">
+    <div style="font-family: 'Forte';font-size: 50px; margin-left: 39%; margin-bottom: 2.5%; color:#42FCA9;">
         {{-- i want t change this so it uses "forte regular" font --}}
         STORES PAGE
     </div>
@@ -118,7 +121,7 @@
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     {{$store->name}}
                 </a>
-                <p><img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Store Image" style="width: 150px; height: 150px;"></p>
+                <p><img src="{{ asset($store->image) }}" alt="Store Image" style="width: 150px; height: 150px;"></p>
                 <p style="font-size:smaller"><strong>Description:</strong> {{ $store->description }}</p>
                 <p><strong>Location:</strong> {{ $store->location }}</p>
                 <p><strong>Opens at</strong> {{ $store->openingTime }}</p>

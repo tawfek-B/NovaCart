@@ -41,7 +41,7 @@ class UserFactory extends Factory
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= bcrypt('password'),
             'email_verified_at' => now(),
-            'logo' => fake()->imageUrl(),
+            'logo' => 'Users/default.png',
             'location' => fake()->streetAddress(),
             'notifications' => null,
             'isDriver' => rand(0,1),

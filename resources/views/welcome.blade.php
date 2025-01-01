@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Buttons</title>
@@ -59,14 +60,23 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <a href="stores">
-            <button class="btn stores">Stores</button>
-        </a>
+    <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; margin-top: 20px;">
+        <div>
+            <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:350px; height:350px;margin-left:-10%; margin-bottom:10%;">
+        </div>
+        <div style="font-family: 'Forte'; font-size: 50px; color: #42FCA9;margin-top:-10%;">
+            WHICH ONE WOULD YOU LIKE TO EDIT?
+        </div>
+        <div class="container">
+            <a href="stores">
+                <button class="btn stores">Stores</button>
+            </a>
 
-        <a href="products">
-            <button class="btn products">Products</button>
-        </a>
+            <a href="products">
+                <button class="btn products">Products</button>
+            </a>
+        </div>
     </div>
 </body>
+
 </html>

@@ -5,6 +5,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\StoreController;
+use App\Http\Controllers\ImageController;
 use App\Models\Product;
 
 Route::get('/', function () {
@@ -19,6 +20,10 @@ Route::get('/stores', function() {
 Route::get('/products', function() {
     return view('products');
 });
+// Route::get('/image/{path}', [ImageController::class, 'show'])->where('path', '.*');
+
+Route::get('/image/{path}', [ImageController::class, 'show'])->where('path', '.*');
+
 Route::post('/addstore', [StoreController::class, 'create']);
 Route::put('/updatestore', [StoreController::class, 'update']);
 

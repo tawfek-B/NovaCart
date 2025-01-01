@@ -16,17 +16,26 @@ class UserController extends Controller
     }
     public function changeLogo(Request $request)
     {
-        $user = Auth::user();//we didnt use the token before, fixed it
+        // $user = Auth::user();//we didnt use the token before, fixed it
 
-        $validated = $request->validate([
-            'newLogo' => 'required|string',
-        ]);
-        $newLogo = $request->input('newLogo');
-        $user->logo = $newLogo;
+        // $validated = $request->validate([
+        //     'newLogo' => 'required|string',
+        // ]);
+        // $newLogo = $request->input('newLogo');
+        // $user->logo = $newLogo;
+        // $user->save();
+        // return response()->json([
+        //     'success' => 'true',
+        // ]);
+
+        // dd($request->file('image'));
+        $user = Auth::user();
+        // $request->validate([
+        //     'newLogo' => 'required|image|mimes:jpeg,png,jpg|max:2048',
+        // ]);
+        $path = $request->file('image')->store('Users', 'public');
+        $user->logo = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
         $user->save();
-        return response()->json([
-            'success' => 'true',
-        ]);
     }
     public function changePassword(Request $request)
     {

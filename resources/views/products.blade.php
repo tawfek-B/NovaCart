@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         .grid-container {
@@ -103,7 +104,7 @@
     <div>
         <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:250px; height:250px; margin-left:41.5%">
     </div>
-    <div style="font-size: 30px; margin-left: 42%; margin-bottom: 5%">
+    <div style="font-family: 'Forte';font-size: 50px; margin-left: 37.5%; margin-bottom: 2.5%; color:#42FCA9;">
         {{-- i want t change this so it uses "forte regular" font --}}
         PRODUCTS PAGE
     </div>
