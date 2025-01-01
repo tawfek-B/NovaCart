@@ -135,6 +135,7 @@ class SessionController extends Controller
         $user = User::create($userAttributes);
         $user -> isDriver = 0;
         $user -> isAccepted = 0;
+        $user -> logo = "Users/default.png";
 
         //made it so the user is logged in after signing up... makes sense
         $token = $user->createToken('API Token Of' . $user->name)->plainTextToken;
