@@ -126,6 +126,9 @@ class CartController extends Controller
             $user->cart = json_encode(null, true);
             $user->save();
         }
+        return response()->json([
+            'success' => true,
+        ]);
     }
 
     public function itemsPurchased(Request $request)

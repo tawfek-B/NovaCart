@@ -21,7 +21,7 @@ class StoreController extends Controller
 
         //for some reason, putting 'required' on these causes postman to return a redirection to "novacart.test"
 
-        $storeAttributes =[
+        $storeAttributes = [
             $name = $request->input('name'),
             $openingTime = $request->input('openingTime'),
             $closingTime = $request->input('closingTime'),
@@ -29,8 +29,8 @@ class StoreController extends Controller
         ];
         $store = Store::factory()->create([
             'name' => $name,
-            'opening time' => $openingTime,
-            'closing time' => $closingTime,
+            'openingTime' => $openingTime,
+            'closingTime' => $closingTime,
             'location' => $location,
         ]);
 
@@ -40,8 +40,8 @@ class StoreController extends Controller
 
         $validated = $request->validate(rules: [
             'name' => 'required',
-            'opening time' => 'required',
-            'closing time' => 'required',
+            'openingTime' => 'required',
+            'closingTime' => 'required',
             'location' => 'required',
         ]);
 

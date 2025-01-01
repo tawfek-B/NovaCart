@@ -11,10 +11,6 @@
 
     <form method="POST" action="/register" enctype="multipart/form-data">
         @csrf
-        <input type="text" id="name" name="name" placeholder="NAME">
-
-        <input type="email" id="email" name="email" placeholder="EMAIL">
-
         <input type="number" id="number" name="number" placeholder="NUMBER">
 
         <input type=password id="password" name="password" placeholder="PASSWORD">
@@ -33,7 +29,7 @@
 </div> --}}
 
 
-        <button class="bg-blue-800 rounded py-2 px-6 font-bold">Create Account</button>
+        <button class="bg-blue-800 rounded py-2 px-6 font-bold">Log in</button>
     </form>
 
 </body>

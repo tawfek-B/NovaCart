@@ -8,7 +8,16 @@ use App\Http\Controllers\StoreController;
 use App\Models\Product;
 
 Route::get('/', function () {
+    return view('auth/register');
+});
+Route::get('/welcome', function () {
     return view('welcome');
+});
+Route::get('/stores', function() {
+    return view('stores');
+});
+Route::get('/products', function() {
+    return view('products');
 });
 Route::post('/addstore', [StoreController::class, 'create']);
 Route::put('/updatestore', [StoreController::class, 'update']);
