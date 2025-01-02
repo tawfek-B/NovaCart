@@ -18,9 +18,9 @@ Route::get('/toobad', function () {
     return view('toobad');
 });
 
-// Route::get('/welcome', function () {
-//     return view('welcome');
-// }); 
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 //haydra : changed this to a comment so u cant acsess the welcome page without logging in
 
 Route::get('/stores', function() {
@@ -34,9 +34,19 @@ Route::get('/products', function() {
 
 Route::get('/image/{path}', [ImageController::class, 'show'])->where('path', '.*');
 
+Route::get('/addstore', function() {
+    return view('storesAdd');
+});
 Route::post('/addstore', [StoreController::class, 'create']);
+Route::get('/updatestore/{id}', function($id) {
+    session(['store_id' => $id]);
+    return view('storesUpdate');
+});
 Route::put('/updatestore', [StoreController::class, 'update']);
 
+Route::get('/addproduct', function() {
+    return view('productsAdd');
+});
 Route::post('/addproduct', [ProductController::class, 'create']);
 Route::put('/updateproduct', [ProductController::class, 'update']);//Obviously we're not using these in the app, only in the website
 // Route::get('/register', [UserController::class, 'create']);

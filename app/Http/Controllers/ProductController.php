@@ -30,7 +30,7 @@ class ProductController extends Controller
             $description = $request->input('description'),
             $image = $request->input('image'),
             $quantity = $request->input('quantity'),
-            $storeId = $request->input('storeId')
+            $storeId = $request->input('storeID')
         ];
 
         $product = Product::factory()->create([

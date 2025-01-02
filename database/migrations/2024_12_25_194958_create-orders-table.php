@@ -15,6 +15,9 @@ return new class extends Migration {
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->json('content');//why in the hell did you remove this?!
+            $table->float('totalPrice');
+            $table->float('deliveryFee');
+            $table->string('paymentMethod');
             $table->foreignIdFor(Driver::class)->nullable();//because the API will wait for a driver to confirm the delivery proccess
             //haydra: tbh i didnot understand why u need this but i added it anyway
             /*

@@ -23,12 +23,14 @@ class StoreController extends Controller
 
         $storeAttributes = [
             $name = $request->input('name'),
+            $description = $request->input('description'),
             $openingTime = $request->input('openingTime'),
             $closingTime = $request->input('closingTime'),
             $location = $request->input('location'),
         ];
         $store = Store::factory()->create([
             'name' => $name,
+            'description' => $description,
             'openingTime' => $openingTime,
             'closingTime' => $closingTime,
             'location' => $location,
@@ -43,6 +45,7 @@ class StoreController extends Controller
             'openingTime' => 'required',
             'closingTime' => 'required',
             'location' => 'required',
+            'description' => 'required',
         ]);
 
             $store = Store::where('id', $request->input('storeID'))->first();

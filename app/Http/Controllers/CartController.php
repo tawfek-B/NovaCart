@@ -136,9 +136,11 @@ class CartController extends Controller
         $user = Auth::user();
         $prod = 0;
         $cart = json_decode($user->cart, true);
+        $totalPrice = 0.0;
         if (!is_null($cart)) {
             foreach ($cart as $index) {
                 $counter = 0;
+                $totalPrice += $index['price'];
                 foreach ($index as $key => $value) {
                     if ($counter != 1) {
                         $prod = $value;
@@ -155,6 +157,9 @@ class CartController extends Controller
                 'content' => json_encode($cart),
                 'user_id' => $user->id,
                 'isAccepted' => 0,
+                'deliveryFee' => $request->input('deliveryFee'),
+                'paymentMethod' => $request->input('paymentMethod'),
+                'totalPrice' => $totalPrice,
             ]);
             $order->save();
             $user->cart = json_encode(null, true);

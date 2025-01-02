@@ -106,6 +106,7 @@
             border-radius: 10px;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-decoration-line: none;
             transition: all 0.3s ease;
             /* Smooth transition for color and border */
         }
@@ -161,9 +162,9 @@
                 <p><strong>Store:</strong> {{ App\Models\Store::where('id', $product->store_id)->first()->name }}</p>
             </div>
         @endforeach
-        <div class="add-product">
+        <a class="add-product" href="/addproduct">
             <span class="plus-sign">+</span>
-        </div>
+        </a>
     </div>
 
 </body>

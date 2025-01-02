@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
             'lastname' => fake()->lastName(),
             'userName' => fake()->name(),
             'number' => 12345678,
-            'admin' => false,
+            'admin' => true,
             'email' => fake()->unique()->safeEmail(),
             'password' => '12345678',
             'email_verified_at' => now(),

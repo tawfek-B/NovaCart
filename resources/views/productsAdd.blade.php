@@ -24,8 +24,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            max-width: 430px;
+            max-width: 75%;
             width: 100%;
+            height:100%;
             background: #fff;
             border-radius: 7px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -87,36 +88,51 @@
 
 <body>
     <div class="container">
-        <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:200px; height:200px;margin-left: 25%; margin-top: 5%;">
-        <form method="POST" action="/reg">
+        <form method="POST" action="/addproduct">
             @csrf
             <div class="form">
-                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;">LOGIN</header>
+                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD PRODUCT</header>
 
-                <!-- Number Input (Mandatory) -->
-                <input type="text" name="number" placeholder="Enter your phone number" value="{{ old('number') }}"
+                <!-- Number Input -->
+                <input type="text" name="name" placeholder="Enter the name of the product" value="{{ old('name') }}"
                     required>
-                @error('number')
+                @error('name')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <!-- Email Input (Optional) -->
-                <input type="text" name="email" placeholder="Enter your email (optional)"
-                    value="{{ old('email') }}">
-                @error('email')
+                <!-- Store ID Input -->
+                <input type="text" name="storeID" placeholder="Enter the ID of the store that's selling this product"
+                    value="{{ old('storeID') }}">
+                @error('storeID')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <!-- Password Input -->
-                <input type="password" name="password" placeholder="Enter your password" required>
-                @error('password')
+                <!-- Price Input -->
+                <input type="text" name="price" placeholder="Enter the price of the product" required>
+                @error('price')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <a href="/toobad">Forgot password?</a>
-                <input type="submit" class="button" value="Log in" style="margin-left:4%;">
+                <!-- Description Input -->
+                <input type="text" name="description" placeholder="Enter the description of the product" required>
+                @error('description')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
-                @error('login')
+                <input type="file" name="image">
+                @error('image')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- quantity Input -->
+                <input type="number" name="quantity" placeholder="Enter the available quantity of the product" required>
+                @error('quantity')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <input type="submit" class="button" value="Submit Product" style="margin-left:4%;">
+
+                @error('Submit Product')
                     <div class="error">{{ $message }}</div>
                 @enderror
             </div>

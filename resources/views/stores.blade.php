@@ -80,6 +80,7 @@
             border-radius: 10px;
             cursor: pointer;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-decoration:none;
             transition: all 0.3s ease; /* Smooth transition for color and border */
         }
 
@@ -111,7 +112,7 @@
     <div class="grid-container">
         @foreach (App\Models\Store::all() as $store)
             <div class="grid-item">
-                <a href="/store/edit/{{ $store->id }}" class="edit-icon" title="Edit">
+                <a href="/updatestore/{{ $store->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
                 </a>
                 <a href="/store/delete/{{ $store->id }}" class="delete-icon" title="Delete">
@@ -128,9 +129,9 @@
                 <p><strong>Closes at</strong> {{ $store->closingTime }}</p>
             </div>
         @endforeach
-        <div class="add-store">
+        <a class="add-store" href="/addstore">
             <span class="plus-sign">+</span>
-        </div>
+        </a>
     </div>
 
 </body>

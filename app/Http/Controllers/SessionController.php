@@ -20,25 +20,37 @@ class SessionController extends Controller
             'email' => 'nullable|email', // Email is optional
             'password' => 'required',
         ]);
-    
-        if (Auth::attempt(['number' => $credentials['number'], 'password' => $credentials['password']])) {
-            // Find user by number
-            $user = User::where('number', $credentials['number'])->first();
-    
-            if ($user && !$user->admin) {
-                return view('welcome');
+
+        if(is_null($credentials['email'])) {
+            if (Auth::attempt(['number' => $credentials['number'], 'password' => $credentials['password']])) {
+                // Find user by number
+                $user = User::where('number', $credentials['number'])->first();
+
+                if ($user && $user->admin) {
+                    return view('welcome');
+                } else {
+                    return redirect()->back()->withErrors(['login' => "Not an admin"])->withInput();
+                }
             } else {
-                return redirect()->back()->withErrors(['login' => "Not an admin"])->withInput();
+                return redirect()->back()->withErrors(['login' => "Invalid credentials."])->withInput();
             }
-        } else {
-            return redirect()->back()->withErrors(['login' => "Invalid credentials."])->withInput();
+        }
+        else {
+            if (Auth::attempt(['number' => $credentials['number'],'email' => $credentials['email'], 'password' => $credentials['password']])) {
+                // Find user by number
+                $user = User::where('number', $credentials['number'])->first();
+
+                if ($user && $user->admin) {
+                    return view('welcome');
+                } else {
+                    return redirect()->back()->withErrors(['login' => "Not an admin"])->withInput();
+                }
+            } else {
+                return redirect()->back()->withErrors(['login' => "Invalid credentials."])->withInput();
+            }
         }
     }
-    
-    
-    
-    
-    
+
 
     public function login(Request $request)
     {
@@ -89,19 +101,19 @@ class SessionController extends Controller
             if($isFound && $isMatching) {
                 return response()->json([
                     'success' => "false", //You're still an idiot
-                    'reason' => "wrongPassword",
+                    'reason' => "Wrong Password",
                 ]);
             }
             else if($isFound) {
                 return response()->json([
                     'success' => "false", //You're still an idiot
-                    'reason' => "wrongEmail",
+                    'reason' => "Wrong Email",
                 ]);
             }
             else {
                 return response()->json([
                     'success' => "false", //You're still an idiot
-                    'reason' => "wrongNumber",
+                    'reason' => "Wrong Number",
                 ]);
             }
         }
@@ -135,9 +147,9 @@ class SessionController extends Controller
         'number' => 'required|string|unique:users,number',
         'password' => 'required|string',
     ], [
-        'email.unique' => 'alreadyUsed',
-        'userName.unique' => 'alreadyUsed',
-        'number.unique' => 'alreadyUsed',
+        'email.unique' => 'Already Used',
+        'userName.unique' => 'Already Used',
+        'number.unique' => 'Already Used',
     ]);//this will check if these are unique or already in use by other users
     //we return each one that wasn't unique so the frontend can highlight all the fields that are already in use
 

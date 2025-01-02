@@ -24,8 +24,9 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            max-width: 430px;
+            max-width: 75%;
             width: 100%;
+            height:100%;
             background: #fff;
             border-radius: 7px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -44,9 +45,10 @@
 
         .form input {
             height: 60px;
-            width: 92.5%;
+            width: 72.5%;
             padding: 0 15px;
             font-size: 17px;
+            margin-left:13%;
             margin-bottom: 1.3rem;
             border: 1px solid #ddd;
             border-radius: 6px;
@@ -87,36 +89,59 @@
 
 <body>
     <div class="container">
-        <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:200px; height:200px;margin-left: 25%; margin-top: 5%;">
-        <form method="POST" action="/reg">
+        <form method="POST" action="/addstore">
             @csrf
             <div class="form">
-                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;">LOGIN</header>
+                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD PRODUCT</header>
 
-                <!-- Number Input (Mandatory) -->
-                <input type="text" name="number" placeholder="Enter your phone number" value="{{ old('number') }}"
+                <!-- Name Input -->
+                <input type="text" name="name" placeholder="Enter the name of the store" value="{{ old('name') }}"
                     required>
-                @error('number')
+                @error('name')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <!-- Email Input (Optional) -->
-                <input type="text" name="email" placeholder="Enter your email (optional)"
-                    value="{{ old('email') }}">
-                @error('email')
+                <!-- Location Input -->
+                <input type="text" name="location" placeholder="Enter the location of the store"
+                    value="{{ old('location') }}">
+                @error('location')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <!-- Password Input -->
-                <input type="password" name="password" placeholder="Enter your password" required>
-                @error('password')
+                <!-- Description Input -->
+                <input type="text" name="description" placeholder="Enter the description of the store" required>
+                @error('description')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <a href="/toobad">Forgot password?</a>
-                <input type="submit" class="button" value="Log in" style="margin-left:4%;">
+                <!-- Description Input -->
+                <input type="file" name="image" placeholder="Enter the image of the product" required>
+                @error('image')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
-                @error('login')
+                <input type="time" name="openingTime" required>
+                <h style="font-size:20px">
+                    Opening Time
+                </h>
+            </input>
+                @error('openingTime')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- quantity Input -->
+                <input type="time" name="closingTime" placeholder="The opening time of the store" required>
+                <h style="font-size:20px">
+                    Closing Time
+                </h>
+            </input>
+                @error('closingTime')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <input type="submit" class="button" value="Submit Store" style="margin-left:14%;">
+
+                @error('Submit Store')
                     <div class="error">{{ $message }}</div>
                 @enderror
             </div>
