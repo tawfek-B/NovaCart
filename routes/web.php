@@ -11,12 +11,22 @@ use App\Models\Product;
 Route::get('/', function () {
     return view('auth/register');
 });
-Route::get('/welcome', function () {
-    return view('welcome');
+
+Route::post('/reg',[SessionController::class,'adminlogin']);
+
+Route::get('/toobad', function () {
+    return view('toobad');
 });
+
+// Route::get('/welcome', function () {
+//     return view('welcome');
+// }); 
+//haydra : changed this to a comment so u cant acsess the welcome page without logging in
+
 Route::get('/stores', function() {
     return view('stores');
 });
+
 Route::get('/products', function() {
     return view('products');
 });

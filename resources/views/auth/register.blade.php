@@ -2,36 +2,124 @@
 <html lang="en">
 
 <head>
+    <style>
+        /* Your existing CSS styles */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background: #009579;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 430px;
+            width: 100%;
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .form {
+            padding: 2rem;
+        }
+
+        .form header {
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .form input {
+            height: 60px;
+            width: 100%;
+            padding: 0 15px;
+            font-size: 17px;
+            margin-bottom: 1.3rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            outline: none;
+        }
+
+        .form input.button {
+            color: #fff;
+            background: #009579;
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            margin-top: 1.7rem;
+            cursor: pointer;
+            transition: 0.4s;
+        }
+
+        .form input.button:hover {
+            background: #006653;
+        }
+
+        .error {
+            color: red;
+            /* Style for error messages */
+            font-size: 14px;
+            /* Adjust font size */
+            margin-top: -10px;
+            /* Adjust spacing */
+            margin-bottom: 10px;
+            /* Space below error message */
+        }
+    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Cart</title>
+    <title>NovaCart</title>
 </head>
 
-<body><!--check app.css-->
+<body>
+    <div class="container">
+        <form method="POST" action="/reg">
+            @csrf
+            <div class="form">
+                <header>Login</header>
 
-    <form method="POST" action="/register" enctype="multipart/form-data">
-        @csrf
-        <input type="number" id="number" name="number" placeholder="NUMBER">
+                <!-- Number Input (Mandatory) -->
+                <input type="text" name="number" placeholder="Enter your phone number" value="{{ old('number') }}"
+                    required>
+                @error('number')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
-        <input type=password id="password" name="password" placeholder="PASSWORD">
+                <!-- Email Input (Optional) -->
+                <input type="text" name="email" placeholder="Enter your email (optional)"
+                    value="{{ old('email') }}">
+                @error('email')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
+                <!-- Password Input -->
+                <input type="password" name="password" placeholder="Enter your password" required>
+                @error('password')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
-        {{-- <div>
-        <div class="inline-flex items-center gap-x-2">
-<span class="w-2 h-2 bg-white inline-block"></span>
-<label class="font-bold" for="logo">Employer Logo</label>
-</div>
+                <a href="/toobad">Forgot password?</a>
+                <input type="submit" class="button" value="Login">
 
-<div class="mt-1">
-    <input type="file" id="logo" name="logo" class="rounded-xl bg-white/10 border border-white/10 px-5 py-4 w-full">
-
-        </div>
-</div> --}}
-
-
-        <button class="bg-blue-800 rounded py-2 px-6 font-bold">Log in</button>
-    </form>
-
+                @error('login')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+            </div>
+        </form>
+    </div>
 </body>
 
 </html>

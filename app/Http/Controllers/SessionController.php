@@ -14,6 +14,32 @@ use Illuminate\Support\Facades\Validator;
 
 class SessionController extends Controller
 {
+    public function adminlogin(Request $request) {
+        $credentials = $request->validate([
+            'number' => 'required',
+            'email' => 'nullable|email', // Email is optional
+            'password' => 'required',
+        ]);
+    
+        if (Auth::attempt(['number' => $credentials['number'], 'password' => $credentials['password']])) {
+            // Find user by number
+            $user = User::where('number', $credentials['number'])->first();
+    
+            if ($user && !$user->admin) {
+                return view('welcome');
+            } else {
+                return redirect()->back()->withErrors(['login' => "Not an admin"])->withInput();
+            }
+        } else {
+            return redirect()->back()->withErrors(['login' => "Invalid credentials."])->withInput();
+        }
+    }
+    
+    
+    
+    
+    
+
     public function login(Request $request)
     {
         // $user = User::where('email', $request->email)->first();
