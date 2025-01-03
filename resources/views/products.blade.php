@@ -142,7 +142,7 @@
     <div class="grid-container">
         @foreach (App\Models\Product::all() as $product)
             <div class="grid-item">
-                <a href="/product/edit/{{ $product->id }}" class="edit-icon" title="Edit">
+                <a href="updateproduct/{{ $product->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
                 </a>
                 <a href="/product/delete/{{ $product->id }}" class="delete-icon" title="Delete">
@@ -153,7 +153,7 @@
                     {{ $product->name }}
                 </a>
                 <p>
-                    <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg"
+                    <img src="{{ asset($product->image) }}"
                         alt="product Image" style="width: 150px; height: 150px;">
                 </p>
                 <p style="font-size:smaller"><strong>Description:</strong> {{ $product->description }}</p>

@@ -88,7 +88,7 @@
 
 <body>
     <div class="container">
-        <form method="POST" action="/addproduct">
+        <form method="POST" action="/addproduct" enctype="multipart/form-data">
             @csrf
             <div class="form">
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD PRODUCT</header>
@@ -101,8 +101,12 @@
                 @enderror
 
                 <!-- Store ID Input -->
-                <input type="text" name="storeID" placeholder="Enter the ID of the store that's selling this product"
-                    value="{{ old('storeID') }}">
+                <select name="storeID" id="storeID" required style="margin-left: 37.5%; width:25%; padding:8px;margin-bottom:2.5%;">
+                    <option value="" selected required>Select a store</option>
+                    @foreach (App\Models\Store::all() as $store)
+                        <option value="{{ $store->id }}">{{ $store->name }}</option>
+                    @endforeach
+                </select>
                 @error('storeID')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -119,10 +123,7 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <input type="file" name="image">
-                @error('image')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                <input type="file" name="image" id="image" placeholder="Enter the image of the product" accept="image/*">
 
                 <!-- quantity Input -->
                 <input type="number" name="quantity" placeholder="Enter the available quantity of the product" required>

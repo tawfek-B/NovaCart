@@ -36,6 +36,9 @@ class UserController extends Controller
         $path = $request->file('image')->store('Users', 'public');
         $user->logo = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
         $user->save();
+        return response()->json([
+            'success'=> 'true',
+        ]);
     }
     public function changePassword(Request $request)
     {

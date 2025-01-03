@@ -89,10 +89,10 @@
 
 <body>
     <div class="container">
-        <form method="POST" action="/addstore">
+        <form method="POST" action="/addstore" enctype="multipart/form-data">
             @csrf
             <div class="form">
-                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD PRODUCT</header>
+                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD STORE</header>
 
                 <!-- Name Input -->
                 <input type="text" name="name" placeholder="Enter the name of the store" value="{{ old('name') }}"
@@ -114,8 +114,8 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <!-- Description Input -->
-                <input type="file" name="image" placeholder="Enter the image of the product" required>
+                <!-- Image Input -->
+                <input type="file" name="image" placeholder="Enter the image of the product" accept="image/*">
                 @error('image')
                     <div class="error">{{ $message }}</div>
                 @enderror

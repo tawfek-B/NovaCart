@@ -23,7 +23,7 @@ class StoreFactory extends Factory
             'openingTime' => fake()->time(),
             'closingTime' => (Carbon::parse($openingTime)->addHours(rand(1,10)))->format('H:i:s'),//this basically turns the string to a "time" variable to be able to add hours to it and turn it to a certain format, not using format adds a date to the time variable.
             //this isn't neccessary, as this is just used for seeding, not for the actual app, I'm just testing shit out and trying to make the 'opening hours' and 'closing hours' work.
-            'image' => 'Users/default.png',
+            'image' => 'Stores/default.png',
             'description' => fake()->text(),
             'location' => fake()->streetName(),
         ];

@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
 use App\Models\Store;
+use Illuminate\Support\Facades\Storage;
+
 
 class ProductController extends Controller
 {
@@ -28,45 +30,53 @@ class ProductController extends Controller
             $name = $request->input('name'),
             $price = $request->input('price'),
             $description = $request->input('description'),
-            $image = $request->input('image'),
             $quantity = $request->input('quantity'),
             $storeId = $request->input('storeID')
         ];
+        if(!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('Products', 'public');
+        }
+        else {
+            $path="Products/default.png";
+        }
+
 
         $product = Product::factory()->create([
             'name' => $name,
             'price' => $price,
             'description' => $description,
-            'image' => $image,
+            'image' => $path,
             'quantity' => $quantity,
             'store_id' => $storeId,
         ]);
     }
 
-    public function update(Request $request){
+    public function update(Request $request, $id){
+
 
         $validated = [
             $name = $request->input('name'),
             $price = $request->input('price'),
             $description = $request->input('description'),
-            $image = $request->input('image'),
             $quantity = $request->input('quantity'),
         ];
 
-            $product = Product::where('id', $request->input('productID'))->first();
 
-            $product->name = $name;
-            $product->price = $price;
-            $product->description = $description;
-            $product->image = $image;
-            $product->quantity = $quantity;//i don't think we need to change the store id of a product, so......
+            $product = Product::where('id', $id)->first();
 
+            $product->name = $request->input('name');
+            $product->price = $request->input('price');
+            $product->description = $request->input('description');
+            $product->quantity = $request->input('quantity');//i don't think we need to change the store id of a product, so......
+
+
+            if(!is_null($request->file('image'))) {
+                $path = $request->file('image')->store('Products', 'public');
+                if($product->image!="Products/default.png")
+                Storage::delete($product->image);
+                $product->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
+            }
             $product->save();
-
-            return response()->json([
-                'message' => 'product updated successfully',
-                'data' => $product,
-            ], 200);
     }
     public function fetch(Request $request) {
         return Product::where('id', $request->input('productID'))->first();

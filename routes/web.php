@@ -42,13 +42,17 @@ Route::get('/updatestore/{id}', function($id) {
     session(['store_id' => $id]);
     return view('storesUpdate');
 });
-Route::put('/updatestore', [StoreController::class, 'update']);
+Route::post('/updatestore/{id}', [StoreController::class, 'update']);
 
 Route::get('/addproduct', function() {
     return view('productsAdd');
 });
 Route::post('/addproduct', [ProductController::class, 'create']);
-Route::put('/updateproduct', [ProductController::class, 'update']);//Obviously we're not using these in the app, only in the website
+Route::get('/updateproduct/{id}', function($id) {
+    session(['product_id' => $id]);
+    return view('productsUpdate');
+});
+Route::post('/updateproduct/{id}', [ProductController::class, 'update']);//Obviously we're not using these in the app, only in the website
 // Route::get('/register', [UserController::class, 'create']);
 // Route::post('/register', [UserController::class, 'store']);
 
