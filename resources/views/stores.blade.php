@@ -107,7 +107,6 @@
     </a>
 
     <div style="font-family: 'Forte';font-size: 50px; margin-left: 39%; margin-bottom: 2.5%; color:#42FCA9;">
-        {{-- i want t change this so it uses "forte regular" font --}}
         STORES PAGE
     </div>
     <div class="grid-container">
@@ -116,9 +115,13 @@
                 <a href="/updatestore/{{ $store->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
                 </a>
-                <a href="/store/delete/{{ $store->id }}" class="delete-icon" title="Delete">
-                    <i class="fas fa-trash"></i>
-                </a>
+                <form action="/deletestore/{{ $store->id }}" method="POST" class="delete-form" onsubmit="return confirmDelete('{{ $store->name }}');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="delete-icon" title="Delete" style="border:none">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </form>
                 <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     {{$store->name}}
@@ -135,5 +138,12 @@
         </a>
     </div>
 
+    <script>
+        function confirmDelete(storeName) {
+            return confirm(`Are you sure you want to delete the store "${storeName}"?\n\nWARNING: All products sold by this store will also be deleted.`);
+        }
+    </script>
+
 </body>
+
 </html>

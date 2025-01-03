@@ -12,11 +12,17 @@ use Illuminate\Support\Facades\Session;
 class DriverController extends Controller
 {
 
-    public function fetchByDriverID(Request $request) {
-        return Driver::where('id', $request->input('driverID'))->first();
+    public function fetchByDriverID($id) {
+        return response()->json([
+            'success' => Driver::where('id', $id)->first()?true:false,
+            'driver' => Driver::where('id', $id)->first()
+        ]);
     }
-    public function fetchByUserID(Request $request) {
-        return Driver::where('user_id', $request->input('driverID'))->first();
+    public function fetchByUserID($id) {
+        return response()->json([
+            'success' => (User::where('id', $id)->first() && User::where('id', $id)->first()->isDriver)?true:false,
+            'driver' => (User::where('id', $id)->first() && User::where('id', $id)->first()->isDriver)?User::where('id', $id)->first():null
+        ]);
     }
     public function makeDelivery(Request $request, User $user)
     {

@@ -115,12 +115,18 @@
 
                 <!-- Location Input -->
                 <input type="text" name="location" placeholder="Enter the location of the store" value="{{ App\Models\Store::where('id', session('store_id'))->first()->location}}">
+                <h style="font-size:20px">
+                    Location
+                </h>
                 @error('location')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
                 <!-- Description Input -->
                 <input type="text" name="description" placeholder="Enter the description of the store"  value="{{ App\Models\Store::where('id', session('store_id'))->first()->description}}"required>
+                <h style="font-size:20px">
+                    Description
+                </h>
                 @error('description')
                     <div class="error">{{ $message }}</div>
                 @enderror
@@ -144,7 +150,7 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <input type="submit" class="button" value="Submit Store" style="margin-left:14%;">
+                <input type="submit" class="button" value="Update Store" style="margin-left:14%;">
 
                 @error('Submit Store')
                     <div class="error">{{ $message }}</div>

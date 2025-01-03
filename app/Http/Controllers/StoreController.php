@@ -9,6 +9,18 @@ class StoreController extends Controller
 {
     //
 
+    public function fetch(Request $request, $id) {
+
+
+        return response()->json([
+            'success' => Store::where('id', $id)->first()?true:false,
+            'store' => Store::where('id', $id)->first()
+        ]);
+    }
+
+    public function fetchAll() {
+        return Store::all();
+    }
     public function create(Request $request) {
 
         // $request->validate([
@@ -79,13 +91,22 @@ class StoreController extends Controller
 
     }
 
-    public function fetch(Request $request) {
+    public function delete(Request $request, $id) {
+        $store=Store::where('id', $id)->first();
+        $name = $store->name;
+        $store->delete();
 
-        return Store::where('id', $request->input('storeID'))->first();
-    }
+        // $i=1;
+        // foreach(Store::all() as $store) {
+        //     $store->id = $i;
+        //     $store->save();
+        //     $i++;
+        // }
+        //We can't change the IDs of the stores, as the products have a foreign key dependent on the ID of the stores
 
-    public function fetchAll() {
-        return Store::all();
+        $data = ['element' => 'store', 'id' => $id, 'name'=>$name];
+        session( ['delete_info' => $data]);
+        return redirect()->route('delete.confirmation');
     }
 
 }

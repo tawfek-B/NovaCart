@@ -86,6 +86,13 @@ class UserController extends Controller
     {
         return Auth::user();
     }
+    public function fetchSpecificUser($id)
+    {
+        return response()->json([
+            'success' => User::where('id', $id)->first()?true:false,
+            'user' => User::where('id', $id)->first()
+        ]);
+    }
 
 
     public function getUsers()//don't worry, I kept your fetch function ;)

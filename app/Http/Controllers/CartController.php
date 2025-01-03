@@ -162,6 +162,14 @@ class CartController extends Controller
                 'totalPrice' => $totalPrice,
             ]);
             $order->save();
+
+            $i = 1;
+            foreach(Order::all() as $order) {
+                $order->id = $i;
+                $order->save();
+                $i++;
+            }
+
             $user->cart = json_encode(null, true);
             $user->notifications = 'pending';
             $user->save();

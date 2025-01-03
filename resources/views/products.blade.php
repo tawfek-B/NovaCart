@@ -145,9 +145,13 @@
                 <a href="updateproduct/{{ $product->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
                 </a>
-                <a href="/product/delete/{{ $product->id }}" class="delete-icon" title="Delete">
-                    <i class="fas fa-trash"></i>
-                </a>
+                <form action="/deleteproduct/{{ $product->id }}" method="POST" class="delete-form" onsubmit="return confirmDelete('{{ $product->name }}', '{{$product->quantity}}');">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="delete-icon" title="Delete" style="border:none">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </form>
                 <a href="#">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     {{ $product->name }}
@@ -168,5 +172,18 @@
     </div>
 
 </body>
+
+<script>
+    function confirmDelete(productName, productQuantity) {
+    let message = `Are you sure you want to delete the product "${productName}"?`;
+
+    if (productQuantity !== 0) {
+        message += `\n\nWARNING: There's still ${productQuantity} amounts left of this product still in sale.`;
+    }
+
+    return confirm(message);
+}
+
+</script>
 
 </html>

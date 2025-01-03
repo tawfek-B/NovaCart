@@ -8,6 +8,7 @@ use App\Http\Controllers\SessionController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DriverController;
+use App\Http\Controllers\NotificationsController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -42,14 +43,15 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     //haydra:did it, should be good now
     //tawfek: Nice!
 
-    Route::get('/getstore', [StoreController::class, 'fetch']);
+    Route::get('/getstore/{id}', [StoreController::class, 'fetch']);
     Route::get('/getallstores', action: [StoreController::class, 'fetchAll']);
 
-    Route::get('/getproduct', [ProductController::class, 'fetch']);
+    Route::get('/getproduct/{id}', [ProductController::class, 'fetch']);
+    Route::get('/getstoreproducts/{id}', [ProductController::class, 'fetchStoreProducts']);//this returns all products of a certain store
     Route::get('/getallproducts', [ProductController::class, 'fetchAllProducts']);//don't think we need this, but might as well have it
-    Route::get('/getstoreproducts', [ProductController::class, 'fetchStoreProducts']);//this returns all products of a certain store
 
     Route::get('/getuser', [UserController::class, 'fetch']);
+    Route::get('/fetchuser/{id}', [UserController::class, 'fetchSpecificUser']);
     Route::get('/getusers', [UserController::class, 'getUsers']);
     Route::get('/getfavs', [UserController::class, 'getfavs']);
     Route::post('/modifyfavs', [UserController::class, 'modifyFavs']);
@@ -58,15 +60,16 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::put('/updateusername', [UserController::class, 'changeUserName']);
 
 
-    Route::get('/getorder', [OrderController::class, 'fetch']);
+    Route::get('/getorder/{id}', [OrderController::class, 'fetch']);
     Route::get('/getorderid', [OrderController::class, 'fetchID']);
     Route::get('/getallorders', [OrderController::class, 'fetchAll']);
     Route::delete('/deleteorder', [OrderController::class, 'delete']);
 
-    Route::get('/getdriverbydriver', [DriverController::class, 'fetchByDriverID']);//whenever the notif turns to accepted, we use this
+    Route::get('/getdriverbydriver/{id}', [DriverController::class, 'fetchByDriverID']);//whenever the notif turns to accepted, we use this
     //to show the user who the driver is.   That's why i asked you to add a driver_id to the order
-    Route::get('/getdriverbyuser', [DriverController::class, 'fetchByUserID']);
+    Route::get('/getdriverbyuser/{id}', [DriverController::class, 'fetchByUserID']);
 
+    Route::post('/notif', [NotificationsController::class, 'cycleNotif']);
 
     //i just want you to add these functions, one that returns the order(the whole model, not just the 'content' variable), another functions that returns ALL of the orders haydra: bro dats like 2 lines of code gimme somethin harder (like ur pepe maybe UwU)
     //one that turns isAccepted true only when a user that is isDriver accepts the delivery (maybe add a driver_id variable to the Order model?) haydra : plz put this in the ordercont cuz my dumbass thoguth i should add an api route for it
@@ -74,9 +77,13 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 
 
 
-    Route::post('/notif', function () {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
-        Artisan::call('app:update-notifications', ['userID' => Auth::id()]);
-    });
+    // Route::post('/notif', function () {//this is supposed to cycle through [pending, accepted, delivering, delivered] every 15 seconds for when the driver accepts a delivery, but whenever i call this on postman, it only changes state once, maybe give it a shot
+    //     $output = Artisan::call('app:update-notifications', ['userID' => Auth::id()]);
+
+    //     return response()->json([
+    //         Artisan::output(),
+    //     ]);
+    // });
 
     // Route::get('/gettt', function () {
     //     return response()->json(["user" => auth()->user()]);

@@ -151,7 +151,7 @@
                 @enderror --}}
 
                 </div>
-                <input type="submit" class="button" value="Submit Product" style="margin-left:14%;">
+                <input type="submit" class="button" value="Update Product" style="margin-left:14%;">
 
                 @error('Submit Product')
                     <div class="error">{{ $message }}</div>

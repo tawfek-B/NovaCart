@@ -11,6 +11,38 @@ use Illuminate\Support\Facades\Storage;
 
 class ProductController extends Controller
 {
+
+    public function fetch(Request $request, $id) {
+
+        return response()->json([
+            'success' => Product::where('id', $id)->first()?true:false,
+            'product' => Product::where('id', $id)->first()
+        ]);
+    }
+
+    public function fetchAllProducts() {
+        return Product::all();
+    }
+    public function fetchStoreProducts(Request $request, $id) {
+        if(is_null($store = Store::where('id', $id)->first())) {
+        return response()->json([
+            'success' => false
+        ]);//do we have to encode this?
+        }
+        $products = [];
+        $store = Store::where('id', $id)->first();
+        foreach(Product::all() as $product) {
+            if($product->store_id==$store->id) {
+                $products[] = $product;
+            }
+        }
+
+
+        return response()->json([
+            'success' => Store::where('id', $id)->first()?true:false,
+            'products' => $products
+        ]);//do we have to encode this?
+    }
     //
     public function create(Request $request)
     {
@@ -78,21 +110,19 @@ class ProductController extends Controller
             }
             $product->save();
     }
-    public function fetch(Request $request) {
-        return Product::where('id', $request->input('productID'))->first();
-    }
 
-    public function fetchAllProducts() {
-        return Product::all();
-    }
-    public function fetchStoreProducts(Request $request) {
-        $products = [];
-        $store = Store::where('id', $request->input('storeID'))->first();
+    public function delete(Request $request, $id) {
+        $product = Product::where('id', $id)->first();
+        $name = $product->name;
+        $product->delete();
+        $i = 1;
         foreach(Product::all() as $product) {
-            if($product->store_id==$store->id) {
-                $products[] = $product;
-            }
+            $product->id = $i;
+            $product->save();
+            $i++;
         }
-        return $products;//do we have to encode this?
+        $data = ['element' => 'store', 'id' => $id, 'name'=>$name];
+        session( ['delete_info' => $data]);
+        return redirect()->route('delete.confirmation');
     }
 }

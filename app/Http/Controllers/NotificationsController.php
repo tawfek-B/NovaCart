@@ -1,38 +1,17 @@
 <?php
 
-namespace App\Console\Commands;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\DriverController;
-use App\Http\Controllers\OrderController;
-use Illuminate\Console\Command;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Order;
 
-class UpdateNotifications extends Command
+class NotificationsController extends Controller
 {
-    /**
-     * The name and signature of the console command.
-     *
-     * @var string
-     */
-    protected $signature = 'app:update-notifications {userID}';
-
-    /**
-     * The console command description.
-     *
-     * @var string
-     */
-    protected $description = 'Command description';
-
-    /**
-     * Execute the console command.
-     */
-    public function handle(Request $request)
-    {
-        $userID = $this->argument('userID');
-        $userOrDriver = User::find($userID);
+    //
+    public function cycleNotif(Request $request) {
+        $userOrDriver = Auth::user();
         //// Get the user (assumed to be logged in or authenticated)
         // $user = Auth::user();
 
@@ -46,15 +25,23 @@ class UpdateNotifications extends Command
 
         foreach (User::all() as $temp) {
             if ($temp->notifications == 'delivered') {
+                $hasOtherOrders = false;//this code now checks if the user has other orders before setting his notifications value to either null(if there are no other orders),
+                //or pending(if he has other orders)
+                foreach(Order::all() as $order) {
+                    if($order->user_id == $temp->id) {
+                        $hasOtherOrders = true;
+                    }
+                }
+                if($hasOtherOrders)
+                $temp->notifications = "pending";
+                else
                 $temp->notifications = null;
                 $temp->save();
-                $this->line(json_encode(['success'=>true, 'status' => null]));
-                return null;
+                return response()->json((['success'=>true, 'status' => null]));
             }
         }
         if (is_null(Order::where('id', $request->input('orderID')))) {
-            $this->line(json_encode(value: ['success'=>false, 'status' => "No Order"]));
-            return;
+            return response()->json((['success' => 'false']));
         }
         if (!($userOrDriver->isDriver) && ($userOrDriver->isAccepted)) {
             $OC = new OrderController();
@@ -65,8 +52,7 @@ class UpdateNotifications extends Command
                 // echo(' has been delivered');
                 $DriverController = new DriverController();
                 if (is_null($DriverController->finishedDelivery($request))) {
-                    // $this->line(json_encode(value: ['success'=>false]));=
-                    $OC->returnJson('false', 'null');
+                    return response()->json((['success' => 'false']));
                 } else {
                     $userOrDriver->save();
                     $OC->delete($request);
@@ -75,27 +61,23 @@ class UpdateNotifications extends Command
                     $userOrDriver->notifications = $notifications[$currentIndex]; // Move to the next status
                     $userOrDriver->save();
                 }
-                // $this->line(json_encode(['success'=>true, 'status' => $userOrDriver->notifications]));
-                return $OC->returnJson('true', $userOrDriver->notifications);
+                    return response()->json((['success' => 'true', 'status' => $userOrDriver->notifications]));
                 // return;
             }
             if($currentIndex == 1) {
-                // $this->line(json_encode(['success'=>false]));
-                return $OC->returnJson('false', 'null');
+                return response()->json((['success' => 'false']));
             }
             else {
                 $currentIndex++;
                 $userOrDriver->notifications = $notifications[$currentIndex]; // Move to the next status
                 $userOrDriver->save();
             }
-            // $this->line(json_encode(['success'=>true, 'status' => $userOrDriver->notifications]));
-            return $OC->returnJson('true', $userOrDriver->notifications);
+            return response()->json((['success' => 'true', 'status' => $userOrDriver->notifications]));
         }
         else {
             if(!(Auth::user()->isDriver) && Auth::user()->notifcations!="pending") {
-                // $this->line(json_encode(['success'=>false]));
-                return (new OrderController)->returnJson('true', $userOrDriver->notifications);
-                return;
+                // $this->line((['success'=>false]));
+                return response()->json((['success' => 'true', 'status' => $userOrDriver->notifications]));
             }
             if ($userOrDriver) {
                 $user = User::where('id', Order::where('id', $request->input('orderID'))->first()->user_id)->first();
@@ -115,13 +97,13 @@ class UpdateNotifications extends Command
                     $DriverController = new DriverController();
                     if (is_null($DriverController->makeDelivery($request, $userOrDriver))) {
 
-                    // $this->line(json_encode(['success'=>true, 'status' => "accepted"]));
-                    return $OC->returnJson('true', $userOrDriver->notifications);
+                        $currentIndex++;
+                        $user->notifications = $notifications[$currentIndex]; // Move to the next status
+                        $user->save();
+                    // $this->line((['success'=>true, 'status' => "accepted"]));
+                    return response()->json((['success' => 'true', 'status' => 'Accepted Delivery']));
                     }
                     // Set the new notification status
-                    $currentIndex++;
-                    $user->notifications = $notifications[$currentIndex]; // Move to the next status
-                    $user->save();
 
                 }
             } else {

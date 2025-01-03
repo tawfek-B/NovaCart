@@ -9,12 +9,15 @@ use Illuminate\Http\Request;
 
 class OrderController extends Controller
 {
-    public function fetch(Request $request)
+    public function fetch(Request $request, $id)
     {
-        return $order = Order::where('id', $request->input('orderID'))->first();
+        return response()->json([
+            'success' => Order::where('id', $id)->first()?true:false,
+            'order' =>  Order::where('id', $id)->first(),
+        ]);
     }
 
-    public function fetchID(Request $request) {//sends the id of the order made by the current user and that isAccepted
+    public function fetchID() {//sends the id of the order made by the current user and that isAccepted
         $userID = Auth::id();
         foreach(Order::all() as $order) {
             if($order->user_id == $userID && $order->isAccepted) {
@@ -46,11 +49,6 @@ class OrderController extends Controller
             $order->save();
         }
 
-
-    }
-
-    public function deliveredOrder(Request $request)
-    {//might make some changes here so the user notification will turn into delivered. since the driver will click on a button to confirm the delivery has been.... delivered
 
     }
 
