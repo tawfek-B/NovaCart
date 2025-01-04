@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->foreignIdFor(App\Models\User::class)->nullable();
             $table->string('name')->nullable();
             $table->string('location')->nullable();
+            $table->string('image')->nullable();
             $table->boolean('isDelivering')->nullable();
             $table->timestamps();
         });

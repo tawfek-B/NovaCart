@@ -74,4 +74,68 @@ class DriverController extends Controller
             echo "No isDelivering found to be false";
         }
     }
+
+    public function create(Request $request)
+    {
+
+        $driverAttributes = [
+            $name = $request->input('name'),
+            $Location = $request->input('Location'),
+            $isDelivering = $request->input('isDelivering')
+        ];
+        if(!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('drivers', 'public');
+        }
+        else {
+            $path="drivers/default.png";
+        }
+
+
+        $driver = driver::factory()->create([
+            'name' => $name,
+            'Location' => $Location,
+            'isDelivering' => $isDelivering
+        ]);
+    }
+
+    public function update(Request $request, $id){
+
+
+        $validated = [
+            $name = $request->input('name'),
+            $Location = $request->input('Location'),
+            $isDelivering = $request->input('isDelivering')
+        ];
+
+
+            $driver = driver::where('id', $id)->first();
+
+            $driver->name = $request->input('name');
+            $driver->Location = $request->input('Location');
+            $driver->isDelivering = $request->input('isDelivering');
+
+
+            if(!is_null($request->file('image'))) {
+                $path = $request->file('image')->store('drivers', 'public');
+                if($driver->image!="drivers/default.png")
+                Storage::delete($driver->image);
+                $driver->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
+            }
+            $driver->save();
+    }
+
+    public function delete(Request $request, $id) {
+        $driver = driver::where('id', $id)->first();
+        $name = $driver->name;
+        $driver->delete();
+        $i = 1;
+        foreach(driver::all() as $driver) {
+            $driver->id = $i;
+            $driver->save();
+            $i++;
+        }
+        $data = ['element' => 'store', 'id' => $id, 'name'=>$name];
+        session( ['delete_info' => $data]);
+        return redirect()->route('delete.confirmation');
+    }
 }

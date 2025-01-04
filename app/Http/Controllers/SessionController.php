@@ -39,7 +39,6 @@ class SessionController extends Controller
             if (Auth::attempt(['number' => $credentials['number'],'email' => $credentials['email'], 'password' => $credentials['password']])) {
                 // Find user by number
                 $user = User::where('number', $credentials['number'])->first();
-
                 if ($user && $user->admin) {
                     return view('welcome');
                 } else {

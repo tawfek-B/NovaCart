@@ -86,14 +86,14 @@
 
 <body>
     <div class="container">
-        <form method="POST" action="/addproduct" enctype="multipart/form-data">
+        <form method="POST" action="/adddriver" enctype="multipart/form-data">
             @csrf
             <div class="form">
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD
-                    PRODUCT</header>
+                    driver</header>
 
                 <!-- Number Input -->
-                <input type="text" name="name" placeholder="Enter the name of the product"
+                <input type="text" name="name" placeholder="Enter the name of the driver"
                     value="{{ old('name') }}" required>
                 @error('name')
                     <div class="error">{{ $message }}</div>
@@ -112,30 +112,29 @@
                 @enderror
 
                 <!-- Price Input -->
-                <input type="text" name="price" placeholder="Enter the price of the product" required>
+                <input type="text" name="price" placeholder="Enter the price of the driver" required>
                 @error('price')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
                 <!-- Description Input -->
-                <input type="text" name="description" placeholder="Enter the description of the product" required>
+                <input type="text" name="description" placeholder="Enter the description of the driver" required>
                 @error('description')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <input type="file" name="image" id="image" placeholder="Enter the image of the product"
+                <input type="file" name="image" id="image" placeholder="Enter the image of the driver"
                     accept="image/*">
 
                 <!-- quantity Input -->
-                <input type="number" name="quantity" placeholder="Enter the available quantity of the product"
-                    required>
+                <input type="number" name="quantity" placeholder="Enter the available quantity of the driver" required>
                 @error('quantity')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <input type="submit" class="button" value="Submit Product" style="margin-left:4%;">
+                <input type="submit" class="button" value="Submit driver" style="margin-left:4%;">
 
-                @error('Submit Product')
+                @error('Submit driver')
                     <div class="error">{{ $message }}</div>
                 @enderror
             </div>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="{{ asset('css/custom.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Buttons</title>
@@ -43,26 +44,32 @@
 
         /* Stores button */
         .stores {
-            background-color: #143640; /* Dark blue */
+            background-color: #143640;
+            /* Dark blue */
             color: white;
         }
 
         /* Products button */
         .products {
-            background-color: #30C198; /* Turquoise */
+            background-color: #30C198;
+            /* Turquoise */
             color: white;
         }
 
         /* Light green hover effect */
         .btn:hover {
-            background-color: #42FCA9; /* Light green */
+            background-color: #42FCA9;
+            /* Light green */
         }
     </style>
 </head>
+
 <body>
-    <div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; margin-top: 20px;">
+    <div
+        style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; margin-top: 20px;">
         <div>
-            <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:350px; height:350px;margin-left:-10%; margin-bottom:10%;">
+            <img src="{{ asset('images/NovaCart.png') }}" alt=""
+                style="width:350px; height:350px;margin-left:-10%; margin-bottom:10%;">
         </div>
         <div style="font-family: 'Forte'; font-size: 50px; color: #42FCA9;margin-top:-10%;">
             WHICH ONE WOULD YOU LIKE TO EDIT?
@@ -74,6 +81,10 @@
 
             <a href="products">
                 <button class="btn products">Products</button>
+            </a>
+
+            <a href="drivers">
+                <button class="btn drivers">drivers</button>
             </a>
         </div>
     </div>

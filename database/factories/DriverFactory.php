@@ -27,6 +27,7 @@ class DriverFactory extends Factory
         return [
             'user_id' => rand(0,1000),
             'name' => fake()->name(),
+            'image' => 'Products/default.png',
             'location' => fake()->streetAddress(),
             'isDelivering' => 0,
         ];

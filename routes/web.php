@@ -18,6 +18,7 @@ Route::get('/toobad', function () {
     return view('toobad');
 });
 
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -31,32 +32,60 @@ Route::get('/image/{path}', [ImageController::class, 'show'])->where('path', '.*
 Route::get('/stores', function() {
     return view('stores');
 });
+
 Route::get('/addstore', function() {
     return view('storesAdd');
 });
+
 Route::post('/addstore', [StoreController::class, 'create']);
+
 Route::get('/updatestore/{id}', function($id) {
     session(['store_id' => $id]);
     return view('storesUpdate');
 });
+
 Route::post('/updatestore/{id}', [StoreController::class, 'update']);
+
 Route::delete('/deletestore/{id}', [StoreController::class, 'delete']);
 
 
 Route::get('/products', function() {
     return view('products');
 });
+
 Route::get('/addproduct', function() {
     return view('productsAdd');
 });
+
 Route::post('/addproduct', [ProductController::class, 'create']);
+
 Route::get('/updateproduct/{id}', function($id) {
     session(['product_id' => $id]);
     return view('productsUpdate');
 });
+
 Route::post('/updateproduct/{id}', [ProductController::class, 'update']);//Obviously we're not using these in the app, only in the website
+
 Route::delete('/deleteproduct/{id}', [ProductController::class, 'delete']);
 
+Route::get('/drivers', function() {
+    return view('drivers');
+});
+
+Route::get('/adddriver', function() {
+    return view('driversAdd');
+});
+
+Route::post('/adddriver', [DriverController::class, 'create']);
+
+Route::get('/updatedriver/{id}', function($id) {
+    session(['driver_id' => $id]);
+    return view('driversUpdate');
+});
+
+Route::post('/updatedriver/{id}', [DriverController::class, 'update']);//Obviously we're not using these in the app, only in the website
+
+Route::delete('/deletedriver/{id}', [DriverController::class, 'delete']);
 
 Route::get('/confirmdelete', function() {
     return view(view: 'confirmedDelete');
