@@ -50,6 +50,7 @@ class UserController extends Controller
         $newPassword = $request->input('newPassword');
         $user = Auth::user();
         if (Hash::check($oldPassword, $user->password)) {
+            //i think we need to add an if to check if the token of the user tryin to change the passowrd is the same for the user who has the passowrd
             $user->password = Hash::make($newPassword);
             $user->save();
 
