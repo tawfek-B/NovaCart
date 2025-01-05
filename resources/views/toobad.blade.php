@@ -36,7 +36,7 @@
 <body>
     <div>
         <h1 class="emoji">😢</h1>
-        <h1>toobad</h1>
+        <h1>Too Bad</h1>
     </div>
 </body>
 

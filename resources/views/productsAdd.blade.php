@@ -19,12 +19,12 @@
 
         .container {
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: 75%;
             width: 100%;
-            height: 100%;
+            height: 130%;
             background: #fff;
             border-radius: 7px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -92,6 +92,10 @@
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD
                     PRODUCT</header>
 
+                    <img id="imagePreview" src="{{ asset('/Products/default.png') }}"
+                alt="{{ asset('/Products/default.png') }}"
+                style="width:200px; height:200px; margin-left: 40%; margin-top: ;">
+
                 <!-- Number Input -->
                 <input type="text" name="name" placeholder="Enter the name of the product"
                     value="{{ old('name') }}" required>
@@ -123,8 +127,11 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <input type="file" name="image" id="image" placeholder="Enter the image of the product"
-                    accept="image/*">
+                 <!-- Image Input -->
+               <input type="file" name="image" placeholder="Enter the image of the product" accept="image/*" id="imageInput">
+               @error('image')
+                   <div class="error">{{ $message }}</div>
+               @enderror
 
                 <!-- quantity Input -->
                 <input type="number" name="quantity" placeholder="Enter the available quantity of the product"
@@ -141,6 +148,18 @@
             </div>
         </form>
     </div>
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </body>
 
 </html>

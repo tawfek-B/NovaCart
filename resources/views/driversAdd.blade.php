@@ -19,12 +19,12 @@
 
         .container {
             position: absolute;
-            top: 50%;
+            top: 75%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: 75%;
             width: 100%;
-            height: 100%;
+            height: 160%;
             background: #fff;
             border-radius: 7px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -90,21 +90,62 @@
             @csrf
             <div class="form">
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD
-                    driver</header>
+                    DRIVER</header>
 
-                <!-- Number Input -->
-                <input type="text" name="name" placeholder="Enter the name of the driver"
-                    value="{{ old('name') }}" required>
+                    <img id="imagePreview" src="{{ asset('/Drivers/default.jpg') }}"
+                alt="{{ asset('/Drivers/default.jpg') }}"
+                style="width:200px; height:200px; margin-left: 40%; margin-bottom: 5%;">
+
+                <!-- userName Input -->
+                <input type="text" name="firstName" placeholder="Enter the first name of the driver"
+                    value="{{ old('firstName') }}" required>
                 @error('name')
                     <div class="error">{{ $message }}</div>
                 @enderror
 
 
-                <!-- location Input -->
-                <input type="text" name="location" placeholder="Enter the location of the driver" required>
-                @error('location')
+                <!-- lastName Input -->
+                <input type="text" name="lastName" placeholder="Enter the last name of the driver" value="{{old('lastName')}}" required>
+                @error('lastName')
+                <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- userName Input -->
+                <input type="text" name="userName" placeholder="Enter the user name of the driver" required>
+                @error('userName')
+                <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- number Input -->
+                <input type="number" name="number" placeholder="Enter the number of the driver" required>
+                @error('number')
                     <div class="error">{{ $message }}</div>
                 @enderror
+
+                <!-- email Input -->
+                <input type="email" name="email" placeholder="Enter the email of the driver" required>
+                @error('email')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- password Input -->
+                <input type="password" name="password" placeholder="Enter the password of the driver" required>
+                @error('password')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- logo Input -->
+                <input type="file" name="image" placeholder="Enter the image of the driver" accept="image/*" value="{{old('image')}}" id="imageInput">
+                @error('image')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
+                <!-- location Input -->
+                <input type="text" name="location" placeholder="Enter the location of the product" value = "{{old('location')}}">
+                @error('location')
+                    <div class="error">{{ $message }}</div>
+                @enderror
+
                 <a href="/drivers">
                     <input type="submit" class="button" value="Submit driver" style="margin-left:4%;">
                     @error('Submit driver')
@@ -114,6 +155,18 @@
             </div>
         </form>
     </div>
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -84,7 +84,7 @@
             </a>
 
             <a href="drivers">
-                <button class="btn drivers">drivers</button>
+                <button class="btn drivers">Drivers</button>
             </a>
         </div>
     </div>

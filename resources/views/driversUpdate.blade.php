@@ -19,7 +19,7 @@
 
         .container {
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: 75%;
@@ -92,7 +92,7 @@
             @csrf
             <div class="form">
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:15%;">
-                    UPDATE driver</header>
+                    UPDATE DRIVER</header>
 
                 <!-- Image Preview -->
                 <img id="imagePreview"
@@ -103,12 +103,12 @@
 
                     <!-- Name Input -->
                     {{-- {{ 'driver_id' }} --}}
-                    <input type="text" name="name" placeholder="Enter the name of the driver"
+                    <input type="text" name="userName" placeholder="Enter the user name of the driver"
                         value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->name }}" required>
                     <h style="font-size:20px">
-                        Name
+                        User Name
                     </h>
-                    @error('name')
+                    @error('userName')
                         <div class="error">{{ $message }}</div>
                     @enderror
 
@@ -120,19 +120,29 @@
                     <input type="text" name="location" placeholder="Enter the location of the driver"
                         value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->location }}" required>
                     <h style="font-size:20px">
-                        location
+                        Location
                     </h>
                     @error('location')
                         <div class="error">{{ $message }}</div>
                     @enderror
 
-                    <input type="isDelivering" name="isDelivering"
-                        value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->isDelivering }}"required>
+                    <input type="text" name="number"
+                        value="{{ App\Models\User::where('id',App\Models\Driver::where('id', session('driver_id'))->first()->user_id)->first()->number }}"required>
                     <h style="font-size:20px">
-                        isDelivering
+                        Number
+                    </h>
+                    @error('number')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
+                    </input>
+
+                    <input type="password" name="password"
+                        value="">
+                    <h style="font-size:20px">
+                        password
                     </h>
                     </input>
-                    @error('isDelivering')
+                    @error('password')
                         <div class="error">{{ $message }}</div>
                     @enderror
 

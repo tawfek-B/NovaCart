@@ -112,7 +112,7 @@
             /* Smooth transition for color and border */
         }
 
-        .add-driver :hover {
+        .add-driver:hover {
             background-color: #42FCA9;
             /* Green background */
             color: white;
@@ -133,15 +133,19 @@
 
 <body style="background-color: #FFFFFF">
 
-    <div>
-        <img src="{{ asset('images/NovaCart.png') }}" alt="" style="width:250px; height:250px; margin-left:41.5%">
-    </div>
+    <a href="/welcome">
+        <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:250px; height:250px; margin-left:41.5%">
+    </a>
+
     <div style="font-family: 'Forte';font-size: 50px; margin-left: 37.5%; margin-bottom: 2.5%; color:#42FCA9;">
         {{-- i want t change this so it uses "forte regular" font --}}
         DRIVERS PAGE
     </div>
     <div class="grid-container">
         @foreach (App\Models\driver::all() as $driver)
+        @php
+            $user = App\Models\User::where('id', $driver->user_id)->first();
+        @endphp
             <div class="grid-item">
                 <a href="updatedriver/{{ $driver->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
@@ -163,13 +167,20 @@
                          Image"
                         style="width: 150px; height: 150px;">
                 </p>
-                <p style="font-size:smaller"><strong>Location:</strong> {{ $driver->location }}
+                <p><strong>Name:</strong> {{ $driver->name }}</p>
+                <p><strong>Email:</strong> {{ $user->email }}</p>
+                <p><strong>Number:</strong> {{ $user->number }}</p>
+                <p><strong>Location:</strong> {{ $driver->location }}</p>
+                <p style="justify-content:end"><strong></strong>
+                    @if($driver->isDelivering)
+                    Delivering
+                    @else
+                    Not Delivering
+                    @endif
                 </p>
-                <p><strong>isDelivering:</strong> {{ $driver->isDelivering }}</p>
             </div>
         @endforeach
-        <a class="add-driver
-        " href="/adddriver">
+        <a class="add-driver" href="/adddriver">
             <span class="plus-sign">+</span>
         </a>
     </div>

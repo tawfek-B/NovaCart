@@ -110,8 +110,11 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <input type="file" name="image" id="image" placeholder="Enter the image of the product" accept="image/*">
-
+                <!-- Image Input -->
+                <input type="file" name="image" placeholder="Enter the image of the product" accept="image/*" id="imageInput">
+                @error('image')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
                 <!-- price Input -->
                 <input type="number" name="price" placeholder="Enter the price of the product" value="{{ App\Models\Product::where('id', session('product_id'))->first()->price}}">

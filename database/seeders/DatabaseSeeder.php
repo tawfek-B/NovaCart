@@ -28,18 +28,21 @@ class DatabaseSeeder extends Seeder
             'email' => fake()->unique()->safeEmail(),
             'password' => '12345678',
             'email_verified_at' => now(),
-            'logo' => 'Users/default.png',
+            'logo' => 'Driver/default.jpg',
             'location' => fake()->streetAddress(),
             'isAccepted' => 0,
             'isDriver' => 1,
         ]);
         foreach(User::all() as $user) {//this iterates through all the users to check which one is a driver to create an instance of the Driver model
             if($user->isDriver) {
+                $user->logo = "Drivers/default.jpg";
+                $user->save();
                 Driver::factory()->create([
                     'user_id' => $user->id,
                     'name' => $user->userName,//Maybe change this so it takes both the first and last name instead of the username? Or maybe add a first, last and username for the driver model?
                     'location' => $user->location,
                     'isDelivering' => 0,
+
                 ]);
             }
         }

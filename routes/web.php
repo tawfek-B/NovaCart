@@ -17,12 +17,12 @@ Route::get('/', function () {
 Route::post('/reg',[SessionController::class,'adminlogin']);
 
 Route::get('/toobad', function () {
-    return view('toobad');
+    return view('tooBad');
 });
 
 //Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
-    
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -90,6 +90,14 @@ Route::get('/updatedriver/{id}', function($id) {
 Route::post('/updatedriver/{id}', [DriverController::class, 'update']);//Obviously we're not using these in the app, only in the website
 
 Route::delete('/deletedriver/{id}', [DriverController::class, 'delete']);
+
+Route::get('/confirmadd', function() {
+    return view(view: 'confirmedAdd');
+})->name('add.confirmation');
+
+Route::get('/confirmupdate', function() {
+    return view(view: 'confirmedUpdate');
+})->name('update.confirmation');
 
 Route::get('/confirmdelete', function() {
     return view(view: 'confirmedDelete');

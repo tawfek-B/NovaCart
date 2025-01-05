@@ -81,10 +81,22 @@ class ProductController extends Controller
             'quantity' => $quantity,
             'store_id' => $storeId,
         ]);
+
+        $data = ['element' => 'product', 'id' => $product->id, 'name' => $product->name];
+        session(['add_info' => $data]);
+        return redirect()->route('add.confirmation');
     }
 
     public function update(Request $request, $id){
 
+        foreach(Product::all() as $product) {
+            if($product->name==$request->input('name') && $product->id !=$id) {
+                $validated = $request->validate([
+                    'name' => 'unique:products,name',
+                ]);
+
+            }
+        }
 
         $validated = [
             $name = $request->input('name'),
@@ -109,6 +121,10 @@ class ProductController extends Controller
                 $product->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
             }
             $product->save();
+
+        $data = ['element' => 'product', 'id' => $product->id, 'name' => $product->name];
+        session(['add_info' => $data]);
+        return redirect()->route('add.confirmation');
     }
 
     public function delete(Request $request, $id) {

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Store;
+use Illuminate\Support\Facades\Storage;
 
 class StoreController extends Controller
 {
@@ -23,6 +24,9 @@ class StoreController extends Controller
     }
     public function create(Request $request) {
 
+        $validated = $request->validate([
+            'name' =>'unique:stores,name',
+        ]);
         // $request->validate([
         //     'name' => 'required',
         //     'opening hours' => 'required',
@@ -56,9 +60,22 @@ class StoreController extends Controller
             'location' => $location,
         ]);
 
+        $data = ['element' => 'store', 'id' => $store->id, 'name' => $store->name];
+        session(['add_info' => $data]);
+        return redirect()->route('add.confirmation');
+
     }
 
     public function update(Request $request, $id) {
+
+        foreach(Store::all() as $store) {
+            if($store->name==$request->input('name') && $store->id !=$id) {
+                $validated = $request->validate([
+                    'name' => 'unique:stores,name',
+                ]);
+
+            }
+        }
 
         $validated = $request->validate(rules: [
             'name' => 'required',
@@ -71,8 +88,11 @@ class StoreController extends Controller
         $store = Store::where('id', $id)->first();
         // dd($store, 'auhswfhawusfwas');
 
+
         if(!is_null($request->file('image'))) {
             $path = $request->file('image')->store('Stores', 'public');
+            if($store->image!="Stores/default.png")
+            Storage::delete($store->image);
             $store->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
         }
         // dd($store->name);
@@ -89,6 +109,9 @@ class StoreController extends Controller
             //     'data' => $store,
             // ], 200);
 
+            $data = ['element' => 'store', 'id' => $id, 'name'=>$store->name];
+            session( ['update_info' => $data]);
+            return redirect()->route('update.confirmation');
     }
 
     public function delete(Request $request, $id) {
