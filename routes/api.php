@@ -9,6 +9,7 @@ use App\Http\Controllers\CartController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DriverController;
 use App\Http\Controllers\NotificationsController;
+use App\Http\Controllers\ImageController;
 use Illuminate\Support\Facades\Route;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
@@ -59,6 +60,10 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/changelogo', [UserController::class, 'changeLogo']);
     Route::put('/updateusername', [UserController::class, 'changeUserName']);
 
+    Route::get('/getuserimage/{id}', [ImageController::class, 'showUser']);
+    Route::get('/getdriverimage/{id}', [ImageController::class, 'showDriver']);
+    Route::get('/getstoreimage/{id}', [ImageController::class, 'showStore']);
+    Route::get('/getproductimage/{id}', [ImageController::class, 'showProduct']);
 
     Route::get('/getorder/{id}', [OrderController::class, 'fetch']);
     Route::get('/getorderid', [OrderController::class, 'fetchID']);

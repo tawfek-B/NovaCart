@@ -136,7 +136,6 @@
     <a href="/welcome">
         <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:250px; height:250px; margin-left:41.5%">
     </a>
-
     <div style="font-family: 'Forte';font-size: 50px; margin-left: 37.5%; margin-bottom: 2.5%; color:#42FCA9;">
         {{-- i want t change this so it uses "forte regular" font --}}
         DRIVERS PAGE

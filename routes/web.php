@@ -20,6 +20,11 @@ Route::get('/toobad', function () {
     return view('tooBad');
 });
 
+Route::get('/getuserimage/{id}', [ImageController::class, 'showUser']);
+Route::get('/getdriverimage/{id}', [ImageController::class, 'showDriver']);
+Route::get('/getstoreimage/{id}', [ImageController::class, 'showStore']);
+Route::get('/getproductimage/{id}', [ImageController::class, 'showProduct']);
+
 //Protected routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
 
@@ -29,9 +34,7 @@ Route::get('/welcome', function () {
 //haydra : changed this to a comment so u cant acsess the welcome page without logging in
 
 
-// Route::get('/image/{path}', [ImageController::class, 'show'])->where('path', '.*');
 
-Route::get('/image/{path}', [ImageController::class, 'show'])->where('path', '.*');
 
 Route::get('/stores', function() {
     return view('stores');
