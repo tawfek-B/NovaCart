@@ -116,33 +116,23 @@
                         accept="image/*">
 
 
-                    <!-- price Input -->
-                    <input type="number" name="price" placeholder="Enter the price of the driver"
-                        value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->price }}">
+                    <!-- location Input -->
+                    <input type="text" name="location" placeholder="Enter the location of the driver"
+                        value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->location }}" required>
                     <h style="font-size:20px">
-                        Price
+                        location
                     </h>
-                    @error('price')
+                    @error('location')
                         <div class="error">{{ $message }}</div>
                     @enderror
 
-                    <input type="quantity" name="quantity"
-                        value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->quantity }}"required>
+                    <input type="isDelivering" name="isDelivering"
+                        value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->isDelivering }}"required>
                     <h style="font-size:20px">
-                        Quantity
+                        isDelivering
                     </h>
                     </input>
-                    @error('quantity')
-                        <div class="error">{{ $message }}</div>
-                    @enderror
-
-                    <!-- Description Input -->
-                    <input type="text" name="description" placeholder="Enter the description of the driver"
-                        value="{{ App\Models\Driver::where('id', session('driver_id'))->first()->description }}"required>
-                    <h style="font-size:20px">
-                        Description
-                    </h>
-                    @error('description')
+                    @error('isDelivering')
                         <div class="error">{{ $message }}</div>
                     @enderror
 
@@ -158,7 +148,6 @@
 
                 </div>
                 <input type="submit" class="button" value="Update driver" style="margin-left:14%;">
-
                 @error('Submit driver')
                     <div class="error">{{ $message }}</div>
                 @enderror

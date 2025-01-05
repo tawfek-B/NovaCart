@@ -40,6 +40,7 @@ class SessionController extends Controller
                 // Find user by number
                 $user = User::where('number', $credentials['number'])->first();
                 if ($user && $user->admin) {
+                    Auth::login($user);
                     return view('welcome');
                 } else {
                     return redirect()->back()->withErrors(['login' => "Not an admin"])->withInput();

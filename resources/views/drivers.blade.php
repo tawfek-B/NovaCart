@@ -143,12 +143,10 @@
     <div class="grid-container">
         @foreach (App\Models\driver::all() as $driver)
             <div class="grid-item">
-                <a href="updatedriver
-                /{{ $driver->id }}" class="edit-icon" title="Edit">
+                <a href="updatedriver/{{ $driver->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
                 </a>
-                <form action="/deletedriver
-                /{{ $driver->id }}" method="POST" class="delete-form"
+                <form action="/deletedriver/{{ $driver->id }}" method="POST" class="delete-form"
                     onsubmit="return confirmDelete('{{ $driver->name }}', '{{ $driver->quantity }}');">
                     @csrf
                     @method('DELETE')
@@ -165,7 +163,7 @@
                          Image"
                         style="width: 150px; height: 150px;">
                 </p>
-                <p style="font-size:smaller"><strong>Location:</strong> {{ $driver->Location }}
+                <p style="font-size:smaller"><strong>Location:</strong> {{ $driver->location }}
                 </p>
                 <p><strong>isDelivering:</strong> {{ $driver->isDelivering }}</p>
             </div>
@@ -179,18 +177,8 @@
 </body>
 
 <script>
-    function confirmDelete(driver Name, driver Quantity) {
-        let message = `Are you sure you want to delete the driver
-     "${driver
-    Name}"?`;
-
-        if (driver Quantity !== 0) {
-            message += `\n\nWARNING: There's still ${driver
-        Quantity} amounts left of this driver
-         still in sale.`;
-        }
-
-        return confirm(message);
+    function confirmDelete(driverName) {
+        return confirm(`Are you sure you want to delete the driver "${driverName}"?`);
     }
 </script>
 

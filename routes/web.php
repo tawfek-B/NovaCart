@@ -9,6 +9,7 @@ use App\Http\Controllers\DriverController;
 use App\Http\Controllers\ImageController;
 use App\Models\Product;
 
+//Public routes
 Route::get('/', function () {
     return view('auth/register');
 });
@@ -19,7 +20,9 @@ Route::get('/toobad', function () {
     return view('toobad');
 });
 
-
+//Protected routes
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -106,3 +109,4 @@ Route::get('/products/{product}', function (Product $product) {
     return $product;
 });
 
+});

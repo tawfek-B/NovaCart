@@ -8,6 +8,7 @@ use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Storage;
 
 class DriverController extends Controller
 {
@@ -81,7 +82,7 @@ class DriverController extends Controller
         $driverAttributes = [
             $name = $request->input('name'),
             $Location = $request->input('Location'),
-            $isDelivering = $request->input('isDelivering')
+            $isDelivering = false
         ];
         if(!is_null($request->file('image'))) {
             $path = $request->file('image')->store('drivers', 'public');
@@ -99,7 +100,6 @@ class DriverController extends Controller
     }
 
     public function update(Request $request, $id){
-
 
         $validated = [
             $name = $request->input('name'),

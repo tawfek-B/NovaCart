@@ -99,44 +99,18 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                <!-- Store ID Input -->
-                <select name="storeID" id="storeID" required
-                    style="margin-left: 37.5%; width:25%; padding:8px;margin-bottom:2.5%;">
-                    <option value="" selected required>Select a store</option>
-                    @foreach (App\Models\Store::all() as $store)
-                        <option value="{{ $store->id }}">{{ $store->name }}</option>
-                    @endforeach
-                </select>
-                @error('storeID')
+
+                <!-- location Input -->
+                <input type="text" name="location" placeholder="Enter the location of the driver" required>
+                @error('location')
                     <div class="error">{{ $message }}</div>
                 @enderror
-
-                <!-- Price Input -->
-                <input type="text" name="price" placeholder="Enter the price of the driver" required>
-                @error('price')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-                <!-- Description Input -->
-                <input type="text" name="description" placeholder="Enter the description of the driver" required>
-                @error('description')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-                <input type="file" name="image" id="image" placeholder="Enter the image of the driver"
-                    accept="image/*">
-
-                <!-- quantity Input -->
-                <input type="number" name="quantity" placeholder="Enter the available quantity of the driver" required>
-                @error('quantity')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-                <input type="submit" class="button" value="Submit driver" style="margin-left:4%;">
-
-                @error('Submit driver')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                <a href="/drivers">
+                    <input type="submit" class="button" value="Submit driver" style="margin-left:4%;">
+                    @error('Submit driver')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
+                </a>
             </div>
         </form>
     </div>
