@@ -22,6 +22,11 @@ class CartController extends Controller
                 'message' => 'Product not found'
             ], 400);
         }
+        if(Product::where('id', $request->input('product_id'))->first()->quantity< $request->input('quantity')) {
+            return response()->json([
+                'success' => 'false',
+            ]);
+        }
         $user = Auth::user();
         //We have to change this later
         $productId = $request->input('product_id');

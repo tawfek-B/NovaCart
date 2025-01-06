@@ -13,7 +13,8 @@ class OrderController extends Controller
     {
         return response()->json([
             'success' => Order::where('id', $id)->first()?true:false,
-            'order' =>  Order::where('id', $id)->first(),
+            'order' =>  $order = Order::where('id', $id)->first(),
+            'content' => json_decode($order->content)
         ]);
     }
 
@@ -30,7 +31,14 @@ class OrderController extends Controller
 
     public function fetchAll(Request $request)
     {
-        return Order::all();
+        $contents = [];
+        foreach(Order::all() as $order) {
+            $contents[] = json_decode($order->content);
+        }
+        return response()->json([
+            'orders' => Order::all(),
+            'contents' => $contents,
+        ]);
     }
 
     public function accept(Request $request)
