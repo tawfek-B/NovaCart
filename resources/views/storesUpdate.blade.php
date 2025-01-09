@@ -2,11 +2,10 @@
 <html lang="en">
 
 <head>
+    <title>Update Store</title>
     <style>
         /* Your existing CSS styles */
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-
-        * {
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -26,7 +25,7 @@
             transform: translate(-50%, -50%);
             max-width: 75%;
             width: 100%;
-            height:150%;
+            height: 150%;
             background: #fff;
             border-radius: 7px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -48,7 +47,7 @@
             width: 72.5%;
             padding: 0 15px;
             font-size: 17px;
-            margin-left:13%;
+            margin-left: 13%;
             margin-bottom: 1.3rem;
             border: 1px solid #ddd;
             border-radius: 6px;
@@ -90,72 +89,81 @@
 <body>
     {{-- <p>store_id: {{ session('store_id') }}</p> --}}
     <div class="container">
-        <form method="POST" action="/updatestore/{{session('store_id')}}" enctype="multipart/form-data">
+        <form method="POST" action="/updatestore/{{ session('store_id') }}" enctype="multipart/form-data">
             @csrf
             <div class="form">
-                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:15%;">UPDATE STORE</header>
+                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:15%;">
+                    UPDATE STORE</header>
 
-            <!-- Image Preview -->
-            <img id="imagePreview" src="{{ asset(App\Models\Store::where('id', session('store_id'))->first()->image) }}" alt="Selected Image" style="width:200px; height:200px; margin-left: 40%; margin-top: ;">
-
-
-            <div style="margin-top:5%;">
-                <!-- Name Input -->
-                {{-- {{ 'store_id' }} --}}
-                <input type="text" name="name" placeholder="Enter the name of the store" value="{{ App\Models\Store::where('id', session('store_id'))->first()->name }}" required>
-                <h style="font-size:20px">
-                    Name
-                </h>
-                @error('name')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-                <input type="file" name="image" id="image" placeholder="Enter the image of the product" accept="image/*">
+                <!-- Image Preview -->
+                <img id="imagePreview"
+                    src="{{ asset(App\Models\Store::where('id', session('store_id'))->first()->image) }}?v={{ \Illuminate\Support\Facades\Storage::lastModified(App\Models\Store::where('id', session('store_id'))->first()->image) }}"
+                    alt="Selected Image" style="width:200px; height:200px; margin-left: 40%; margin-top: ;">
 
 
-                <!-- Location Input -->
-                <input type="text" name="location" placeholder="Enter the location of the store" value="{{ App\Models\Store::where('id', session('store_id'))->first()->location}}">
-                <h style="font-size:20px">
-                    Location
-                </h>
-                @error('location')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                <div style="margin-top:5%;">
+                    <!-- Name Input -->
+                    {{-- {{ 'store_id' }} --}}
+                    <input type="text" name="name" placeholder="Enter the name of the store"
+                        value="{{ App\Models\Store::where('id', session('store_id'))->first()->name }}" required>
+                    <h style="font-size:20px">
+                        Name
+                    </h>
+                    @error('name')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                <!-- Description Input -->
-                <input type="text" name="description" placeholder="Enter the description of the store"  value="{{ App\Models\Store::where('id', session('store_id'))->first()->description}}"required>
-                <h style="font-size:20px">
-                    Description
-                </h>
-                @error('description')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                    <input type="file" name="image" id="image" placeholder="Enter the image of the product"
+                        accept="image/*">
 
-                <input type="time" name="openingTime"  value="{{ App\Models\Store::where('id', session('store_id'))->first()->openingTime}}">
-                <h style="font-size:20px">
-                    Opening Time
-                </h>
-            </input>
-                @error('openingTime')
-                    <div class="error">{{ $message }}</div>
-                @enderror
 
-                <!-- quantity Input -->
-                <input type="time" name="closingTime" placeholder="The opening time of the store" value="{{ App\Models\Store::where('id', session('store_id'))->first()->closingTime}}">
-                <h style="font-size:20px">
-                    Closing Time
-                </h>
-            </input>
-                @error('closingTime')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                    <!-- Location Input -->
+                    <input type="text" name="location" placeholder="Enter the location of the store"
+                        value="{{ App\Models\Store::where('id', session('store_id'))->first()->location }}">
+                    <h style="font-size:20px">
+                        Location
+                    </h>
+                    @error('location')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                <input type="submit" class="button" value="Update Store" style="margin-left:14%;">
+                    <!-- Description Input -->
+                    <input type="text" name="description" placeholder="Enter the description of the store"
+                        value="{{ App\Models\Store::where('id', session('store_id'))->first()->description }}"required>
+                    <h style="font-size:20px">
+                        Description
+                    </h>
+                    @error('description')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                @error('Submit Store')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-            </div>
+                    <input type="time" name="openingTime"
+                        value="{{ App\Models\Store::where('id', session('store_id'))->first()->openingTime }}">
+                    <h style="font-size:20px">
+                        Opening Time
+                    </h>
+                    </input>
+                    @error('openingTime')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
+
+                    <!-- quantity Input -->
+                    <input type="time" name="closingTime" placeholder="The opening time of the store"
+                        value="{{ App\Models\Store::where('id', session('store_id'))->first()->closingTime }}">
+                    <h style="font-size:20px">
+                        Closing Time
+                    </h>
+                    </input>
+                    @error('closingTime')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
+
+                    <input type="submit" class="button" value="Update Store" style="margin-left:14%;">
+
+                    @error('Submit Store')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
+                </div>
 
             </div>
         </form>
@@ -175,7 +183,8 @@
                 reader.readAsDataURL(file);
             } else {
                 // Reset to the original image if no file is selected
-                imagePreview.src = "{{ asset(App\Models\Store::where('id', session('store_id'))->first()->image) }}";
+                imagePreview.src =
+                    "{{ asset(App\Models\Store::where('id', session('store_id'))->first()->image) }}";
             }
         });
     </script>

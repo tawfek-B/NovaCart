@@ -123,8 +123,8 @@ class ProductController extends Controller
             $product->save();
 
         $data = ['element' => 'product', 'id' => $product->id, 'name' => $product->name];
-        session(['add_info' => $data]);
-        return redirect()->route('add.confirmation');
+        session(['update_info' => $data]);
+        return redirect()->route('update.confirmation');
     }
 
     public function delete(Request $request, $id) {

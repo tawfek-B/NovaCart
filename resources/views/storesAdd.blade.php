@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Add Store</title>
     <style>
         /* Your existing CSS styles */
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
@@ -94,7 +95,7 @@
             <div class="form">
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD STORE</header>
 
-                <img id="imagePreview" src="{{ asset('/Stores/default.png') }}"
+                <img id="imagePreview" src="{{ asset('/Stores/default.png') }}?v={{ file_exists(public_path('storage/Stores/default.png')) ? filemtime(public_path('storage/Stores/default.png')) : now()->timestamp }}" alt="Store Image"
                 alt="{{ asset('/Stores/default.png') }}"
                 style="width:200px; height:200px; margin-left: 40%; margin-top: ;">
                 <!-- Name Input -->

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Update Driver</title>
     <style>
         /* Your existing CSS styles */
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">* {
@@ -19,7 +20,7 @@
 
         .container {
             position: absolute;
-            top: 60%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
             max-width: 75%;
@@ -96,7 +97,7 @@
 
                 <!-- Image Preview -->
                 <img id="imagePreview"
-                    src="{{ asset(App\Models\Driver::where('id', session('driver_id'))->first()->image) }}"
+                src="{{ asset(App\Models\Driver::where('id', session('driver_id'))->first()->image) }}?v={{ \Illuminate\Support\Facades\Storage::lastModified(App\Models\Driver::where('id', session('driver_id'))->first()->image) }}"
                     alt="Selected Image" style="width:200px; height:200px; margin-left: 40%; margin-top: 5%;">
 
                 <div style="margin-top:5%;">
@@ -127,7 +128,7 @@
                     @enderror
 
                     <input type="text" name="number"
-                        value="{{ App\Models\User::where('id',App\Models\Driver::where('id', session('driver_id'))->first()->user_id)->first()->number }}"required>
+                        value="{{ App\Models\User::where('id', App\Models\Driver::where('id', session('driver_id'))->first()->user_id)->first()->number }}"required>
                     <h style="font-size:20px">
                         Number
                     </h>
@@ -136,8 +137,7 @@
                     @enderror
                     </input>
 
-                    <input type="password" name="password"
-                        value="">
+                    <input type="password" name="password" value="">
                     <h style="font-size:20px">
                         password
                     </h>

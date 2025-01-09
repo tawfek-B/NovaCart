@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Add Product</title>
     <style>
         /* Your existing CSS styles */
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">* {
@@ -92,9 +93,10 @@
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD
                     PRODUCT</header>
 
-                    <img id="imagePreview" src="{{ asset('/Products/default.png') }}"
-                alt="{{ asset('/Products/default.png') }}"
-                style="width:200px; height:200px; margin-left: 40%; margin-top: ;">
+                <img id="imagePreview"
+                    src="{{ asset('/Products/default.png') }}?v={{ file_exists(public_path('storage/Products/default.png')) ? filemtime(public_path('storage/Products/default.png')) : now()->timestamp }}"
+                    alt="Product Image" alt="{{ asset('/Products/default.png') }}"
+                    style="width:200px; height:200px; margin-left: 40%; margin-top: ;">
 
                 <!-- Number Input -->
                 <input type="text" name="name" placeholder="Enter the name of the product"
@@ -127,11 +129,12 @@
                     <div class="error">{{ $message }}</div>
                 @enderror
 
-                 <!-- Image Input -->
-               <input type="file" name="image" placeholder="Enter the image of the product" accept="image/*" id="imageInput">
-               @error('image')
-                   <div class="error">{{ $message }}</div>
-               @enderror
+                <!-- Image Input -->
+                <input type="file" name="image" placeholder="Enter the image of the product" accept="image/*"
+                    id="imageInput">
+                @error('image')
+                    <div class="error">{{ $message }}</div>
+                @enderror
 
                 <!-- quantity Input -->
                 <input type="number" name="quantity" placeholder="Enter the available quantity of the product"
@@ -149,16 +152,16 @@
         </form>
     </div>
     <script>
-        document.getElementById('imageInput').addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    document.getElementById('imagePreview').src = e.target.result;
-                }
-                reader.readAsDataURL(file);
-            }
-        });
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
     </script>
 </body>
 

@@ -14,28 +14,28 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(10)->create();
+        // User::factory(10)->create();
 
-        User::factory(10)->create();
-        $this->call(StoreSeeder::class);
+        // User::factory(10)->create();
+        // $this->call(StoreSeeder::class);
 
         User::create([
             'firstname' => 'hi',
             'lastname' => fake()->lastName(),
             'userName' => fake()->name(),
-            'number' => 12345678,
+            'number' => "09876543210",
             'admin' => true,
             'email' => fake()->unique()->safeEmail(),
             'password' => '12345678',
             'email_verified_at' => now(),
-            'logo' => 'Driver/default.jpg',
+            'logo' => 'Driver/default.png',
             'location' => fake()->streetAddress(),
             'isAccepted' => 0,
             'isDriver' => 1,
         ]);
         foreach(User::all() as $user) {//this iterates through all the users to check which one is a driver to create an instance of the Driver model
             if($user->isDriver) {
-                $user->logo = "Drivers/default.jpg";
+                $user->logo = "Drivers/default.png";
                 $user->save();
                 Driver::factory()->create([
                     'user_id' => $user->id,

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Add Driver</title>
     <style>
         /* Your existing CSS styles */
         <link rel="stylesheet" href="{{ asset('css/custom.css') }}">* {
@@ -92,9 +93,9 @@
                 <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:5%;">ADD
                     DRIVER</header>
 
-                    <img id="imagePreview" src="{{ asset('/Drivers/default.jpg') }}"
-                alt="{{ asset('/Drivers/default.jpg') }}"
-                style="width:200px; height:200px; margin-left: 40%; margin-bottom: 5%;">
+                <img id="imagePreview" src="{{ asset('/Drivers/default.png') }}?v={{ file_exists(public_path('storage/Drivers/default.png')) ? filemtime(public_path('storage/Drivers/default.png')) : now()->timestamp }}" alt="Driver Image"
+                    alt="{{ asset('/Drivers/default.png') }}"
+                    style="width:200px; height:200px; margin-left: 40%; margin-bottom: 5%;">
 
                 <!-- userName Input -->
                 <input type="text" name="firstName" placeholder="Enter the first name of the driver"
@@ -105,15 +106,16 @@
 
 
                 <!-- lastName Input -->
-                <input type="text" name="lastName" placeholder="Enter the last name of the driver" value="{{old('lastName')}}" required>
+                <input type="text" name="lastName" placeholder="Enter the last name of the driver"
+                    value="{{ old('lastName') }}" required>
                 @error('lastName')
-                <div class="error">{{ $message }}</div>
+                    <div class="error">{{ $message }}</div>
                 @enderror
 
                 <!-- userName Input -->
                 <input type="text" name="userName" placeholder="Enter the user name of the driver" required>
                 @error('userName')
-                <div class="error">{{ $message }}</div>
+                    <div class="error">{{ $message }}</div>
                 @enderror
 
                 <!-- number Input -->
@@ -135,15 +137,17 @@
                 @enderror
 
                 <!-- logo Input -->
-                <input type="file" name="image" placeholder="Enter the image of the driver" accept="image/*" value="{{old('image')}}" id="imageInput">
+                <input type="file" name="image" placeholder="Enter the image of the driver" accept="image/*"
+                    value="{{ old('image') }}" id="imageInput">
                 @error('image')
-                    <div class="error">{{ $message }}</div>
+                    <div class="error">{{ $message }}</div>
                 @enderror
 
                 <!-- location Input -->
-                <input type="text" name="location" placeholder="Enter the location of the product" value = "{{old('location')}}">
+                <input type="text" name="location" placeholder="Enter the location of the driver"
+                    value = "{{ old('location') }}">
                 @error('location')
-                    <div class="error">{{ $message }}</div>
+                    <div class="error">{{ $message }}</div>
                 @enderror
 
                 <a href="/drivers">
@@ -156,16 +160,16 @@
         </form>
     </div>
     <script>
-        document.getElementById('imageInput').addEventListener('change', function(event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function(e) {
-                    document.getElementById('imagePreview').src = e.target.result;
-                }
-                reader.readAsDataURL(file);
-            }
-        });
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
     </script>
 </body>
 

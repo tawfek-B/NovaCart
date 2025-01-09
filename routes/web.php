@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\ProductController;
@@ -12,7 +14,7 @@ use App\Models\Product;
 //Public routes
 Route::get('/', function () {
     return view('auth/register');
-});
+})->name('login');
 
 Route::post('/reg', [SessionController::class, 'adminlogin']);
 
@@ -26,7 +28,7 @@ Route::get('/getstoreimage/{id}', [ImageController::class, 'showStore']);
 Route::get('/getproductimage/{id}', [ImageController::class, 'showProduct']);
 
 //Protected routes
-Route::group(['middleware' => ['auth:sanctum']], function () {
+Route::group(['middleware' => ['auth']], function () {
 
     Route::get('/welcome', function () {
         return view('welcome');
@@ -58,6 +60,11 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         return view('products');
     });
 
+    Route::get('/storeproducts/{id}', function ($id) {
+        session(['store_id' => $id]);
+        return view('productsFromStore');
+    });
+
     Route::get('/addproduct', function () {
         return view('productsAdd');
     });
@@ -65,6 +72,11 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/addproduct', [ProductController::class, 'create']);
 
     Route::get('/updateproduct/{id}', function ($id) {
+        session(['product_id' => $id]);
+        return view('productsUpdate');
+    });
+
+    Route::get('storeproducts/updateproduct/{id}', function ($id) {
         session(['product_id' => $id]);
         return view('productsUpdate');
     });
@@ -105,11 +117,12 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     })->name('delete.confirmation');
 
 
+
     // Route::get('/register', [UserController::class, 'create']);
-// Route::post('/register', [UserController::class, 'store']);
+    // Route::post('/register', [UserController::class, 'store']);
 
     // Route::get('/login', [SessionController::class, 'create']);
-// Route::post('/login', [SessionController::class, 'store']);
+    // Route::post('/login', [SessionController::class, 'store']);
 
     //trying out github push
 
@@ -118,4 +131,15 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
         return $product;
     });
 
+    Route::post('/logout', function(Request $request) {
+        Auth::logout();
+        session()->invalidate(); // Invalidate the session
+        session()->regenerateToken(); // Regenerate CSRF token
+        return redirect()->route('logout.confirmation');
+    });
+
 });
+
+Route::get('/confirmlogout', function () {
+    return view(view: 'confirmedLogout');
+})->name('logout.confirmation');

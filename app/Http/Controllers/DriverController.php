@@ -236,7 +236,7 @@ class DriverController extends Controller
 
         if (!is_null($request->file('image'))) {
             $path = $request->file('image')->store('drivers', 'public');
-            if ($driver->image != "Drivers/default.jpg")
+            if ($driver->image != "Drivers/default.png")
                 Storage::delete($driver->image);
             $driver->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
             $user->logo = str_replace('public\\', '', $path);
@@ -258,8 +258,10 @@ class DriverController extends Controller
     public function delete(Request $request, $id)
     {
         $driver = driver::where('id', $id)->first();
+        $userID = $driver->user_id;
         $name = $driver->name;
         $driver->delete();
+        User::where('id', $userID)->first()->delete();
         $i = 1;
         foreach (driver::all() as $driver) {
             $driver->id = $i;

@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <title>Drivers</title>
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -33,14 +34,24 @@
             transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 
+
         .grid-item:hover {
-            background-color: #42FCA9;
+            background-color: #143640;
             /* Green background */
             border: 2px solid #30C198;
             /* Green border initially */
-            transition: all 0.3s ease;
+            name-color: #FFFFFF;
+            color: #FFFFFF;
+           rgb(131, 65, 65)tion: all 0.3s ease;
             box-shadow: 0 8px 16px #42FCA9;
             transform: translateY(-3px);
+        }
+
+        .grid-item:hover .highlight-on-hover {
+            color: #42FCA9;
+            /* Change color for this specific <a> */
+            /* text-decoration:none; */
+            /* Optional: Remove underline */
         }
 
         .edit-icon,
@@ -76,7 +87,7 @@
         }
 
         .edit-icon:hover {
-            background-color: #143640;
+            background-color: #42FCA9;
             /* Hover background */
             color: white;
             /* White icon */
@@ -128,13 +139,44 @@
             font-size: 48px;
             font-weight: bold;
         }
+
+        .logout {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px 30px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 20px;
+            border: 3px solid;
+            border-bottom-left-radius: 40px;
+            border-color: hsl(153, 97%, 62%);
+            cursor:pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            transition: 0.5s ease, box-shadow 0.5s ease, font-size 0.5s ease, border 0.5s ease;
+        }
+
+        .logout:hover {
+            color: #42FCA9;
+            border-left: 4.5px solid;
+            border-bottom: 4.5px solid;
+            background-color:#143640;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            font-size:23px;
+            /* Optional: Change color on hover */
+        }
     </style>
 </head>
 
 <body style="background-color: #FFFFFF">
-
+    <form method="POST" action="/logout" style="display:flex; flex-direction:row-reverse; width:100%; height:50%" onsubmit="return confirmLogout()">
+        @csrf
+        <button type="submit" class="logout" style="font-family: 'Forte'">
+            LOG OUT
+        </button>
+    </form>
     <a href="/welcome">
-        <img src="{{ asset('images/NovaCart.png')}}" alt="" style="width:250px; height:250px; margin-left:41.5%">
+        <img src="{{ asset('images/NovaCart.png') }}" alt="" style="width:250px; height:250px; margin-left:41.5%">
     </a>
     <div style="font-family: 'Forte';font-size: 50px; margin-left: 37.5%; margin-bottom: 2.5%; color:#42FCA9;">
         {{-- i want t change this so it uses "forte regular" font --}}
@@ -142,9 +184,9 @@
     </div>
     <div class="grid-container">
         @foreach (App\Models\driver::all() as $driver)
-        @php
-            $user = App\Models\User::where('id', $driver->user_id)->first();
-        @endphp
+            @php
+                $user = App\Models\User::where('id', $driver->user_id)->first();
+            @endphp
             <div class="grid-item">
                 <a href="updatedriver/{{ $driver->id }}" class="edit-icon" title="Edit">
                     <i class="fas fa-edit"></i>
@@ -157,12 +199,12 @@
                         <i class="fas fa-trash"></i>
                     </button>
                 </form>
-                <a href="#">
+                <a href="#" class="highlight-on-hover">
                     <span aria-hidden="true" class="absolute inset-0"></span>
                     {{ $driver->name }}
                 </a>
                 <p>
-                    <img src="{{ asset($driver->image) }}" alt="driver
+                    <img src="{{ asset($driver->image) }}?v={{ \Illuminate\Support\Facades\Storage::lastModified($driver->image) }}" alt="driver
                          Image"
                         style="width: 150px; height: 150px;">
                 </p>
@@ -170,11 +212,11 @@
                 <p><strong>Email:</strong> {{ $user->email }}</p>
                 <p><strong>Number:</strong> {{ $user->number }}</p>
                 <p><strong>Location:</strong> {{ $driver->location }}</p>
-                <p style="justify-content:end"><strong></strong>
-                    @if($driver->isDelivering)
-                    Delivering
+                <p style=" position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); margin: 0; font-size: 18px;color:#30C198"><strong></strong>
+                    @if ($driver->isDelivering)
+                        Delivering
                     @else
-                    Not Delivering
+                        Not Delivering
                     @endif
                 </p>
             </div>
@@ -189,6 +231,9 @@
 <script>
     function confirmDelete(driverName) {
         return confirm(`Are you sure you want to delete the driver "${driverName}"?`);
+    }
+    function confirmLogout() {
+        return confirm("Are you sure you want to log out?")
     }
 </script>
 

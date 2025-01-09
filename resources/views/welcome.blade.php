@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styled Buttons</title>
+    <title>Nova Cart</title>
     <style>
         /* General body styling */
         body {
@@ -56,6 +56,33 @@
             color: white;
         }
 
+        .logout {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px 30px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 20px;
+            border: 3px solid;
+            border-bottom-left-radius: 40px;
+            border-color: hsl(153, 97%, 62%);
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            transition: 0.5s ease, box-shadow 0.5s ease, font-size 0.5s ease, border 0.5s ease;
+        }
+
+        .logout:hover {
+            color: #42FCA9;
+            border-left: 4.5px solid;
+            border-bottom: 4.5px solid;
+            background-color: #143640;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            font-size: 23px;
+            /* Optional: Change color on hover */
+        }
+
+
         /* Light green hover effect */
         .btn:hover {
             background-color: #42FCA9;
@@ -67,6 +94,12 @@
 <body>
     <div
         style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; margin-top: 20px;">
+        <form method="POST" action="/logout" style="display:flex; flex-direction:row-reverse; width:100%; height:50%" onsubmit="return confirmLogout()">
+            @csrf
+            <button type="submit" class="logout" style="font-family: 'Forte'">
+                LOG OUT
+            </button>
+        </form>
         <div>
             <img src="{{ asset('images/NovaCart.png') }}" alt=""
                 style="width:350px; height:350px;margin-left:-10%; margin-bottom:10%;">
@@ -88,6 +121,15 @@
             </a>
         </div>
     </div>
+
+    <script>
+        function confirmLogout() {
+            return confirm(
+                `Are you sure you want to log out?`
+            );
+        }
+    </script>
+
 </body>
 
 </html>

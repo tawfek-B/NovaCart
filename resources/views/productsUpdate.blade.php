@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
+    <title>Update Product</title>
     <style>
-        /* Your existing CSS styles */
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
-
-        * {
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}">* {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -26,7 +24,7 @@
             transform: translate(-50%, -50%);
             max-width: 75%;
             width: 100%;
-            height:150%;
+            height: 150%;
             background: #fff;
             border-radius: 7px;
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
@@ -48,7 +46,7 @@
             width: 72.5%;
             padding: 0 15px;
             font-size: 17px;
-            margin-left:13%;
+            margin-left: 13%;
             margin-bottom: 1.3rem;
             border: 1px solid #ddd;
             border-radius: 6px;
@@ -90,68 +88,66 @@
 <body>
     {{-- <p>product_id: {{ session('product_id') }}</p> --}}
     <div class="container">
-        <form method="POST" action="/updateproduct/{{session('product_id')}}" enctype="multipart/form-data">
+        <form method="POST" action="/updateproduct/{{ session('product_id') }}" enctype="multipart/form-data">
             @csrf
             <div class="form">
-                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:15%;">UPDATE PRODUCT</header>
+                <header style="margin-top: -5%;font-family: 'Forte'; color: #42FCA9; font-size:40px;margin-top:15%;">
+                    UPDATE PRODUCT</header>
 
-            <!-- Image Preview -->
-            <img id="imagePreview" src="{{ asset(App\Models\Product::where('id', session('product_id'))->first()->image) }}" alt="Selected Image" style="width:200px; height:200px; margin-left: 40%; margin-top: 5%;">
+                <!-- Image Preview -->
+                <img id="imagePreview"
+                    src="{{ asset(App\Models\Product::where('id', session('product_id'))->first()->image) }}?v={{ \Illuminate\Support\Facades\Storage::lastModified(App\Models\Product::where('id', session('product_id'))->first()->image) }}"
+                    alt="Selected Image" style="width:200px; height:200px; margin-left: 40%; margin-top: 5%;">
 
                 <div style="margin-top:5%;">
 
-                <!-- Name Input -->
-                {{-- {{ 'product_id' }} --}}
-                <input type="text" name="name" placeholder="Enter the name of the product" value="{{ App\Models\Product::where('id', session('product_id'))->first()->name }}" required>
-                <h style="font-size:20px">
-                    Name
-                </h>
-                @error('name')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                    <!-- Name Input -->
+                    {{-- {{ 'product_id' }} --}}
+                    <input type="text" name="name" placeholder="Enter the name of the product"
+                        value="{{ App\Models\Product::where('id', session('product_id'))->first()->name }}" required>
+                    <h style="font-size:20px">
+                        Name
+                    </h>
+                    @error('name')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                <!-- Image Input -->
-                <input type="file" name="image" placeholder="Enter the image of the product" accept="image/*" id="imageInput">
-                @error('image')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                    <!-- Image Input -->
+                    <input type="file" name="image" id="image" placeholder="Enter the image of the product"
+                        accept="image/*" id="imageInput">
+                    @error('image')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                <!-- price Input -->
-                <input type="number" name="price" placeholder="Enter the price of the product" value="{{ App\Models\Product::where('id', session('product_id'))->first()->price}}">
-                <h style="font-size:20px">
-                    Price
-                </h>
-                @error('price')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                    <!-- price Input -->
+                    <input type="text" name="price" placeholder="Enter the price of the product"
+                        value="{{ App\Models\Product::where('id', session('product_id'))->first()->price }}">
+                    <h style="font-size:20px">
+                        Price
+                    </h>
+                    @error('price')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                <input type="quantity" name="quantity"  value="{{ App\Models\Product::where('id', session('product_id'))->first()->quantity}}"required>
-                <h style="font-size:20px">
-                    Quantity
-                </h>
-            </input>
-                @error('quantity')
-                    <div class="error">{{ $message }}</div>
-                @enderror
+                    <input type="quantity" name="quantity"
+                        value="{{ App\Models\Product::where('id', session('product_id'))->first()->quantity }}"required>
+                    <h style="font-size:20px">
+                        Quantity
+                    </h>
+                    </input>
+                    @error('quantity')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
-                <!-- Description Input -->
-                <input type="text" name="description" placeholder="Enter the description of the product"  value="{{ App\Models\Product::where('id', session('product_id'))->first()->description}}"required>
-                <h style="font-size:20px">
-                    Description
-                </h>
-                @error('description')
-                    <div class="error">{{ $message }}</div>
-                @enderror
-
-                {{-- <!-- quantity Input -->
-                <input type="time" name="closingTime" placeholder="The opening time of the product" value="{{ App\Models\Product::where('id', session('product_id'))->first()->closingTime}}" required>
-                <h style="font-size:20px">
-                    Closing Time
-                </h>
-            </input>
-                @error('closingTime')
-                    <div class="error">{{ $message }}</div>
-                @enderror --}}
+                    <!-- Description Input -->
+                    <input type="text" name="description" placeholder="Enter the description of the product"
+                        value="{{ App\Models\Product::where('id', session('product_id'))->first()->description }}"required>
+                    <h style="font-size:20px">
+                        Description
+                    </h>
+                    @error('description')
+                        <div class="error">{{ $message }}</div>
+                    @enderror
 
                 </div>
                 <input type="submit" class="button" value="Update Product" style="margin-left:14%;">
@@ -177,7 +173,8 @@
                 reader.readAsDataURL(file);
             } else {
                 // Reset to the original image if no file is selected
-                imagePreview.src = "{{ asset(App\Models\Product::where('id', session('product_id'))->first()->image) }}";
+                imagePreview.src =
+                    "{{ asset(App\Models\Product::where('id', session('product_id'))->first()->image) }}";
             }
         });
     </script>
