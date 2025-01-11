@@ -37,6 +37,7 @@
 
     .page-item.disabled .page-link {
         color: #ccc;
+        border-color: #CCC;
         pointer-events: none;
     }
 
