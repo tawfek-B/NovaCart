@@ -14,7 +14,7 @@
         body {
             min-height: 100vh;
             width: 100%;
-            background: #42FCA9;
+            background: #143640;
         }
 
         .container {
