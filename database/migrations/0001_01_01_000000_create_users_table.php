@@ -5,8 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Validation\Rules\Unique;
 
-return new class extends Migration
-{
+return new class extends Migration {
     /**
      * Run the migrations.
      */
@@ -17,18 +16,21 @@ return new class extends Migration
             $table->string('firstName');
             $table->string('lastName'); //for the love of god, use camelCase
             $table->string('userName')->unique();
-            $table->integer('number')->unique();
+            $table->string('number')->unique();
             $table->boolean('admin');
             $table->string('email')->unique();
             $table->string('notifications')->nullable();
             $table->string('password');
             $table->string('logo');
             $table->string('location');
-            $table->boolean('isAccepted')->nullable();
+            $table->boolean('isAccepted')->nullable(); //haydra : what is this for ?    //tawfek: made it so when the user logs in to the app, it checks
+            //if isAccepted is true or false, if false everything continues like normal, if true it fire up the event for the driver to change the user's
+            //notifications from pending to accepted to delivering to delivered to null
             $table->boolean('isDriver')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->json('cart')->nullable();
+            $table->json('favourites')->nullable();
             $table->timestamps();//for some reason, users can sign up on the same username, even though it's unique. We have to solve that
             //nevermind, im an idiot, we wrote Unique instead of unique in front of userName
             //xD

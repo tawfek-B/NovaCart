@@ -21,7 +21,7 @@ class ProductFactory extends Factory
             'name' => fake()->name(),
             'price' => fake()->numberBetween(10, 20),
             'description' => fake()->text(),
-            'image' => fake()->imageUrl(),
+            'image' => 'Products/default.png',
             'quantity' => fake()->numberBetween(0, 101),
             'store_id' => Store::factory()
         ];

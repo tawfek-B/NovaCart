@@ -8,6 +8,7 @@ use App\Models\User;
 use App\Models\Order;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\DriverController;
+use Illuminate\Support\Facades\Artisan;
 
 
 class CartController extends Controller
@@ -21,6 +22,11 @@ class CartController extends Controller
                 'message' => 'Product not found'
             ], 400);
         }
+        if(Product::where('id', $request->input('product_id'))->first()->quantity< $request->input('quantity')) {
+            return response()->json([
+                'success' => 'false',
+            ]);
+        }
         $user = Auth::user();
         //We have to change this later
         $productId = $request->input('product_id');
@@ -30,11 +36,19 @@ class CartController extends Controller
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
                     $item['quantity'] = $request->input('quantity');
+                    if ($cart[$index]['quantity'] + $request->input('quantity') > Product::where('id', $productId)->first()->quantity) {
+                        return response()->json([
+                            "success" => "false"
+                        ]);//added this just in case the user orders an extra amount of a product, but they ordered more than what's available
+                    }
                     $cart[$index]['quantity'] += $request->input('quantity');
+                    $cart[$index]['price'] = (Product::where('id', $productId)->first()->price)*$cart[$index]['quantity'];
                     $user->cart = json_encode($cart);
                     $user->save();
+                    return response()->json([
+                        'success' => "true",
+                    ]);
 
-                    return;
                 }
             }
         }//haydra: we dont need to check if we have enough of the item right da boys at front end are goin to do it ?
@@ -44,10 +58,14 @@ class CartController extends Controller
         $newItem = [
             'product_id' => $productId,
             'quantity' => $quantity,
+            'price' => (Product::where('id', $productId)->first()->price)*$quantity,
         ];
         $cart[] = $newItem;
         $user->cart = $cart;
         $user->save();
+        return response()->json([
+            "success" => "true"
+        ]);
     }
     public function update(Request $request)
     {
@@ -60,14 +78,21 @@ class CartController extends Controller
                 if ($item['product_id'] == $request->input('product_id')) {
                     $item['quantity'] = $request->input('newQuantity');
                     $cart[$index]['quantity'] = $request->input('newQuantity');
+                    $cart[$index]['price'] = (Product::where('id', $item['product_id'])->first()->price)*$cart[$index]['quantity'];
                     $user->cart = json_encode($cart);
                     $user->save();
 
-                    return;
+                    return response()->json([
+                        'success' => 'true'
+                    ]);
                 }
             }
         }
     }
+
+
+    // $favourites = array_filter($favourites, fn($item) => $item['product_id'] != $request->input('product_id'));
+    // $user->favourites = json_encode($favourites);
 
     public function delete(Request $request)
     {
@@ -78,14 +103,23 @@ class CartController extends Controller
         if (!is_null($cart)) {
             foreach ($cart as $index => $item) {
                 if ($item['product_id'] == $request->input('product_id')) {
-                    unset($cart[$index]);
-                    $user->cart = json_encode($cart);
+                    $cart = array_filter($cart, fn($item) => $item['product_id'] != $request->input('product_id'));
+                    $user->cart = $cart;
                     $user->save();
+                    break;
+                    // $user->cart = json_encode($cart);
+                    // $user->save();
 
-                    return;
+                    // return;
                 }
             }
+            $cart = array_values($cart);
+            $user->cart = json_encode($cart);
+            $user->save();
         }
+        return response()->json([
+            'success' => 'true',
+        ]);
     }
 
     public function deleteCart(Request $request)
@@ -97,6 +131,9 @@ class CartController extends Controller
             $user->cart = json_encode(null, true);
             $user->save();
         }
+        return response()->json([
+            'success' => true,
+        ]);
     }
 
     public function itemsPurchased(Request $request)
@@ -104,9 +141,11 @@ class CartController extends Controller
         $user = Auth::user();
         $prod = 0;
         $cart = json_decode($user->cart, true);
+        $totalPrice = 0.0;
         if (!is_null($cart)) {
             foreach ($cart as $index) {
                 $counter = 0;
+                $totalPrice += $index['price'];
                 foreach ($index as $key => $value) {
                     if ($counter != 1) {
                         $prod = $value;
@@ -123,8 +162,21 @@ class CartController extends Controller
                 'content' => json_encode($cart),
                 'user_id' => $user->id,
                 'isAccepted' => 0,
+                'deliveryFee' => $request->input('deliveryFee'),
+                'paymentMethod' => $request->input('paymentMethod'),
+                'totalPrice' => $totalPrice,
             ]);
+            $order->save();
+
+            $i = 1;
+            foreach(Order::all() as $order) {
+                $order->id = $i;
+                $order->save();
+                $i++;
+            }
+
             $user->cart = json_encode(null, true);
+            $user->notifications = 'pending';
             $user->save();
 
             // foreach ($cart as $product) {
@@ -133,9 +185,9 @@ class CartController extends Controller
             //     echo $firstProduct['product_id']; // This will print 3
 
             // }
-            $DriverController = new DriverController();
-            $DriverController->makeDelivery();
-            return response()->json(['msg' => 'worked'], 200);
+
+            //to pending after confirming his purchase
+            return response()->json(['success' => 'true'], 200);
 
         }
 
@@ -143,6 +195,6 @@ class CartController extends Controller
     public function fetch()
     {
         $user = Auth::user();
-        return $user->cart;
+        return json_decode($user->cart);
     }
 }

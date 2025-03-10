@@ -14,9 +14,11 @@ return new class extends Migration
         Schema::create('stores', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->time('opening time');
-            $table->time('closing time');
+            $table->time('openingTime');
+            $table->time('closingTime');
             $table->string('location');
+            $table->text('description');
+            $table->string('image');
             // $table->foreignIdFor(App\Models\Product::class);
             $table->timestamps();
         });

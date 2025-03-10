@@ -1,59 +1,135 @@
-<html>
-    <head>
-        <style type="text/css">
+<!DOCTYPE html>
+<html lang="en">
 
-            #container {height: 100%; width:100%; font-size: 0;border:black}
-            #left, #right {display: inline-block; *display: inline; zoom: 1; vertical-align: top; font-size: 12px;border: black;}
-            #left {width: 31.5%; background: red;}
-            #right {width: 31.5%; background: lightgray;}
-            </style>
-    </head>
+<head>
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Cart</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
 
-    <body>
+        /* Container for buttons */
+        .container {
+            display: flex;
+            gap: 20px;
+        }
 
-<div class="bg-white border-black">
-    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-      <h2 class="text-2xl font-bold tracking-tight text-gray-900 border-black">Customers also purchased</h2>
+        /* General button styling */
+        .btn {
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
 
-      <div id="products" class="mt-6 grid grid-rows-1 grid-cols-6 gap-x-6 gap-y-10 sm:grid-cols-6 lg:grid-cols-6 xl:gap-x-8" >
-          <div id ="right" class="mt-4 justify-between">
+        /* Hover effect */
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
 
-            <div id="left">
-                <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="w-full rounded-xl bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" style="width:150px ;height:150px">
-            </div>
-            <div id="right">
-              <h3 class="text-sm text-gray-700">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee
-                </a>
-              </h3>
-              <p class="mt-1 text-sm text-gray-500">Black</p>
-              <p class="text-sm font-medium text-gray-900">$35</p>
-            </div>
-          </div>
+        /* Stores button */
+        .stores {
+            background-color: #143640;
+            /* Dark blue */
+            color: white;
+        }
+
+        /* Products button */
+        .products {
+            background-color: #30C198;
+            /* Turquoise */
+            color: white;
+        }
+
+        .logout {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 20px 30px;
+            text-decoration: none;
+            color: #000000;
+            font-size: 20px;
+            border: 3px solid;
+            border-bottom-left-radius: 40px;
+            border-color: hsl(153, 97%, 62%);
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+            transition: 0.5s ease, box-shadow 0.5s ease, font-size 0.5s ease, border 0.5s ease;
+        }
+
+        .logout:hover {
+            color: #42FCA9;
+            border-left: 4.5px solid;
+            border-bottom: 4.5px solid;
+            background-color: #143640;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            font-size: 23px;
+            /* Optional: Change color on hover */
+        }
 
 
+        /* Light green hover effect */
+        .btn:hover {
+            background-color: #42FCA9;
+            /* Light green */
+        }
+    </style>
+</head>
 
-          <div id ="right" class="mt-4 flex justify-between">
+<body>
+    <div
+        style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 20px; margin-top: 20px;">
+        <form method="POST" action="/logout" style="display:flex; flex-direction:row-reverse; width:100%; height:50%" onsubmit="return confirmLogout()">
+            @csrf
+            <button type="submit" class="logout" style="font-family: 'Forte'">
+                LOG OUT
+            </button>
+        </form>
+        <div>
+            <img src="{{ asset('images/NovaCart.png') }}" alt=""
+                style="width:350px; height:350px;margin-left:-10%; margin-bottom:10%;">
+        </div>
+        <div style="font-family: 'Forte'; font-size: 50px; color: #42FCA9;margin-top:-10%;">
+            WHICH ONE WOULD YOU LIKE TO EDIT?
+        </div>
+        <div class="container">
+            <a href="stores">
+                <button class="btn stores">Stores</button>
+            </a>
 
-            <div id="left">
-                <img src="https://tailwindui.com/plus/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Front of men&#039;s Basic Tee in black." class="aspect-square w-full rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" style="width:150px ;height:150px">
-            </div>
-            <div id="right">
-              <h3 class="text-sm text-gray-700">
-                <a href="#">
-                  <span aria-hidden="true" class="absolute inset-0"></span>
-                  Basic Tee
-                </a>
-              </h3>
-              <p class="mt-1 text-sm text-gray-500">Black</p>
-              <p class="text-sm font-medium text-gray-900">$35</p>
-            </div>
-          </div>
-      </div>
+            <a href="products">
+                <button class="btn products">Products</button>
+            </a>
+
+            <a href="drivers">
+                <button class="btn drivers">Drivers</button>
+            </a>
+        </div>
     </div>
-  </div>
+
+    <script>
+        function confirmLogout() {
+            return confirm(
+                `Are you sure you want to log out?`
+            );
+        }
+    </script>
 
 </body>
-  </html>
+
+</html>

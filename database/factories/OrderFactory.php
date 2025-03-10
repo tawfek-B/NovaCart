@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\Driver;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -19,6 +20,7 @@ class OrderFactory extends Factory
         return [
             'content' => null,
             'user_id' => null,
+            'driver_id' => Driver::factory(),
             'isAccepted' => 0,
             //
         ];

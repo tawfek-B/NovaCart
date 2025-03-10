@@ -5,9 +5,44 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Models\User;
+use App\Models\Store;
+use Illuminate\Support\Facades\Storage;
+
 
 class ProductController extends Controller
 {
+
+    public function fetch(Request $request, $id) {
+
+        return response()->json([
+            'success' => Product::where('id', $id)->first()?true:false,
+            'product' => Product::where('id', $id)->first()
+        ]);
+    }
+
+    public function fetchAllProducts() {
+        return Product::all();
+    }
+    public function fetchStoreProducts(Request $request, $id) {
+        if(is_null($store = Store::where('id', $id)->first())) {
+        return response()->json([
+            'success' => false
+        ]);//do we have to encode this?
+        }
+        $products = [];
+        $store = Store::where('id', $id)->first();
+        foreach(Product::all() as $product) {
+            if($product->store_id==$store->id) {
+                $products[] = $product;
+            }
+        }
+
+
+        return response()->json([
+            'success' => Store::where('id', $id)->first()?true:false,
+            'products' => $products
+        ]);//do we have to encode this?
+    }
     //
     public function create(Request $request)
     {
@@ -27,47 +62,83 @@ class ProductController extends Controller
             $name = $request->input('name'),
             $price = $request->input('price'),
             $description = $request->input('description'),
-            $image = $request->input('image'),
             $quantity = $request->input('quantity'),
-            $storeId = $request->input('storeId')
+            $storeId = $request->input('storeID')
         ];
+        if(!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('Products', 'public');
+        }
+        else {
+            $path="Products/default.png";
+        }
+
 
         $product = Product::factory()->create([
             'name' => $name,
             'price' => $price,
             'description' => $description,
-            'image' => $image,
+            'image' => $path,
             'quantity' => $quantity,
             'store_id' => $storeId,
         ]);
+
+        $data = ['element' => 'product', 'id' => $product->id, 'name' => $product->name];
+        session(['add_info' => $data]);
+        return redirect()->route('add.confirmation');
     }
 
-    public function update(Request $request){
+    public function update(Request $request, $id){
+
+        foreach(Product::all() as $product) {
+            if($product->name==$request->input('name') && $product->id !=$id) {
+                $validated = $request->validate([
+                    'name' => 'unique:products,name',
+                ]);
+
+            }
+        }
 
         $validated = [
             $name = $request->input('name'),
             $price = $request->input('price'),
             $description = $request->input('description'),
-            $image = $request->input('image'),
             $quantity = $request->input('quantity'),
         ];
 
-            $product = Product::where('id', $request->input('productID'))->first();
 
-            $product->name = $name;
-            $product->price = $price;
-            $product->description = $description;
-            $product->image = $image;
-            $product->quantity = $quantity;//i don't think we need to change the store id of a product, so......
+            $product = Product::where('id', $id)->first();
 
+            $product->name = $request->input('name');
+            $product->price = $request->input('price');
+            $product->description = $request->input('description');
+            $product->quantity = $request->input('quantity');//i don't think we need to change the store id of a product, so......
+
+
+            if(!is_null($request->file('image'))) {
+                $path = $request->file('image')->store('Products', 'public');
+                if($product->image!="Products/default.png")
+                Storage::delete($product->image);
+                $product->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
+            }
             $product->save();
 
-            return response()->json([
-                'message' => 'product updated successfully',
-                'data' => $product,
-            ], 200);
+        $data = ['element' => 'product', 'id' => $product->id, 'name' => $product->name];
+        session(['update_info' => $data]);
+        return redirect()->route('update.confirmation');
     }
-    public function fetch(Request $request) {
-        return Product::where('id', $request->input('productID'))->first();
+
+    public function delete(Request $request, $id) {
+        $product = Product::where('id', $id)->first();
+        $name = $product->name;
+        $product->delete();
+        $i = 1;
+        foreach(Product::all() as $product) {
+            $product->id = $i;
+            $product->save();
+            $i++;
+        }
+        $data = ['element' => 'store', 'id' => $id, 'name'=>$name];
+        session( ['delete_info' => $data]);
+        return redirect()->route('delete.confirmation');
     }
 }

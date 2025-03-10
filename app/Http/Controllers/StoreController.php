@@ -4,13 +4,29 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Store;
+use Illuminate\Support\Facades\Storage;
 
 class StoreController extends Controller
 {
     //
 
+    public function fetch(Request $request, $id) {
+
+
+        return response()->json([
+            'success' => Store::where('id', $id)->first()?true:false,
+            'store' => Store::where('id', $id)->first()
+        ]);
+    }
+
+    public function fetchAll() {
+        return Store::all();
+    }
     public function create(Request $request) {
 
+        $validated = $request->validate([
+            'name' =>'unique:stores,name',
+        ]);
         // $request->validate([
         //     'name' => 'required',
         //     'opening hours' => 'required',
@@ -21,44 +37,99 @@ class StoreController extends Controller
 
         //for some reason, putting 'required' on these causes postman to return a redirection to "novacart.test"
 
-        $storeAttributes =[
+        $storeAttributes = [
             $name = $request->input('name'),
+            $description = $request->input('description'),
             $openingTime = $request->input('openingTime'),
             $closingTime = $request->input('closingTime'),
             $location = $request->input('location'),
         ];
+
+        if(!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('Stores', 'public');
+        }
+        else {
+            $path="Stores/default.png";
+        }
         $store = Store::factory()->create([
             'name' => $name,
-            'opening time' => $openingTime,
-            'closing time' => $closingTime,
+            'description' => $description,
+            'openingTime' => $openingTime,
+            'closingTime' => $closingTime,
+            'image' => $path,
             'location' => $location,
         ]);
 
+        $data = ['element' => 'store', 'id' => $store->id, 'name' => $store->name];
+        session(['add_info' => $data]);
+        return redirect()->route('add.confirmation');
+
     }
 
-    public function update(Request $request) {
+    public function update(Request $request, $id) {
+
+        foreach(Store::all() as $store) {
+            if($store->name==$request->input('name') && $store->id !=$id) {
+                $validated = $request->validate([
+                    'name' => 'unique:stores,name',
+                ]);
+
+            }
+        }
 
         $validated = $request->validate(rules: [
             'name' => 'required',
-            'opening time' => 'required',
-            'closing time' => 'required',
+            'openingTime' => 'required',
+            'closingTime' => 'required',
             'location' => 'required',
+            'description' => 'required',
         ]);
 
-            $store = Store::where('id', $request->input('storeID'))->first();
+        $store = Store::where('id', $id)->first();
+        // dd($store, 'auhswfhawusfwas');
 
-            $store->update($validated);
 
-            return response()->json([
-                'message' => 'Store updated successfully',
-                'data' => $store,
-            ], 200);
+        if(!is_null($request->file('image'))) {
+            $path = $request->file('image')->store('Stores', 'public');
+            if($store->image!="Stores/default.png")
+            Storage::delete($store->image);
+            $store->image = str_replace('public\\', '', $path);//this replaces what's already in the user logo for the recently stored new pic
+        }
+        // dd($store->name);
+        // dd($request->input('name'));
+        $store->name = $request->input('name');
+        $store->openingTime = $request->input('openingTime');
+        $store->closingTime = $request->input('closingTime');
+        $store->description = $request->input('description');
+        $store->location = $request->input('location');
+        $store->save();
+        // $store = 'sto' === 1;
+            // return response()->json([
+            //     'message' => 'Store updated successfully',
+            //     'data' => $store,
+            // ], 200);
 
+            $data = ['element' => 'store', 'id' => $id, 'name'=>$store->name];
+            session( ['update_info' => $data]);
+            return redirect()->route('update.confirmation');
     }
 
-    public function fetch(Request $request) {
+    public function delete(Request $request, $id) {
+        $store=Store::where('id', $id)->first();
+        $name = $store->name;
+        $store->delete();
 
-        return Store::where('id', $request->input('storeID'))->first();
+        // $i=1;
+        // foreach(Store::all() as $store) {
+        //     $store->id = $i;
+        //     $store->save();
+        //     $i++;
+        // }
+        //We can't change the IDs of the stores, as the products have a foreign key dependent on the ID of the stores
+
+        $data = ['element' => 'store', 'id' => $id, 'name'=>$name];
+        session( ['delete_info' => $data]);
+        return redirect()->route('delete.confirmation');
     }
 
 }
